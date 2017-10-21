@@ -1,0 +1,89 @@
+html
+{
+    height: 100%;
+}
+
+body
+{
+    position: fixed;
+    background-repeat: no-repeat;
+    position: fixed;
+    width: 100%;
+    margin: 10px 0;
+    background-image: url(Background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -2;
+}
+
+header
+{
+    position: relative;
+    background-color: #272323;
+    height: 100%;
+    margin: -10px 0;
+    padding: 35px;
+    opacity: .75;
+    z-index: -1;
+}
+
+.logo
+{
+    position: absolute;
+    bottom: 2px;
+    left: 5px;
+    float: left;
+    width: 100px;
+    height: 50px;
+}
+
+.tagline
+{
+    position: absolute;
+    color: white;
+    font-family: monospace;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    font-size: 50px;
+    bottom: 3px;
+    right: 0px;
+    left: 0px;
+}
+
+a.login:link
+{
+    position: absolute;
+    text-decoration: none;
+    text-align: right;
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 20px;
+    right: 20px;
+    bottom: 10px;
+    color: white;
+    z-index: 1;
+}
+
+a.login:visited
+{
+    color: white;
+}
+
+a.login:hover
+{
+    color: gray;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+a.login:active
+{
+    position: absolute;
+    color: #623c3c;
+    font-size: 21px;
+    right: 23px;
+    top: 25px;
+    bottom: 13px;
+}
