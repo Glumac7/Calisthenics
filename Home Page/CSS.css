@@ -1,13 +1,19 @@
+@font-face
+{
+    font-family: Ripped;
+    src: url('/Fonts/28 Days Later.ttf');
+}
+
 html
 {
     height: 100%;
+   
 }
 
 body
 {
     position: fixed;
     background-repeat: no-repeat;
-    position: fixed;
     width: 100%;
     margin: 10px 0;
     background-image: url(Background.jpg);
@@ -21,35 +27,33 @@ header
 {
     position: relative;
     background-color: #272323;
-    height: 100%;
+    height: 200%;
     margin: -10px 0;
-    padding: 35px;
-    opacity: .75;
+    padding: 50px;
+    opacity: .60;
     z-index: -1;
 }
 
 .logo
 {
     position: absolute;
-    bottom: 2px;
+    bottom: -20px;
     left: 5px;
     float: left;
-    width: 100px;
-    height: 50px;
+    width: 150px;
+    height: 140px;
 }
 
 .tagline
 {
     position: absolute;
     color: white;
-    font-family: monospace;
+    font-family: Ripped;
     font-weight: bold;
     font-style: italic;
-    text-align: center;
     font-size: 50px;
     bottom: 3px;
-    right: 0px;
-    left: 0px;
+    left: 160px;
 }
 
 a.login:link
@@ -73,17 +77,12 @@ a.login:visited
 
 a.login:hover
 {
-    color: gray;
-    font-size: 25px;
+    color: #e6cd45;
     cursor: pointer;
 }
 
 a.login:active
 {
     position: absolute;
-    color: #623c3c;
-    font-size: 21px;
-    right: 23px;
-    top: 25px;
-    bottom: 13px;
+    color: gray;
 }
