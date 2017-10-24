@@ -1,40 +1,45 @@
 @font-face
 {
     font-family: Ripped;
-    src: url('/Fonts/28 Days Later.ttf');
+    src: url('../Fonts/28 Days Later.ttf');
 }
 
 html
 {
     height: 100%;
-   
+}
+
+img.background
+{
+    position: fixed;
+    top: 58px;
+    width: 100%;
+    margin: auto;
+    left: 0;
+    background-repeat: no-repeat;
+    background-image: url(Background.jpg);
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
 }
 
 body
 {
-    position: fixed;
-    background-repeat: no-repeat;
-    width: 100%;
-    margin: 10px 0;
-    background-image: url(Background.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: -2;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 header
 {
     position: relative;
-    background-color: #272323;
-    height: 200%;
-    margin: -10px 0;
-    padding: 50px;
-    opacity: .60;
-    z-index: -1;
+    background-color: black;
+    margin: -10px -10px;
+    width: auto;
+    padding-top: 111px;
+    z-index: 1;
 }
 
-.logo
+img.logo
 {
     position: absolute;
     bottom: -20px;
@@ -44,28 +49,26 @@ header
     height: 140px;
 }
 
-.tagline
+div.tagline
 {
     position: absolute;
-    color: white;
-    font-family: Ripped;
+    bottom: 18px;
+    left: 180px;
+    font-family: sans-serif;
     font-weight: bold;
-    font-style: italic;
     font-size: 50px;
-    bottom: 3px;
-    left: 160px;
+    color: white;
 }
 
 a.login:link
 {
     position: absolute;
+    right: 30px;
+    bottom: 18px;
     text-decoration: none;
     text-align: right;
-    font-weight: bold;
-    font-family: monospace;
+    font-family: cursive;
     font-size: 20px;
-    right: 20px;
-    bottom: 10px;
     color: white;
     z-index: 1;
 }
@@ -86,3 +89,62 @@ a.login:active
     position: absolute;
     color: gray;
 }
+
+body nav
+{
+    position: -webkit-sticky;
+    position: -moz-sticky;
+    position: -ms-sticky;
+    position: -o-sticky;
+    top: 0;
+    background-color: #272323;
+    border-top: 3px solid #e6cd45;
+    margin: 10px -10px 0 -10px;
+    width: auto;
+    z-index: 1;
+}
+
+ul 
+{
+    text-align: justify;
+    min-width: 500px;
+}
+
+ul:after
+{
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+
+ul li
+{
+    display: inline-block;
+}
+
+.nav
+{
+    font-family:cursive;
+    text-decoration: none;
+    font-size: 120%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 65px;
+    color: white;
+    z-index: 1; 
+}
+
+.nav:visited
+{
+    color: white;
+}
+
+.nav:hover
+{
+    opacity: 1;
+    color: #e6cd45;
+    cursor: pointer;
+}
+
+.nav:active{color: gray;}
