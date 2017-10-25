@@ -1,7 +1,7 @@
 @font-face
 {
     font-family: Ripped;
-    src: url('../Fonts/28 Days Later.ttf');
+    src: url('../Fonts/octin-prison-rg.ttf');
 }
 
 html
@@ -12,7 +12,7 @@ html
 img.background
 {
     position: fixed;
-    top: 58px;
+    top: 0;
     width: 100%;
     margin: auto;
     left: 0;
@@ -31,8 +31,11 @@ body
 
 header
 {
+    opacity: .9;
     position: relative;
     background-color: black;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
     margin: -10px -10px;
     width: auto;
     padding-top: 111px;
@@ -54,7 +57,7 @@ div.tagline
     position: absolute;
     bottom: 18px;
     left: 180px;
-    font-family: sans-serif;
+    font-family: Ripped;
     font-weight: bold;
     font-size: 50px;
     color: white;
@@ -67,7 +70,7 @@ a.login:link
     bottom: 18px;
     text-decoration: none;
     text-align: right;
-    font-family: cursive;
+    font-family: serif;
     font-size: 20px;
     color: white;
     z-index: 1;
@@ -90,18 +93,22 @@ a.login:active
     color: gray;
 }
 
-body nav
+
+body nav.navbar
 {
-    position: -webkit-sticky;
+    opacity: .9;
+    position: -webkit-fixed;
     position: -moz-sticky;
     position: -ms-sticky;
     position: -o-sticky;
     top: 0;
     background-color: #272323;
-    border-top: 3px solid #e6cd45;
+    border-radius: 15px;
+    border-top: 1px solid #e6cd45;
+    box-shadow: 0 4px 10px #e6cd45;
     margin: 10px -10px 0 -10px;
     width: auto;
-    z-index: 1;
+    z-index: 10;
 }
 
 ul 
@@ -124,7 +131,7 @@ ul li
 
 .nav
 {
-    font-family:cursive;
+    font-family: serif;
     text-decoration: none;
     font-size: 120%;
     padding-top: 15px;
