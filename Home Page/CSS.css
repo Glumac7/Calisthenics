@@ -1,6 +1,12 @@
 @font-face
 {
     font-family: Ripped;
+    src: url('../Fonts/Asket Extended Light.ttf');
+}
+
+@font-face
+{
+    font-family: Tagline;
     src: url('../Fonts/octin-prison-rg.ttf');
 }
 
@@ -57,7 +63,7 @@ div.tagline
     position: absolute;
     bottom: 18px;
     left: 180px;
-    font-family: Ripped;
+    font-family: Tagline;
     font-weight: bold;
     font-size: 50px;
     color: white;
@@ -70,8 +76,9 @@ a.login:link
     bottom: 18px;
     text-decoration: none;
     text-align: right;
-    font-family: serif;
-    font-size: 20px;
+    font-family: Ripped;
+    font-size: 15px;
+    padding: 5px;
     color: white;
     z-index: 1;
 }
@@ -89,23 +96,22 @@ a.login:hover
 
 a.login:active
 {
-    position: absolute;
     color: gray;
 }
 
 
-body nav.navbar
+body nav#navbar
 {
     opacity: .9;
     position: -webkit-fixed;
-    position: -moz-sticky;
-    position: -ms-sticky;
-    position: -o-sticky;
+    position: -moz-fixed;
+    position: -ms-fixed;
+    position: -o-fixed;
     top: 0;
     background-color: #272323;
     border-radius: 15px;
     border-top: 1px solid #e6cd45;
-    box-shadow: 0 4px 10px #e6cd45;
+    box-shadow: 0 3px 10px #e6cd45;
     margin: 10px -10px 0 -10px;
     width: auto;
     z-index: 10;
@@ -131,9 +137,9 @@ ul li
 
 .nav
 {
-    font-family: serif;
+    font-family: Ripped;
     text-decoration: none;
-    font-size: 120%;
+    font-size: 100%;
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 20px;
@@ -155,3 +161,13 @@ ul li
 }
 
 .nav:active{color: gray;}
+
+section
+{
+    height: auto;
+    margin: auto;
+    margin-top: -11px;
+    width: 90%;
+    background-color: black;
+    opacity: .4;
+}
