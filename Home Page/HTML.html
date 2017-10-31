@@ -6,6 +6,7 @@
         <link rel=stylesheet type="text/css" href="CSS.css"/>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script>
+            
             var mn = $(".navbar");
 
             $(window).scroll(function()
@@ -19,19 +20,13 @@
                     mn.removeClass("navbar-scrolled");
                 }
             });
+            
         </script>
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
     
     <body>
-        
-        <!--Side of the home page-->
-        <aside>
-            <img class="background" src="Background.jpg" alt="background"/>
-            <a href=""><div class="RightArrow"></div></a>
-            <a href=""><div class="LeftArrow"></div></a>
-        </aside>
             
         <!--Main head of the home page-->
         <header>
@@ -55,9 +50,15 @@
                             
                 <li><a class="nav" href="">FAQ</a></li> 
                 
-                <li><a class="nav" href="">About</a></li>
+                <li><a class="nav nav2" href="">About</a></li>
             </ul>
         </nav>
+        
+        <aside>
+            <img class="background" src="Background.jpg" alt="background"/>
+            <a href=""><div class="RightArrow"></div></a>
+            <a href=""><div class="LeftArrow"></div></a>
+        </aside>
         
         <!--Main content of the home page-->
         <section style="padding-bottom: 2000px;">

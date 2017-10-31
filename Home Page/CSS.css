@@ -24,9 +24,10 @@ html
 img.background
 {
     position: fixed;
-    top: 0;
+    top: 7.5%;
     width: 100%;
     margin: auto;
+    height: 97%;
     left: 0;
     background-repeat: no-repeat;
     background-position: center;
@@ -45,8 +46,6 @@ header
 {
     position: relative;
     background-color: black;
-    border-bottom-right-radius: 15px;
-    border-bottom-left-radius: 15px;
     margin: -10px -10px;
     width: auto;
     padding-top: 111px;
@@ -112,14 +111,14 @@ nav.navbar
     animation-duration: 1.5s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-    position: relative;
     background: #272323;
     background: -webkit-linear-gradient(black, #272323);
     background: -moz-linear-gradient(top, black, #272323);
     background: -ms-linear-gradient(top, black, #272323);
     background: -o-linear-gradient(top, black, #272323);
     background: linear-gradient(to bottom, black, #272323);
-    border-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
     border-top: 1px solid black;
     box-shadow: 0 3px 5px rgb(144, 144, 144);
     margin: 10px -10px 0 -10px;
@@ -165,9 +164,13 @@ ul li
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 20px;
-    padding-right: 65px;
+    padding-right: 20px;
     color: white;
     z-index: 4; 
+}
+.nav2
+{
+    padding-right: 65px;
 }
 
 .nav:visited
@@ -187,12 +190,12 @@ ul li
 section
 {
     height: auto;
-    margin: auto;
-    margin-top: -11px;
-    width: 90%;
-    background-color: black;
-    opacity: .4;
-    z-index: 1;
+    margin-top: 47%;
+    width: auto;
+    background-position: center;    
+    border: 2px solid #e6cd45;
+    background-color: #212121;
+    z-index: 500;
 }
 
 aside
@@ -203,15 +206,14 @@ aside
 div.RightArrow
 {
     position: fixed;
-    top: 400px;
+    top: 50%;
     bottom: 0;
-    width: 50px;
-    height: 50px;
+    width: 15%;
+    height: 15%;
     background-image: url(RightArrow.png);
     background-repeat: no-repeat;
-    background-size: 50px;
-    text-align: right;
-    right: 20px;
+    background-size: 15%;
+    right: -11%;
     opacity: .7;
     z-index: 1;
 }
@@ -219,15 +221,14 @@ div.RightArrow
 div.LeftArrow
 {
     position: fixed;
-    top: 400px;
+    top: 50%;
     bottom: 0;
-    width: 50px;
-    height: 50px;
+    width: 15%;
+    height: 15%;
     background-image: url(LeftArrow.png);
     background-repeat: no-repeat;
-    background-size: 50px;
-    text-align: left;
-    left: 20px;
+    background-size: 15%;
+    left: 1.6%;
     opacity: .7;
     z-index: 1;
 }
