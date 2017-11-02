@@ -1,13 +1,13 @@
-var mn = $(".navbar");
-
+//Navbar is sticky
 $(window).scroll(function()
 {
-    if( $(this).scrollTop() > 111)
+
+    if( $(this).scrollTop() > 103)
     {
-        mn.addClass("navbar-scrolled");
+        $(".navbar").addClass("navbar-scrolled");
     }
     else
     {
-        mn.removeClass("navbar-scrolled");
+        $(".navbar").removeClass("navbar-scrolled");
     }
 });
