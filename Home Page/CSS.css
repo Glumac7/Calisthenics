@@ -11,8 +11,8 @@
 }
 @keyframes tagline
 {
-  0%{transform: rotateX(0deg);}
-  100%{transform: rotateX(360deg);}
+    0%{transform: rotateX(0deg);}
+    100%{transform: rotateX(360deg);}
 }
 
 @keyframes navborder
@@ -29,7 +29,7 @@ html
 img.background
 {
     position: fixed;
-    top: 6.5%;
+    top: 3%;
     width: 100%;
     height: 100%;
     background-repeat: no-repeat;
@@ -44,11 +44,10 @@ div.RightArrow
     top: 50%;
     width: 70px;
     height: 70px;
-    left: 1397.75px;
     background-image: url(Arrow.png);
     background-repeat: no-repeat;
     background-size: 100%;
-    right: -11%;
+    right: 2%;
     z-index: 1;
 }
 
@@ -106,6 +105,8 @@ div.tagline
     animation-name: tagline;
     animation-duration: 2s;
     animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
     position: absolute;
     bottom: 18px;
     left: 180px;
@@ -114,6 +115,7 @@ div.tagline
     font-size: 50px;
     color: white;
 }
+
 
 a.login:link
 {
@@ -233,13 +235,91 @@ section
     position: relative;
     height: auto;
     margin-top: 50%;
+    padding-bottom: 2000px;
     background-position: center;
     border: 2px solid #e6cd45;
     background-color: #212121;
     z-index: 5;
 }
 
-section.programs
+div.programs
 {
-  column-span: 3;
+    position: relative;
+}
+
+div.programs h1.program
+{
+    position: absolute;
+    top: .5%;
+    left: 0;
+    right: 0;
+    width: 160px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 5px;
+    font-family: sans-serif;
+    color: #d4d4d4;
+    text-align: center;
+    border-bottom-style: dashed;
+    border-bottom-width: medium;
+    border-bottom-color: #e6cd45;
+    z-index: 6;
+}
+
+pre.beginner
+{
+    position: absolute;
+    top: 160%;
+    left: -20%;
+    margin-left: 20%;
+    font-family: monospace;
+    text-align: center;
+    color: #d4d4d4;
+    z-index: 6;
+}
+
+img.beginnerimage
+{
+    position: absolute;
+    top: -60%;
+    left: 47%;
+    width: 50%;
+    height: 50%;
+    border-radius: 200px;
+}
+
+pre span.beginnerspan
+{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+pre.intermidiate
+{
+    position: absolute;
+    top: 160%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: monospace;
+    text-align: center;
+    color: #d4d4d4;
+    z-index: 6;
+}
+
+img.intermidiateimage
+{
+    position: absolute;
+    top: -60%;
+    left: 47%;
+    width: 50%;
+    height: 40%;
+    border-radius: 200px;
+}
+
+pre span.intermidiatespan
+{
+    font-weight: bold;
+    font-size: 25px;
 }
