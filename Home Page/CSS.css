@@ -268,18 +268,13 @@ h1.program
     z-index: 6;
 }
 
-div.beginnerdiv
+pre.beginnerpre
 {
     position: relative;
     text-align: center;
     top: 350px;
-    right: -9%;
+    left: -71.25%;
     margin-left: auto;
-}
-
-pre.beginnerpre
-{
-    position: absolute;
     font-family: Ripped;
     font-size: 20px;
     color: #d4d4d4;
@@ -317,19 +312,13 @@ a.beginnerhref:hover
     opacity: .7;
 }
 
-div.intermidiatediv
-{
-    position: relative;
-    top: 350px;
-    left: -137px;
-    margin-left: 50%;
-    margin-right: 50%;
-    z-index: 6;
-}
-
 pre.intermidiatepre
 {
     position: absolute;
+    top: 350px;
+    left: -140px;
+    margin-left: 50%;
+    margin-right: 50%;
     color: #d4d4d4;
     width: 285px;
     font-family: Ripped;
@@ -338,6 +327,7 @@ pre.intermidiatepre
     border-bottom-left-radius: 20px;
     box-shadow: 0px 13px 15px 0px rgba(230,205,69,1);
     text-align: center;
+    z-insdex: 6;
 }
 
 span.intermidiatespan
@@ -367,17 +357,11 @@ a.intemidiatehref:hover
     opacity: .8;
 }
 
-div.advanceddiv
-{
-    position: relative;
-    top: 350px;
-    left: 72%;
-    z-index: 6;
-}
-
 pre.advancedpre
 {
     position: absolute;
+    top: 350px;
+    left: 72%;
     font-family: Ripped;
     font-size: 20px;
     width: 285px;
@@ -387,6 +371,7 @@ pre.advancedpre
     box-shadow: 0px 13px 15px 0px rgba(230,205,69,1);
     padding-bottom: 28px;
     color: #d4d4d4;
+    z-index: 6;
 }
 
 img.advancedimage
@@ -415,4 +400,38 @@ a.advancedhref:hover
 {
     opacity: .7;
 
+}
+
+div.tutorials
+{
+    position: relative;
+    top: 500px;
+}
+
+h1.tutorialsh1
+{
+    position: absolute;
+    top: -72px;
+    left: 0;
+    right: 0;
+    width: 160px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 5px;
+    font-family: sans-serif;
+    color: #d4d4d4;
+    text-align: center;
+    border-bottom-style: dashed;
+    border-bottom-width: medium;
+    border-bottom-color: #e6cd45;
+    z-index: 6;
+}
+
+p.tutorialsp
+{
+    position: absolute;
+    top: -100px;
+    width: 100%;
+    height: auto;
+    border-top: 1px dotted #e6cd45;
 }
