@@ -21,12 +21,6 @@
     100%{box-shadow: 0 4px 10px rgba(230, 205, 69, 1);}
 }
 
-@keyframes program
-{
-    0%{font-size: 18px;}
-    100%{font-size: 25px;}
-}
-
 html
 {
     height: 100%;
@@ -249,6 +243,12 @@ section
     z-index: 5;
 }
 
+#programsection
+{
+    position: absolute;
+    top: 24%;
+}
+
 h1.program
 {
     position: absolute;
@@ -273,7 +273,7 @@ pre.beginnerpre
     position: relative;
     text-align: center;
     top: 350px;
-    left: -71.25%;
+    left: -72%;
     margin-left: auto;
     font-family: Ripped;
     font-size: 20px;
@@ -298,12 +298,9 @@ img.beginnerimage
 
 pre span.beginnerspan
 {
-    animation-name: program;
-    animation-iteration-count: infinite;
-    animation-duration: 2s;
-    animation-direction: alternate;
-    animation-timing-function: ease-in-out;
-    text-align: right;
+    position: absolute;
+    left: 0;
+    right: 0;
     font-weight: bold;
     font-size: 25px;
 }
@@ -316,7 +313,7 @@ pre.intermidiatepre
 {
     position: absolute;
     top: 350px;
-    left: -140px;
+    left: -142.5px;
     margin-left: 50%;
     margin-right: 50%;
     color: #d4d4d4;
@@ -332,11 +329,9 @@ pre.intermidiatepre
 
 span.intermidiatespan
 {
-    animation-name: program;
-    animation-duration: 2s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+    position: absolute;
+    left: 0;
+    right: 0;
     font-weight: bold;
     font-size: 25px;
 }
@@ -384,13 +379,11 @@ img.advancedimage
     border-radius: 20px;
 }
 
-pre span.advancedspan
+span.advancedspan
 {
-    animation-name: program;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-    animation-direction: alternate;
+    position: absolute;
+    right: 0;
+    left: 0;
     font-weight: bold;
     font-size: 25px;
     padding-bottom: auto;
@@ -402,7 +395,7 @@ a.advancedhref:hover
 
 }
 
-div.tutorials
+div#tutorials
 {
     position: relative;
     top: 500px;
@@ -434,4 +427,33 @@ p.tutorialsp
     width: 100%;
     height: auto;
     border-top: 1px dotted #e6cd45;
+}
+
+pre.tutorialspre
+{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 30px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    color: #d4d4d4;
+    font-family: Ripped;
+    font-weight: bold;
+    font-size: 21px;
+}
+
+img.tutorialsimage
+{
+    position: absolute;
+    top: 150px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    width: 1400px;
+    height: 660px;
 }
