@@ -2,7 +2,7 @@
 $(window).scroll(function()
 {
 
-    if( $(this).scrollTop() > 103)
+    if( $(this).scrollTop() > 101)
     {
         $(".navbar").addClass("navbar-scrolled");
     }
