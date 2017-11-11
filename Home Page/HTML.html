@@ -3,7 +3,7 @@
 
     <head>
         <title>Welcome Athlete!</title>
-        <link rel=stylesheet type="text/css" href="CSS.css"/>
+        <link rel="stylesheet" type="text/css" href="CSS.css"/>
         <script src="jquery-3.2.1.js">
         </script>
         <script src="JSCRIPT.js"></script>
@@ -25,9 +25,9 @@
         <!--Main navigational bar of the home page-->
         <nav class="navbar">
             <ul>
-                <li><a class="nav" href="#programsection">Programs</a></li>
+                <li><a class="nav" href="#program">Programs</a></li>
 
-                <li><a class="nav" href="">Tutorials</a></li>
+                <li><a class="nav" href="#tutorialsp">Tutorials</a></li>
 
                 <li><a class="nav" href="">Transformations</a></li>
 
@@ -46,12 +46,12 @@
         </aside>
 
         <!--Main content of the home page-->
-        <p id="programsection"></p>
+
         <section>
 
 
             <div id="programs">
-                <h1 class="program">PROGRAMS</h1>
+                <h1 id="program">PROGRAMS</h1>
                 <pre class="beginnerpre">
 <a class="beginnerhref" href=""><img class="beginnerimage"
 src="Images/beginner.jpg" alt="Beginner"/></a>
@@ -110,11 +110,13 @@ Tips and Nutrition.
 
             <div id="tutorials">
                 <h1 class="tutorialsh1">TUTORIALS</h1>
-                <p class="tutorialsp"></p>
-                <pre class="tutorialspre">
-If you don't have the technique down, you are not ready to start calisthenics. Form(technique) is everithing in calisthenics,
-without it you will never be at your full potenical.
-                </pre>
+                <p id="tutorialsp"></p>
+                <p class="tutorialspre">
+If you don't have the technique down, you are not ready to start
+calisthenics. Form(technique) is everithing in calisthenics,
+<br/>without it you will never be at your full potenical.
+ If you are ready to start your juorney,<br/><br/><a class="clickhere" href="">CLICK HERE!</a><br/>
+                </p>
                 <img class="tutorialsimage" src="Images/tutorials.jpg">
             </div>
         </section>
