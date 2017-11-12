@@ -21,6 +21,12 @@
     100%{box-shadow: 0 4px 10px rgba(230, 205, 69, 1);}
 }
 
+@keyframes tutorialborder
+{
+    0%{box-shadow: 0 0 0 rgba(230,205,69,0);}
+    100%{box-shadow: 0px 13px 15px 0px rgba(230,205,69,1);}
+}
+
 html
 {
     height: 100%;
@@ -248,7 +254,7 @@ section
 h1#program
 {
     position: absolute;
-    top: .5%;
+    top: 10px;
     left: 0;
     right: 0;
     width: 160px;
@@ -458,6 +464,24 @@ img.tutorialsimage
     height: 450px;
 }
 
+p.tutorialshadow
+{
+    position: absolute;
+    top: 193px;
+    left: 0;
+    right: 0;
+    animation-name: tutorialborder;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-out;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    width: 1400px;
+    height: 450px;
+}
+
 a.clickhere
 {
     position: relative;
@@ -469,4 +493,74 @@ a.clickhere
 a.clickhere:hover
 {
     color: gold;
+}
+
+p.transformborder
+{
+    position: absolute;
+    top: 1680px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 1px dotted #e6cd45;
+    z-index: 6;
+}
+
+div#transformations
+{
+    position: absolute;
+    top: 2000px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 6;
+}
+
+h1.transformh1
+{
+  position: absolute;
+  top: -290px;
+  left: 0;
+  right: 0;
+  width: 251px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 5px;
+  font-family: sans-serif;
+  color: #d4d4d4;
+  text-align: center;
+  border-bottom-style: dashed;
+  border-bottom-width: medium;
+  border-bottom-color: #e6cd45;
+  z-index: 6;
+}
+
+p.transformp
+{
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  top: -185px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  color: #d4d4d4;
+  font-family: Ripped;
+  font-weight: bold;
+  font-size: 21px;
+}
+
+img.transformimage
+{
+    position: absolute;
+    top: 160px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    z-index: 6;
 }
