@@ -36,7 +36,6 @@ img.background
 {
     position: fixed;
     top: 3%;
-    filter: grayscale(90%);
     width: 100%;
     height: 100%;
     background-repeat: no-repeat;
@@ -243,7 +242,7 @@ section
     position: relative;
     height: auto;
     margin: 50% 0 0 0;
-    padding-bottom: 2000px;
+    padding-bottom: 3000px;
     padding-left: -10%;
     background-position: center;
     border: 1px solid #e6cd45;
@@ -344,7 +343,6 @@ img.intermidiateimage
     position: absolute;
     top: -180px;
     right: 14px;
-    filter: grayscale(90%);
     width: 260px;
     height: 150px;
     border-bottom: 0;
@@ -378,7 +376,6 @@ img.advancedimage
     position: absolute;
     top: -180px;
     right: 14px;
-    filter: grayscale(80%);
     width: 260px;
     height: 150px;
     border-radius: 20px;
@@ -453,33 +450,16 @@ p.tutorialspre
 img.tutorialsimage
 {
     position: absolute;
-    top: 210px;
+    top: 158px;
     left: 0;
     right: 0;
-    filter: grayscale(90%);
     margin-left: auto;
     margin-right: auto;
+    border-left: 3px solid #e6cd45;
+    border-right: 3px solid #e6cd45;
     border-radius: 20px;
-    width: 1400px;
-    height: 450px;
-}
-
-p.tutorialshadow
-{
-    position: absolute;
-    top: 193px;
-    left: 0;
-    right: 0;
-    animation-name: tutorialborder;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: ease-out;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 20px;
-    width: 1400px;
-    height: 450px;
+    width: 1000px;
+    height: 350px;
 }
 
 a.clickhere
@@ -498,7 +478,7 @@ a.clickhere:hover
 p.transformborder
 {
     position: absolute;
-    top: 1680px;
+    top: -320px;
     left: 0;
     right: 0;
     margin-left: auto;
@@ -510,7 +490,7 @@ p.transformborder
 div#transformations
 {
     position: absolute;
-    top: 2000px;
+    top: 1910px;
     left: 0;
     right: 0;
     margin-left: auto;
@@ -539,18 +519,18 @@ h1.transformh1
 
 p.transformp
 {
-  position: absolute;
-  text-align: center;
-  width: 100%;
-  top: -185px;
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
-  color: #d4d4d4;
-  font-family: Ripped;
-  font-weight: bold;
-  font-size: 21px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: -185px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    color: #d4d4d4;
+    font-family: Ripped;
+    font-weight: bold;
+    font-size: 21px;
 }
 
 img.transformimage
@@ -561,6 +541,80 @@ img.transformimage
     right: 0;
     margin-left: auto;
     margin-right: auto;
+    border-left: 3px solid #e6cd45;
+    border-right: 3px solid #e6cd45;
+    border-radius: 20px;
+    z-index: 6;
+}
+
+p.qnaborder
+{
+    position: absolute;
+    top: -20px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 1px dotted #e6cd45;
+    z-index: 6
+}
+
+div#qna
+{
+    position: absolute;
+    top: 2200px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 6;
+}
+
+h1.qnah1
+{
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    width: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 5px;
+    font-family: sans-serif;
+    color: #d4d4d4;
+    text-align: center;
+    border-bottom-style: dashed;
+    border-bottom-width: medium;
+    border-bottom-color: #e6cd45;
+    z-index: 6;
+}
+
+p.qnap
+{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 110px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    color: #d4d4d4;
+    font-family: Ripped;
+    font-weight: bold;
+    font-size: 21px;
+}
+
+img.qnaimage
+{
+    position: absolute;
+    top: 190px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    border-left: 3px solid #e6cd45;
+    border-right: 3px solid #e6cd45;
     border-radius: 20px;
     z-index: 6;
 }
