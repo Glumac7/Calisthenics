@@ -242,7 +242,7 @@ section
     position: relative;
     height: auto;
     margin: 50% 0 0 0;
-    padding-bottom: 3000px;
+    padding-bottom: 4000px;
     padding-left: -10%;
     background-position: center;
     border: 1px solid #e6cd45;
@@ -500,21 +500,21 @@ div#transformations
 
 h1.transformh1
 {
-  position: absolute;
-  top: -290px;
-  left: 0;
-  right: 0;
-  width: 251px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 5px;
-  font-family: sans-serif;
-  color: #d4d4d4;
-  text-align: center;
-  border-bottom-style: dashed;
-  border-bottom-width: medium;
-  border-bottom-color: #e6cd45;
-  z-index: 6;
+    position: absolute;
+    top: -290px;
+    left: 0;
+    right: 0;
+    width: 251px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 5px;
+    font-family: sans-serif;
+    color: #d4d4d4;
+    text-align: center;
+    border-bottom-style: dashed;
+    border-bottom-width: medium;
+    border-bottom-color: #e6cd45;
+    z-index: 6;
 }
 
 p.transformp
@@ -608,7 +608,7 @@ p.qnap
 img.qnaimage
 {
     position: absolute;
-    top: 190px;
+    top: 160px;
     left: 0;
     right: 0;
     margin-left: auto;
@@ -616,5 +616,77 @@ img.qnaimage
     border-left: 3px solid #e6cd45;
     border-right: 3px solid #e6cd45;
     border-radius: 20px;
+    z-index: 6;
+}
+
+div#faq
+{
+    position: absolute;
+    top: 3050px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 6;
+}
+
+p.faqborder
+{
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 1px dotted #e6cd45;
+    z-index: 6
+}
+
+h1.faqh1
+{
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    width: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 5px;
+    font-family: sans-serif;
+    color: #d4d4d4;
+    text-align: center;
+    border-bottom-style: dashed;
+    border-bottom-width: medium;
+    border-bottom-color: #e6cd45;
+    z-index: 6;
+}
+
+p.faqp
+{
+      position: absolute;
+      text-align: center;
+      width: 100%;
+      top: 150px;
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+      color: #d4d4d4;
+      font-family: Ripped;
+      font-weight: bold;
+      font-size: 21px;
+}
+
+img.faqimage
+{
+    position: absolute;
+    top: 160px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    border-left: 3px solid #e6cd45;
+    border-right: 3px solid #e6cd45;
     z-index: 6;
 }
