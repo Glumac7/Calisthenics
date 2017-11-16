@@ -242,12 +242,20 @@ section
     position: relative;
     height: auto;
     margin: 50% 0 0 0;
-    padding-bottom: 4000px;
+    padding-bottom: 3500px;
     padding-left: -10%;
     background-position: center;
-    border: 1px solid #e6cd45;
+    border-top: 1px solid #e6cd45;
+    border-left: 1px solid #e6cd45;
+    border-right: 1px solid #e6cd45;
     background-color: #212121;
     z-index: 5;
+}
+
+h1#programs
+{
+    position: absolute;
+    top: -52px;
 }
 
 h1#program
@@ -399,14 +407,18 @@ a.advancedhref:hover
 
 div#tutorials
 {
-    position: relative;
-    top: 500px;
+    position: absolute;
+    top: 835px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 h1.tutorialsh1
 {
     position: absolute;
-    top: -72px;
+    top: 40px;
     left: 0;
     right: 0;
     width: 160px;
@@ -422,13 +434,16 @@ h1.tutorialsh1
     z-index: 6;
 }
 
-p#tutorialsp
+p.tutorialsp
 {
     position: absolute;
-    top: -100px;
-    width: 100%;
-    height: auto;
+    top: 10px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
     border-top: 1px dotted #e6cd45;
+    z-index: 6
 }
 
 p.tutorialspre
@@ -436,7 +451,7 @@ p.tutorialspre
     position: absolute;
     text-align: center;
     width: 100%;
-    top: 30px;
+    top: 140px;
     left: 0;
     right: 0;
     margin-left: auto;
@@ -450,7 +465,7 @@ p.tutorialspre
 img.tutorialsimage
 {
     position: absolute;
-    top: 158px;
+    top: 170px;
     left: 0;
     right: 0;
     margin-left: auto;
@@ -460,6 +475,7 @@ img.tutorialsimage
     border-radius: 20px;
     width: 1000px;
     height: 350px;
+    z-index: 6;
 }
 
 a.clickhere
@@ -478,7 +494,7 @@ a.clickhere:hover
 p.transformborder
 {
     position: absolute;
-    top: -320px;
+    top: 13px;
     left: 0;
     right: 0;
     margin-left: auto;
@@ -490,7 +506,7 @@ p.transformborder
 div#transformations
 {
     position: absolute;
-    top: 1910px;
+    top: 1575px;
     left: 0;
     right: 0;
     margin-left: auto;
@@ -501,7 +517,7 @@ div#transformations
 h1.transformh1
 {
     position: absolute;
-    top: -290px;
+    top: 43px;
     left: 0;
     right: 0;
     width: 251px;
@@ -522,7 +538,7 @@ p.transformp
     position: absolute;
     text-align: center;
     width: 100%;
-    top: -185px;
+    top: 153px;
     left: 0;
     right: 0;
     margin-left: auto;
@@ -536,7 +552,7 @@ p.transformp
 img.transformimage
 {
     position: absolute;
-    top: 160px;
+    top: 173px;
     left: 0;
     right: 0;
     margin-left: auto;
@@ -550,7 +566,7 @@ img.transformimage
 p.qnaborder
 {
     position: absolute;
-    top: -20px;
+    top: 10px;
     left: 0;
     right: 0;
     margin-left: auto;
@@ -562,7 +578,7 @@ p.qnaborder
 div#qna
 {
     position: absolute;
-    top: 2200px;
+    top: 2165px;
     left: 0;
     right: 0;
     margin-left: auto;
@@ -573,7 +589,7 @@ div#qna
 h1.qnah1
 {
     position: absolute;
-    top: 10px;
+    top: 40px;
     left: 0;
     right: 0;
     width: 60px;
@@ -594,7 +610,7 @@ p.qnap
     position: absolute;
     text-align: center;
     width: 100%;
-    top: 110px;
+    top: 140px;
     left: 0;
     right: 0;
     margin-left: auto;
@@ -608,7 +624,7 @@ p.qnap
 img.qnaimage
 {
     position: absolute;
-    top: 160px;
+    top: 170px;
     left: 0;
     right: 0;
     margin-left: auto;
@@ -622,7 +638,7 @@ img.qnaimage
 div#faq
 {
     position: absolute;
-    top: 3050px;
+    top: 3020px;
     left: 0;
     right: 0;
     margin-left: auto;
@@ -633,7 +649,7 @@ div#faq
 p.faqborder
 {
     position: absolute;
-    top: 20px;
+    top: 15px;
     left: 0;
     right: 0;
     margin-left: auto;
@@ -645,7 +661,7 @@ p.faqborder
 h1.faqh1
 {
     position: absolute;
-    top: 50px;
+    top: 45px;
     left: 0;
     right: 0;
     width: 60px;
@@ -666,7 +682,7 @@ p.faqp
       position: absolute;
       text-align: center;
       width: 100%;
-      top: 150px;
+      top: 145px;
       left: 0;
       right: 0;
       margin-left: auto;
@@ -680,7 +696,7 @@ p.faqp
 img.faqimage
 {
     position: absolute;
-    top: 160px;
+    top: 155px;
     left: 0;
     right: 0;
     margin-left: auto;
@@ -689,4 +705,23 @@ img.faqimage
     border-left: 3px solid #e6cd45;
     border-right: 3px solid #e6cd45;
     z-index: 6;
+}
+
+footer
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: -10%;
+    background-position: center;
+    background-color: #393939;
+    width: 100%;
+    height: 300px;
+    border-left: 1px solid #e6cd45;
+    border-right: 1px solid #e6cd45;
+    border-bottom: 1px solid #e6cd45;
+    z-index: 5;
 }
