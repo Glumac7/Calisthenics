@@ -32,6 +32,7 @@ html
     height: 100%;
 }
 
+/*-------------ASIDE-------------*/
 img.background
 {
     position: fixed;
@@ -76,6 +77,7 @@ div.RightArrow:hover, div.LeftArrow:hover
     opacity: .5;
 }
 
+/*-------------BODY-------------*/
 body
 {
     position: relative;
@@ -85,6 +87,7 @@ body
     overflow-y: auto;
 }
 
+/*-------------HEADER-------------*/
 header
 {
     position: relative;
@@ -122,7 +125,7 @@ div.tagline
     color: white;
 }
 
-
+/*-------------LOGIN-------------*/
 a.login:link
 {
     transition-duration: .4s;
@@ -154,6 +157,7 @@ a.login:active
     color: gray;
 }
 
+/*-------------NAVBAR-------------*/
 nav.navbar
 {
     animation-name: navborder;
@@ -237,6 +241,7 @@ ul li
 
 .nav:active{color: gray;}
 
+/*-------------SECTION-------------*/
 section
 {
     position: relative;
@@ -251,6 +256,7 @@ section
     z-index: 5;
 }
 
+/*-------------PROGRAMS-------------*/
 h1#programs
 {
     position: absolute;
@@ -404,6 +410,7 @@ a.advancedhref:hover
 
 }
 
+/*-------------TUTORIALS-------------*/
 div#tutorials
 {
     position: absolute;
@@ -487,6 +494,7 @@ a.clickhere
 
 a.clickhere:hover
 {
+    text-decoration: underline;
     color: gold;
 }
 
@@ -574,6 +582,7 @@ p.qnaborder
     z-index: 6
 }
 
+/*-------------QnQ-------------*/
 div#qna
 {
     position: absolute;
@@ -634,6 +643,7 @@ img.qnaimage
     z-index: 6;
 }
 
+/*-------------FAQ-------------*/
 div#faq
 {
     position: absolute;
@@ -706,6 +716,7 @@ img.faqimage
     z-index: 6;
 }
 
+/*-------------FOOTER-------------*/
 footer
 {
     position: relative;
@@ -729,7 +740,7 @@ footer
 
 p.footertop
 {
-  position: relative;
+  position: absolute;
   left: 0;
   right: 0;
   margin-top: 0;
@@ -741,12 +752,22 @@ p.footertop
   z-index: 6;
 }
 
-p.footerp
+img.footerimage
+{
+    height: 70px;
+    width: 70px;
+}
+
+p.footerul
 {
     position: absolute;
     left: 0;
     right: 0;
     margin-left: auto;
     margin-right: auto;
+    color: #d4d4d4;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: right;
     z-index: 6;
 }
