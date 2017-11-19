@@ -766,8 +766,41 @@ p.footerul
     margin-left: auto;
     margin-right: auto;
     color: #d4d4d4;
-    display: inline-block;
-    vertical-align: middle;
     text-align: right;
     z-index: 6;
+}
+
+li.footerleft
+{
+    position: relative;
+    text-align: center;
+    top: 10px;
+    left: -72%;
+    margin-left: auto;
+    -moz-font-family: Ripped;
+    font-family: Ripped;
+    font-size: 20px;
+    color: #d4d4d4;
+    width: 285px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    box-shadow: 0px 13px 15px 0px rgba(230,205,69,1);
+    padding-bottom: 85px;
+    z-index: 6;
+}
+
+li.footercenter
+{
+    position: absolute;
+    display: block;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 6;
+}
+
+li.footerright
+{
+   position: absolute;
 }
