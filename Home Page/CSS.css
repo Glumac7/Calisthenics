@@ -9,11 +9,39 @@
     font-family: "Tagline";
     src: url('../Fonts/octin-prison-rg.ttf');
 }
-@keyframes tagline
-{
-    0%{transform: rotateX(0deg);}
-    100%{transform: rotateX(360deg);}
-}
+
+  @-webkit-keyframes tagline
+  {
+    0%
+    {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -100%, 0);
+      transform: translate3d(0, -100%, 0);
+    }
+    100%
+    {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+    }
+  }
+
+  @keyframes tagline
+  {
+    0%
+    {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -100%, 0);
+      transform: translate3d(0, -100%, 0);
+    }
+
+    100%
+    {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+    }
+  }
 
 @keyframes navborder
 {
@@ -36,7 +64,7 @@ html
 img.background
 {
     position: fixed;
-    top: 3%;
+    top: 0;
     width: 100%;
     height: 100%;
     background-repeat: no-repeat;
@@ -111,11 +139,12 @@ img.logo
 
 div.tagline
 {
+    -webkit-animation-name: tagine;
     animation-name: tagline;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-    animation-delay: 1s;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
     position: absolute;
     bottom: 18px;
     left: 180px;
@@ -160,17 +189,17 @@ a.login:active
 /*-------------NAVBAR-------------*/
 nav.navbar
 {
-    animation-name: navborder;
+    animation-name: navbrder;
     animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
     animation-timing-function: ease-out;
     background: #272323;
-    background: -webkit-linear-gradient(#747267, #000000);
-    background: -moz-linear-gradient(bottom, #747267, #000000);
-    background: -ms-linear-gradient(bottom, #747267, #000000);
-    background: -o-linear-gradient(bottom, #747267, #000000);
-    background: linear-gradient(to top, #212121, #000000);
+    background: -webkit-linear-gradient(rgba(33, 33, 33, 0.75), #000000);
+    background: -moz-linear-gradient(bottom, rgba(33, 33, 33, 0.75), #000000);
+    background: -ms-linear-gradient(bottom, rgba(33, 33, 33, 0.75), #000000);
+    background: -o-linear-gradient(bottom, rgba(33, 33, 33, 0.75), #000000);
+    background: linear-gradient(to top, rgba(33, 33, 33, 0.75), #000000);
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     border-top: 1px solid #e6cd45;
@@ -195,16 +224,15 @@ ul
     margin-bottom: 0;
 }
 
-ul:after
+ul::after
 {
     content: '';
     display: inline-block;
     width: 100%;
 }
 
-ul li
+nav ul li
 {
-
     display: inline-block;
     font-weight: bold;
 }
@@ -247,7 +275,7 @@ section
     position: relative;
     height: auto;
     margin: 50% 0 -26px 0;
-    padding-bottom: 3500px;
+    padding-bottom: 2950px;
     background-position: center;
     border-top: 1px solid #e6cd45;
     border-left: 1px solid #e6cd45;
@@ -702,20 +730,6 @@ p.faqp
       font-size: 21px;
 }
 
-img.faqimage
-{
-    position: absolute;
-    top: 155px;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 20px;
-    border-left: 3px solid #e6cd45;
-    border-right: 3px solid #e6cd45;
-    z-index: 6;
-}
-
 /*-------------FOOTER-------------*/
 footer
 {
@@ -738,28 +752,18 @@ footer
     z-index: 5;
 }
 
-footer.footerdiv
-{
-    position: absolute;
-    top: 20px;
-    right: 79%;
-    margin-left: auto;
-    margin-right: auto;
-    color: #d4d4d4;
-    z-index: 6;
-}
-
 p.footertop
 {
   position: absolute;
   left: 0;
   right: 0;
   margin-top: 0;
+  margin-bottom: 0;
   margin-left: auto;
   margin-right: auto;
   border-top:1px solid #323232;
   width: 80%;
-  height: 200px;
+  height: 1px;
   z-index: 6;
 }
 
@@ -801,7 +805,7 @@ img.footerleftimage
 {
     position: absolute;
     top: -20px;
-    left: -95px;  
+    left: -95px;
     width: 100px;
     height: 100px;
 }
@@ -821,27 +825,33 @@ span.footerspan
 
 i
 {
-    text-decoration: underline;
     font-family: serif;
 }
 
-ul.ulul 
+ul.ulul
 {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    margin: 0 auto;
     width: 50px;
+    z-index: 7;
 }
 
-a.footercenter 
+a.footercenter
 {
     display: block;
-    text-decoration: none;
+    color: #d4d4d4;
 }
 
-li.footerli 
+li.footerli
 {
     text-align: center;
+    padding: 3px;
+    margin: 5px;
+    width: 450px;
 }
 
 li.footerright
