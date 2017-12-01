@@ -25,25 +25,65 @@ $(window).scroll(function()
         $(".intermidiatepre").addClass("opacity2");
         $(".advancedpre").removeClass("opacity");
         $(".advancedpre").addClass("opacity2");
-    }             
+    }
 });
 
 $(window).scroll(function()
 {
     if($(this).scrollTop() > 1200)
     {
-        $(".tutorialsspan").addClass("flip");
+        $(".tutorialsspan").addClass("fadeIn");
         $(".tutorialsspan").removeClass("opacity");
         $(".tutorialsspan").addClass("opacity2");
-    }             
+    }
 });
 
 $(window).scroll(function()
 {
-    if($(this).scrollTop() > 1270)
+    if($(this).scrollTop() > 1500)
     {
-        $(".clickherespan").addClass("fadeIn");
-        $(".clickherespan").removeClass("opacity");
-        $(".clickherespan").addClass("opacity2");
-    }             
+        $(".tutorialsimage").addClass("fadeInUp");
+        $(".tutorialsimage").removeClass("opacity");
+        $(".tutorialsimage").addClass("opacity2");
+    }
+});
+
+$(window).scroll(function()
+{
+    if($(this).scrollTop() > 2000)
+    {
+        $(".transformspan").addClass("fadeIn");
+        $(".transformspan").removeClass("opacity");
+        $(".transformspan").addClass("opacity2");
+    }
+});
+
+$(window).scroll(function()
+{
+    if($(this).scrollTop() > 2200)
+    {
+        $(".transformimage").addClass("fadeInUp");
+        $(".transformimage").removeClass("opacity");
+        $(".transformimage").addClass("opacity2");
+    }
+});
+
+$(window).scroll(function()
+{
+    if($(this).scrollTop() > 2600)
+    {
+        $(".qnaspan").addClass("fadeIn");
+        $(".qnaspan").removeClass("opacity");
+        $(".qnaspan").addClass("opacity2");
+    }
+});
+
+$(window).scroll(function()
+{
+    if($(this).scrollTop() > 2930)
+    {
+        $(".faqspan").addClass("fadeIn");
+        $(".faqspan").removeClass("opacity");
+        $(".faqspan").addClass("opacity2");
+    }
 });
