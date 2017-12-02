@@ -1,9 +1,9 @@
 $("#newUser").click(function(){
   $("h1").text("Registration");
   $(".logo").css({
-    "width":"120px",
-    "height":"120px",
-    "top":"10px"
+    "width":"150px",
+    "height":"150px",
+    "top":"-10px"
   });
   $("#login-form").fadeOut(200);
   $("#registration-form").delay(300).fadeIn(500);
@@ -26,9 +26,9 @@ $("#signup-btn,#getpass-btn").click(function(){
 $("#fPass").click(function(){
   $("h1").text("Forgotten password");
   $(".logo").css({
-    "width":"190px",
-    "height":"190px",
-    "top":"40px"
+    "width":"230px",
+    "height":"230px",
+    "top":"15px";
   });
 
   $("#login-form").fadeOut(200);
