@@ -258,6 +258,85 @@
     }
 }
 
+.flipInX
+{
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+    -webkit-animation-name: flipInX;
+    animation-name: flipInX;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+@-webkit-keyframes flipInX 
+{
+    0% 
+    {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+        -webkit-transition-timing-function: ease-in;
+        transition-timing-function: ease-in;
+        opacity: 0;
+    }
+    40% 
+    {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+        -webkit-transition-timing-function: ease-in;
+        transition-timing-function: ease-in;
+    }
+    60% 
+    {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+        opacity: 1;
+    }
+    80% 
+    {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    }
+    100% 
+    {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+}
+@keyframes flipInX 
+{
+    0% 
+    {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+        -webkit-transition-timing-function: ease-in;
+        transition-timing-function: ease-in;
+        opacity: 0;
+    }
+    40% 
+    {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+        -webkit-transition-timing-function: ease-in;
+        transition-timing-function: ease-in;
+    }
+    60% 
+    {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+        opacity: 1;
+    }
+    80% 
+    {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    }
+    100% 
+    {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+}
 .fadeIn
 {
     -webkit-animation-name: fadeIn;
@@ -268,7 +347,7 @@
     animation-fill-mode: both;
 }
 
-  @-webkit-keyframes fadeIn
+@-webkit-keyframes fadeIn
 {
     0%
     {
@@ -280,7 +359,7 @@
     }
 }
 
-  @keyframes fadeIn
+@keyframes fadeIn
 {
     0%
     {
@@ -538,7 +617,7 @@ section
     position: relative;
     height: auto;
     margin: 50% 0 -26px 0;
-    padding-bottom: 2415px;
+    padding-bottom: 2425px;
     background-position: center;
     border-top: 1px solid #e6cd45;
     border-left: 1px solid #e6cd45;
@@ -595,11 +674,22 @@ pre.beginnerpre
 img.beginnerimage
 {
     position: absolute;
+    -webkit-filter: blur(3px);
+	filter: blur(3px);
+	-webkit-transition: .2s ease-in-out;
+	transition: .2s ease-in-out;
     top: -180px;
     right: 14px;
     width: 260px;
     height: 150px;
     border-radius: 20px;
+}
+
+img.beginnerimage:hover
+{
+    -webkit-filter: blur(0);
+	filter: blur(0);
+    transform: .2s ease-in-out;
 }
 
 pre span.beginnerspan
@@ -609,10 +699,6 @@ pre span.beginnerspan
     right: 0;
     font-weight: bold;
     font-size: 25px;
-}
-a.beginnerhref:hover
-{
-    opacity: .7;
 }
 
 pre.intermidiatepre
@@ -645,6 +731,10 @@ span.intermidiatespan
 img.intermidiateimage
 {
     position: absolute;
+    -webkit-filter: blur(3px);
+	filter: blur(3px);
+	-webkit-transition: .2s ease-in-out;
+	transition: .2s ease-in-out;
     top: -180px;
     right: 14px;
     width: 260px;
@@ -653,9 +743,11 @@ img.intermidiateimage
     border-radius: 20px;
 }
 
-a.intemidiatehref:hover
+img.intermidiateimage:hover
 {
-    opacity: .8;
+    -webkit-filter: blur(0);
+	filter: blur(0);
+    transform: .2s ease-in-out;
 }
 
 pre.advancedpre
@@ -678,11 +770,22 @@ pre.advancedpre
 img.advancedimage
 {
     position: absolute;
+    -webkit-filter: blur(3px);
+	filter: blur(3px);
+	-webkit-transition: .2s ease-in-out;
+	transition: .2s ease-in-out;
     top: -180px;
     right: 14px;
     width: 260px;
     height: 150px;
     border-radius: 20px;
+}
+
+img.advancedimage:hover
+{
+    -webkit-filter: blur(0);
+	filter: blur(0);
+    transform: .2s ease-in-out;
 }
 
 span.advancedspan
@@ -693,12 +796,6 @@ span.advancedspan
     font-weight: bold;
     font-size: 25px;
     padding-bottom: auto;
-}
-
-a.advancedhref:hover
-{
-    opacity: .7;
-
 }
 
 /*-------------TUTORIALS-------------*/

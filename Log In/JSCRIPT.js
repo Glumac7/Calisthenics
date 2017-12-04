@@ -24,7 +24,7 @@ $("#signup-btn,#getpass-btn").click(function(){
 });
 
 $("#fPass").click(function(){
-  $("h1").text("Forgotten password");
+  $("h1").text("Forgot password?");
   $(".logo").css({
     "width":"230px",
     "height":"230px",

@@ -32,7 +32,7 @@ $(window).scroll(function()
 {
     if($(this).scrollTop() > 1200)
     {
-        $(".tutorialsspan").addClass("fadeIn");
+        $(".tutorialsspan").addClass("flipInX");
         $(".tutorialsspan").removeClass("opacity");
         $(".tutorialsspan").addClass("opacity2");
     }
@@ -42,7 +42,7 @@ $(window).scroll(function()
 {
     if($(this).scrollTop() > 1500)
     {
-        $(".tutorialsimage").addClass("fadeInUp");
+        $(".tutorialsimage").addClass("flipInX");
         $(".tutorialsimage").removeClass("opacity");
         $(".tutorialsimage").addClass("opacity2");
     }
@@ -52,7 +52,7 @@ $(window).scroll(function()
 {
     if($(this).scrollTop() > 2000)
     {
-        $(".transformspan").addClass("fadeIn");
+        $(".transformspan").addClass("flipInX");
         $(".transformspan").removeClass("opacity");
         $(".transformspan").addClass("opacity2");
     }
@@ -62,7 +62,7 @@ $(window).scroll(function()
 {
     if($(this).scrollTop() > 2200)
     {
-        $(".transformimage").addClass("fadeInUp");
+        $(".transformimage").addClass("flipInX");
         $(".transformimage").removeClass("opacity");
         $(".transformimage").addClass("opacity2");
     }
