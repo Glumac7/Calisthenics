@@ -1,6 +1,8 @@
-$("#newUser").click(function(){
+$("#newUser").click(function()
+{
   $("h1").text("Registration");
-  $(".logo").css({
+  $(".logo").css(
+  {
     "width":"150px",
     "height":"150px",
     "top":"-10px"
@@ -10,9 +12,11 @@ $("#newUser").click(function(){
   $(".other-options").fadeOut(200);
 });
 
-$("#signup-btn,#getpass-btn").click(function(){
+$("#signup-btn,#getpass-btn").click(function()
+{
   $("h1").text("Log in");
-  $(".logo").css({
+  $(".logo").css(
+  {
     "width":"150px",
     "height":"150px",
     "top":"30px"
@@ -23,9 +27,11 @@ $("#signup-btn,#getpass-btn").click(function(){
   $(".other-options").fadeIn(300);
 });
 
-$("#fPass").click(function(){
+$("#fPass").click(function()
+{
   $("h1").text("Forgot password?");
-  $(".logo").css({
+  $(".logo").css(
+  {
     "width":"230px",
     "height":"230px",
     "top":"15px";
