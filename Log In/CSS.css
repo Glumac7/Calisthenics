@@ -129,8 +129,8 @@ body, html
   margin: auto;
   top: 0; left: 0; bottom: 0; right: 0;
   border-radius: 10px;
-  width: 300px;
-  height: 500px;
+  width: 330px;
+  height: 530px;
   background: rgba(3,3,3,.7);
   overflow: hidden;
 }
@@ -224,20 +224,23 @@ a
 .login-btn:not(hover)
 {
   transition: .6s;
-  border-radius: 4px;
+  border: 1px solid rgb(230, 205, 69);
+  border-width: thin;
+  border-radius: 10px;
+  background-color: black;
   text-align: center;
-  background: rgba(230, 205, 69, .7);
-  color: #fff;
+  opacity: .8;
+  color: #e6cd45;
 }
 
 .login-btn:hover
 {
   transition: .6s;
-  border:1px solid #e6cd45;
-  border-width: thin;
-  background-color: black;
-  opacity: .7;
-  color: #e6cd45;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 20px;
+  background: rgb(230, 205, 69);
+  color: #ffffff;
 }
 
 .other-options
