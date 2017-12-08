@@ -32,14 +32,14 @@ $(() =>
     $("#fPass").click(function()
     {
         $("h1").text("Forgotten password");
-    
+
         $(".logo").css(
         {
             "width":"240px",
             "height":"240px",
             "top":"35px"
         });
-        $("#login-form").fadeOut(200);
+        $("#login-form").fadeOut(300);
         $("#fpass-form").delay(300).fadeIn(500);
         $(".other-options").fadeOut(200);
     });

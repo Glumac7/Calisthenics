@@ -158,11 +158,12 @@ h1
 .logo
 {
   position: relative;
+  left: 3.3%;
   width: 200px;
   height: 200px;
   opacity: .9;
   margin: auto;
-  background: url(Images/logo.png) no-repeat center;
+  background: url(Images/logo1.png) no-repeat center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -224,13 +225,11 @@ a
 .login-btn:not(hover)
 {
   transition: .6s;
-  border: 1px solid rgb(230, 205, 69);
-  border-width: thin;
   border-radius: 10px;
-  background-color: black;
+  background: rgb(230, 205, 69);
   text-align: center;
   opacity: .8;
-  color: #e6cd45;
+  color: #fff;
 }
 
 .login-btn:hover
@@ -238,9 +237,7 @@ a
   transition: .6s;
   border-radius: 10px;
   text-align: center;
-  font-size: 20px;
-  background: rgb(230, 205, 69);
-  color: #ffffff;
+  background: #a39546;
 }
 
 .other-options
