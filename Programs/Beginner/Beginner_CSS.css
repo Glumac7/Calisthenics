@@ -1,0 +1,93 @@
+@font-face 
+{
+    font-family: "Tagline";
+    src: url('C:/Users/Glumac/Desktop/GitHubss/Calisthenics/Fonts/octin-prison-rg.ttf');
+}
+
+body 
+{
+	margin: 0;
+	background: #d4d4d4;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 400;
+    overflow: auto;
+}
+
+.container 
+{
+	width: 80%;
+	margin: 0 auto;
+}
+
+header 
+{
+  background: -webkit-linear-gradient(rgba(33, 33, 33, 0), #000000);
+  background: -moz-linear-gradient(bottom, rgba(33, 33, 33, 0), #000000);
+  background: -ms-linear-gradient(bottom, rgba(33, 33, 33, 0), #000000);
+  background: -o-linear-gradient(bottom, rgba(33, 33, 33, 0), #000000);
+  background: linear-gradient(to top, rgba(33, 33, 33, 0), #000000);
+}
+
+header::after 
+{
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.logo 
+{
+  float: left;
+  height: 90px;
+  width: 90px;
+}
+
+.logo1
+{
+  float: left;
+  margin-top: 26px;
+  font-family: Tagline;
+  font-size: 30px;
+  color: #d4d4d4;
+}
+
+.straight
+{
+  padding-left: 35px;
+  color: #e6cd45;
+}
+
+nav 
+{
+  float: right;
+}
+
+nav ul 
+{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li 
+{
+  display: inline-block;
+  margin-left: 30px;
+  padding-top: 36px;
+  position: relative;
+}
+
+nav a 
+{
+  color: #d4d4d4;
+  font-family: monospace;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: .5s;
+  font-size: 16px;
+}
+
+nav a:hover 
+{
+  color: #e6cd45;
+}

@@ -1,0 +1,99 @@
+@font-face 
+{
+    font-family: Ripped;
+    src: ;
+}
+
+body 
+{
+	margin: 0;
+	background: #d4d4d4;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 400;
+}
+
+.container 
+{
+	width: 80%;
+	margin: 0 auto;
+}
+
+header 
+{
+  background: #212121;
+}
+
+header::after 
+{
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.logo 
+{
+  float: left;
+  height: 100px;
+  width: 100px;
+  padding: 0;
+}
+
+.logo1
+{
+  float: left;
+  margin-top: 43px;
+  font-family: "Ripped";
+  color: #d4d4d4;
+}
+
+nav 
+{
+  float: right;
+}
+
+nav ul 
+{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li 
+{
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 43px;
+  position: relative;
+}
+
+nav a 
+{
+  color: #d4d4d4;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+nav a:hover 
+{
+  color: #e6cd45;
+}
+
+nav a::before 
+{
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #e6cd45;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before
+{
+  width: 100%;
+}
