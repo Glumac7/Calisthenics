@@ -56,21 +56,20 @@ $(window).scroll(function()
 
 $(window).scroll(function()
 {
-    if($(this).scrollTop() > 2600)
+    if($(this).scrollTop() > 2550)
     {
         $(".qnaspan").addClass("fadeIn");
-        $(".qnaspan").removeClass("opacity");
+        $(".qnaspan").removeClass("o50city");
         $(".qnaspan").addClass("opacity2");
     }
 });
 
 $(window).scroll(function()
 {
-    if($(this).scrollTop() > 2930)
+    if($(this).scrollTop() > 2880)
     {
         $(".faqspan").addClass("fadeIn");
         $(".faqspan").removeClass("opacity");
         $(".faqspan").addClass("opacity2");
     }
 });
-
