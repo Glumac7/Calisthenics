@@ -465,10 +465,10 @@ body
 
 header
 {
-  background: -webkit-linear-gradient(rgba(33, 33, 33, 0), #000000);
-  background: -moz-linear-gradient(bottom, rgba(33, 33, 33, 0), #000000);
-  background: -ms-linear-gradient(bottom, rgba(33, 33, 33, 0), #000000);
-  background: -o-linear-gradient(bottom, rgba(33, 33, 33, 0), #000000);
+  background: -webkit-linear-gradient(rgba(63, 63, 63, 0), #000000);
+  background: -moz-linear-gradient(bottom, rgba(63, 63, 63, 0), #000000);
+  background: -ms-linear-gradient(bottom, rgba(63, 63, 63, 0), #000000);
+  background: -o-linear-gradient(bottom, rgba(63, 63, 63, 0), #000000);
   background: linear-gradient(to top, rgba(63, 63, 63, 0), #000000);
 }
 
@@ -556,7 +556,7 @@ section
     position: relative;
     height: auto;
     margin: 50% 0 -26px 0;
-    padding-bottom: 2550px;
+    padding-bottom: 2565px;
     background-position: center;
     border-top: 1px solid #e6cd45;
     border-left: 1px solid #e6cd45;
@@ -613,10 +613,10 @@ pre.beginnerpre
 img.beginnerimage
 {
     position: absolute;
-    -webkit-filter: blur(3px);
-	filter: blur(3px);
-	-webkit-transition: .2s ease-in-out;
-	transition: .2s ease-in-out;
+    max-width: 100%;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
     top: -180px;
     right: 14px;
     width: 260px;
@@ -626,9 +626,9 @@ img.beginnerimage
 
 img.beginnerimage:hover
 {
-    -webkit-filter: blur(0);
-	filter: blur(0);
-    transform: .2s ease-in-out;
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 pre span.beginnerspan
@@ -670,10 +670,9 @@ span.intermidiatespan
 img.intermidiateimage
 {
     position: absolute;
-    -webkit-filter: blur(3px);
-	filter: blur(3px);
-	-webkit-transition: .2s ease-in-out;
-	transition: .2s ease-in-out;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
     top: -180px;
     right: 14px;
     width: 260px;
@@ -684,9 +683,9 @@ img.intermidiateimage
 
 img.intermidiateimage:hover
 {
-    -webkit-filter: blur(0);
-	filter: blur(0);
-    transform: .2s ease-in-out;
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 pre.advancedpre
@@ -709,10 +708,9 @@ pre.advancedpre
 img.advancedimage
 {
     position: absolute;
-    -webkit-filter: blur(3px);
-	  filter: blur(3px);
-	  -webkit-transition: .2s ease-in-out;
-	  transition: .2s ease-in-out;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
     top: -180px;
     right: 14px;
     width: 260px;
@@ -722,9 +720,9 @@ img.advancedimage
 
 img.advancedimage:hover
 {
-    -webkit-filter: blur(0);
-	filter: blur(0);
-    transform: .2s ease-in-out;
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 span.advancedspan
@@ -799,7 +797,7 @@ p.tutorialspre
 img.tutorialsimage
 {
     position: absolute;
-    top: 440px;
+    top: 250px;
     left: 0;
     right: 0;
     margin-left: auto;
@@ -823,7 +821,7 @@ a.clickhere:not(hover)
     position: relative;
     font-family: Ripped;
     transition: .3s;
-    color: #e6cd45;
+    color: #a39546;
     text-decoration: none;
 }
 
@@ -831,7 +829,7 @@ a.clickhere:hover
 {
     font-size: 25px;
     transition: .3s;
-    color: gold;
+    color: #e6cd45;
 }
 
 p.transformborder
@@ -850,7 +848,7 @@ p.transformborder
 div#transformations
 {
     position: absolute;
-    top: 1630px;
+    top: 1605px;
     left: 0;
     right: 0;
     margin-left: auto;
@@ -972,7 +970,7 @@ p.qnap
 div#faq
 {
     position: absolute;
-    top: 2590px;
+    top: 2585px;
     left: 0;
     right: 0;
     margin-left: auto;
