@@ -441,11 +441,6 @@ img.background
     z-index: -1;
 }
 
-div.RightArrow:hover, div.LeftArrow:hover
-{
-    opacity: .5;
-}
-
 /*-------------BODY-------------*/
 body
 {

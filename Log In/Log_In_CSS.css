@@ -224,7 +224,7 @@ a
 
 .login-btn:not(hover)
 {
-  transition: .6s;
+  transition: .4s;
   border-radius: 10px;
   background: rgb(230, 205, 69);
   text-align: center;
@@ -234,7 +234,7 @@ a
 
 .login-btn:hover
 {
-  transition: .6s;
+  transition: .4s;
   border-radius: 10px;
   text-align: center;
   background: #a39546;
