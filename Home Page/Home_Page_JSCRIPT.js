@@ -56,7 +56,7 @@ $(window).scroll(function()
 
 $(window).scroll(function()
 {
-    if($(this).scrollTop() > 2550)
+    if($(this).scrollTop() > 2500)
     {
         $(".qnaspan").addClass("fadeIn");
         $(".qnaspan").removeClass("o50city");
@@ -72,4 +72,18 @@ $(window).scroll(function()
         $(".faqspan").removeClass("opacity");
         $(".faqspan").addClass("opacity2");
     }
+});
+
+$(document).ready(function()
+{
+	$(window).bind('scroll',function(e)
+    {
+   		parallaxScroll();
+   	});
+ 
+   	function parallaxScroll()
+    {
+   		var scrolledY = $(window).scrollTop();
+		$('.parallax').css('background-position','center -'+((scrolledY*.5))+'px');
+   	}
 });
