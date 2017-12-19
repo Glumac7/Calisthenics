@@ -1,7 +1,13 @@
 @font-face 
 {
     font-family: "Tagline";
-    src: url('C:/Users/Glumac/Desktop/GitHubss/Calisthenics/Fonts/octin-prison-rg.ttf');
+    src: url('../../Fonts/octin-prison-rg.ttf');
+}
+
+@font-face
+{
+    font-family: "Ripped";
+    src: url('../../Fonts/Asket Extended Light.ttf');
 }
 
 body 
@@ -119,7 +125,7 @@ section
 {
     position: relative;
     top: 0;
-    padding-bottom: 2500px;
+    padding-bottom: 660px;
     margin: 0 auto;
     background: #212121;
     border: 1px solid #e6cd45;
@@ -145,14 +151,40 @@ section
     z-index: 6;
 }
 
+span
+{
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
 .beginnerp
 {
     position: absolute;
     left: 0;
     right: 0;
     margin: 0 auto;
-    top: 100px;
+    top: 170px;
+    font-family: Ripped;
+    font-weight: bold;
+    font-size: 20px;
     color: #d4d4d4;
-    width: 1000px;
     text-align: center;
+}
+
+.download:not(hover)
+{
+    position: relative;
+    font-family: Ripped;
+    transition: .3s;
+    color: #a39546;
+    font-size: 32px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.download:hover
+{
+    font-size: 40px;
+    transition: .3s;
+    color: #e6cd45;
 }
