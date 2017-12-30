@@ -274,7 +274,7 @@ div.whydiv
     top: -16px;
     height: 800px;
     border: 1px solid #e6cd45;
-    border-bottom: 0;
+    border-bottom: 1px solid rgba(230, 205, 69, .4);
     background: #212121;
     border-top: 0;
     z-index: 6;
@@ -341,24 +341,55 @@ a.whya:hover
     color: #e6cd45;
 }
 
-.download:not(hover)
+div.quotedowdiv
 {
     position: relative;
-    font-family: Ripped;
-    transition: .3s;
-    color: #a39546;
-    font-size: 32px;
-    font-weight: bold;
-    text-decoration: none;
+    top: -20px;
+    height: 200px;
+    width: 100%;
+    background-image: url('../Images/image.jpg');
+    background-blend-mode: color;
+    background-size: cover;
+    z-index: 5;
 }
 
-.download:hover
+span.quotedowspan
+{
+    position: absolute;
+    height: 200px;
+    width: 100%;
+    background-color: #212121;
+    opacity: .7;
+    z-index: 6;
+}
+
+a.quotedowp
+{
+    position: absolute;
+    top: 75px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 300px;
+    transition: .3s;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-family: Ripped;
+    font-weight: bold;
+    color: #a39546;
+    text-decoration: none;
+    text-align: center;
+    z-index: 6;
+}
+
+.quotedowp:hover
 {
     font-size: 40px;
     transition: .3s;
     color: #e6cd45;
 }
 
+/*----------FOOTER----------*/
 footer
 {
     position: relative;
@@ -375,6 +406,7 @@ footer
     background: -o-linear-gradient(bottom, #393939, #212121);
     background: linear-gradient(to top, #393939, #212121);
     height: 200px;
+    border-top: 1px solid rgba(230, 205, 69, .4);
     border-left: 1px solid #e6cd45;
     border-right: 1px solid #e6cd45;
     border-bottom: 1px solid #e6cd45;
@@ -384,6 +416,7 @@ footer
 p.footertop
 {
   position: absolute;
+  top: 2090px;
   left: 0;
   right: 0;
   margin-top: 0;
