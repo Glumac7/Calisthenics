@@ -12,16 +12,44 @@ $(document).ready(function()
    	}
 });
 
-$(document).ready(function()
+$(window).scroll(function()
 {
-	$(window).bind('scroll',function(e)
+    if($(this).scrollTop() > 900)
     {
-   		parallaxScroll();
-   	});
- 
-   	function parallaxScroll()
+        $('.aboutp').addClass('fadeInUp');
+        $('.aboutp').removeClass('opacity');
+    }
+    
+    if($(this).scrollTop() > 900)
     {
-   		var scrolledY = $(window).scrollTop();
-		$('.parallax2').css('background-position','center -'+((scrolledY*.3))+'px');
-   	}
+        $('.aboutimg').addClass('bounceInRight');
+        $('.aboutimg').removeClass('opacity');
+    }
+    
+    if($(this).scrollTop() > 1600)
+    {
+        $('.whyp').addClass('fadeInUp');
+        $('.whyp').removeClass('opacity');
+    }
+    
+    if($(this).scrollTop() > 1600)
+    {
+        $('.whyimg').addClass('bounceInLeft');
+        $('.whyimg').removeClass('opacity');
+    }
+});
+
+$(() =>
+{
+    $('.quotedowp').hover(function() 
+    {
+        $('.quotedowdiv').addClass('opacity')
+        $('.quotedowdiv').removeClass('opacity2')
+    });
+    
+    $('.quotedowp').mouseleave(function()
+    {
+        $('.quotedowdiv').removeClass('opacity')
+        $('.quotedowdiv').addClass('opacity2')
+    });
 });
