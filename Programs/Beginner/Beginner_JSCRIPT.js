@@ -45,9 +45,7 @@ $(() =>
     {
         $('.quotedowdiv').addClass('zoomhover')
         $('.quotedowdiv').removeClass('zoomleave')
-    });
-    
-    $('.quotedowp').mouseleave(function()
+    }, function()
     {
         $('.quotedowdiv').removeClass('zoomhover')
         $('.quotedowdiv').addClass('zoomleave')
