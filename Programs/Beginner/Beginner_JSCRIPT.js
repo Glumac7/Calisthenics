@@ -43,13 +43,13 @@ $(() =>
 {
     $('.quotedowp').hover(function() 
     {
-        $('.quotedowdiv').addClass('opacity')
-        $('.quotedowdiv').removeClass('opacity2')
+        $('.quotedowdiv').addClass('zoomhover')
+        $('.quotedowdiv').removeClass('zoomleave')
     });
     
     $('.quotedowp').mouseleave(function()
     {
-        $('.quotedowdiv').removeClass('opacity')
-        $('.quotedowdiv').addClass('opacity2')
+        $('.quotedowdiv').removeClass('zoomhover')
+        $('.quotedowdiv').addClass('zoomleave')
     });
 });
