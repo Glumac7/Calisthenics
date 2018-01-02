@@ -520,7 +520,7 @@ nav li
 nav a
 {
   color: #d4d4d4;
-  font-family: monospace;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   text-decoration: none;
   text-transform: uppercase;
   transition: .5s;
@@ -1142,6 +1142,7 @@ a.footercenter
 li.footermiddle
 {
      text-align: center;
+     font-family: 'Times New Roman', Times, serif;
      padding: 3px;
      margin-left: 178px;
      width: 100px;

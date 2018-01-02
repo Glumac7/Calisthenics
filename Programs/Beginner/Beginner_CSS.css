@@ -1,5 +1,10 @@
 @font-face
 {
+    font-family: "Header";
+    src: url('../../Fonts/Gentona2.otf');
+}
+@font-face
+{
     font-family: "Tagline";
     src: url('../../Fonts/octin-prison-rg.ttf');
 }
@@ -92,7 +97,7 @@
   }
 } 
 
-.bounceInRight 
+.bounceInRight
 {
   -webkit-animation-name: bounceInRight;
   animation-name: bounceInRight;
@@ -100,6 +105,18 @@
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
+}
+
+.bounceInRight2
+{
+  -webkit-animation-name: bounceInRight;
+  animation-name: bounceInRight;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-delay: .12s;
+  animation-delay: .12s;
 }
 
 @-webkit-keyframes bounceInRight 
@@ -316,7 +333,8 @@ nav li
 nav a
 {
   color: #d4d4d4;
-  font-family: monospace;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: 100;
   text-decoration: none;
   text-transform: uppercase;
   transition: .5s;
@@ -327,6 +345,8 @@ nav a:hover
 {
   color: #e6cd45;
 }
+
+/*---------------------------------*/
 
 section
 {
@@ -375,6 +395,7 @@ div.quotediv
     height: 300px;
     width: 100%;
     background-image: url('../Images/image.jpg');
+    filter: grayscale(.4);
     background-size: cover;
     z-index: 5;
 }
@@ -453,12 +474,35 @@ p.aboutp
     z-index: 6;
 }
 
-img.aboutimg
+ul.aboutul
 {
     position: absolute;
-    top: 350px;
-    left: 100px;
-    height: 270px;
+    top: 215px;
+}
+
+li.aboutli
+{
+    list-style-type: none;
+}
+
+img.aboutimg
+{
+    position: relative;
+    top: 0px;
+    left: 50px;
+    height: 250px;
+    width: 450px;
+    border-radius: 20px;
+    z-index: 6;
+}
+
+img.aboutimg2
+{
+    position: relative;
+    top: 0px;
+    left: 50px;
+    height: 250px;
+    width: 450px;
     border-radius: 20px;
     z-index: 6;
 }
@@ -616,6 +660,11 @@ a.quotedowp
     opacity: 0;
 }
 
+.opacity2
+{
+    opacity: 0;
+}
+
 /*----------FOOTER----------*/
 footer
 {
@@ -739,6 +788,7 @@ a.footercenter
 li.footermiddle
 {
     text-align: center;
+    font-family: 'Times New Roman', Times, serif;
     padding: 3px;
     margin-left: 178px;
     width: 100px;

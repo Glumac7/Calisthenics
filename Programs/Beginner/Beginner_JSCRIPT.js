@@ -23,7 +23,9 @@ $(window).scroll(function()
     if($(this).scrollTop() > 900)
     {
         $('.aboutimg').addClass('bounceInRight');
+        $('.aboutimg2').addClass('bounceInRight2');
         $('.aboutimg').removeClass('opacity');
+        $('.aboutimg2').removeClass('opacity2');
     }
     
     if($(this).scrollTop() > 1600)
@@ -47,7 +49,7 @@ $(() =>
         $('.quotedowdiv').removeClass('zoomleave')
     }, function()
     {
-        $('.quotedowdiv').removeClass('zoomhover')
         $('.quotedowdiv').addClass('zoomleave')
+        $('.quotedowdiv').removeClass('zoomhover')
     });
 });
