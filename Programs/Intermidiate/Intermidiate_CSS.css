@@ -386,8 +386,7 @@ div.quotediv
     position: relative;
     height: 300px;
     width: 100%;
-    background-image: url('../Images/image2.jpg');
-    filter: grayscale(.5);
+    background-image: url('../Images/1.jpeg');
     background-size: cover;
     z-index: 5;
 }
@@ -398,7 +397,7 @@ span.quotespan
     height: 300px;
     width: 100%;
     background-color: #212121;
-    opacity: .8;
+    opacity: .3;
     z-index: 6;
 }
 
@@ -518,7 +517,7 @@ div.whydiv
     height: 800px;
     border: 1px solid #e6cd45;
     border-bottom: 1px solid rgba(230, 205, 69, .4);
-    background: #212121;
+    background: rgb(33, 33, 33);
     border-top: 0;
     z-index: 6;
 }
@@ -588,27 +587,33 @@ div.quotedowdiv
 {
     position: relative;
     top: -20px;
-    height: 200px;
+    height: 185px;
     width: 100%;
-    background-image: url('../Images/download.jpg');
-    background-blend-mode: color;
+    background-image: url('../Images/2.jpg');
+    background-size: cover;
     z-index: 5;
 }
 
 span.quotedowspan
 {
     position: absolute;
-    height: 200px;
+    height: 185px;
     width: 100%;
-    background-color: #212121;
-    opacity: .7;
+    background: -moz-radial-gradient(center, ellipse cover, rgba(133,133,133,1) 0%, rgba(0,0,0,0.6) 71%); /* ff3.6+ */
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(133,133,133,1)), color-stop(71%, rgba(0,0,0,0.6))); /* safari4+,chrome */
+    background:-webkit-radial-gradient(center, ellipse cover, rgba(133,133,133,1) 0%, rgba(0,0,0,0.6) 71%); /* safari5.1+,chrome10+ */
+    background: -o-radial-gradient(center, ellipse cover, rgba(133,133,133,1) 0%, rgba(0,0,0,0.6) 71%); /* opera 11.10+ */
+    background: -ms-radial-gradient(center, ellipse cover, rgba(133,133,133,1) 0%, rgba(0,0,0,0.6) 71%); /* ie10+ */
+    background:radial-gradient(ellipse at center, rgba(133,133,133,1) 0%, rgba(0,0,0,0.6) 41%); /* w3c */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#858585', endColorstr='#000000',GradientType=1 ); /* ie6-9 */ 
+    opacity: .6;
     z-index: 6;
 }
 
 a.quotedowp
 {
     position: absolute;
-    top: 75px;
+    top: 70px;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -668,11 +673,11 @@ footer
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 0;
-    background: -webkit-linear-gradient(#393939, #212121);
-    background: -moz-linear-gradient(bottom, #393939, #212121);
-    background: -ms-linear-gradient(bottom, #393939, #212121);
-    background: -o-linear-gradient(bottom, #393939, #212121);
-    background: linear-gradient(to top, #393939, #212121);
+    background: -webkit-linear-gradient(#141414, #212121);
+    background: -moz-linear-gradient(bottom, #141414, #212121);
+    background: -ms-linear-gradient(bottom, #141414, #212121);
+    background: -o-linear-gradient(bottom, #141414, #212121);
+    background: linear-gradient(to top, #141414, #212121);
     height: 200px;
     border-top: 1px solid rgba(230, 205, 69, .4);
     border-left: 1px solid #e6cd45;

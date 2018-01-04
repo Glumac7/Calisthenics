@@ -394,8 +394,7 @@ div.quotediv
     position: relative;
     height: 300px;
     width: 100%;
-    background-image: url('../Images/image.jpg');
-    filter: grayscale(.4);
+    background-image: url('../Images/5.jpg');
     background-size: cover;
     z-index: 5;
 }
@@ -406,7 +405,7 @@ span.quotespan
     height: 300px;
     width: 100%;
     background-color: #212121;
-    opacity: .7;
+    opacity: .5;
     z-index: 6;
 }
 
@@ -598,7 +597,7 @@ div.quotedowdiv
     top: -20px;
     height: 200px;
     width: 100%;
-    background-image: url('../Images/download.jpg');
+    background-image: url('../Images/image.jpg');
     background-blend-mode: color;
     z-index: 5;
 }
@@ -608,8 +607,14 @@ span.quotedowspan
     position: absolute;
     height: 200px;
     width: 100%;
-    background-color: #212121;
-    opacity: .7;
+    background: -moz-radial-gradient(center, ellipse cover, rgba(133,133,133,1) 0%, rgba(0,0,0,0.6) 71%); /* ff3.6+ */
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(133,133,133,1)), color-stop(71%, rgba(0,0,0,0.6))); /* safari4+,chrome */
+    background:-webkit-radial-gradient(center, ellipse cover, rgba(133,133,133,1) 0%, rgba(0,0,0,0.6) 71%); /* safari5.1+,chrome10+ */
+    background: -o-radial-gradient(center, ellipse cover, rgba(133,133,133,1) 0%, rgba(0,0,0,0.6) 71%); /* opera 11.10+ */
+    background: -ms-radial-gradient(center, ellipse cover, rgba(133,133,133,1) 0%, rgba(0,0,0,0.6) 71%); /* ie10+ */
+    background:radial-gradient(ellipse at center, rgba(133,133,133,1) 0%, rgba(0,0,0,0.6) 41%); /* w3c */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#858585', endColorstr='#000000',GradientType=1 ); /* ie6-9 */
+    opacity: 1;
     z-index: 6;
 }
 

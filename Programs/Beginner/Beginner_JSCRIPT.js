@@ -53,3 +53,17 @@ $(() =>
         $('.quotedowdiv').removeClass('zoomhover')
     });
 });
+
+$(document).ready(function()
+{
+	$(window).bind('scroll',function(e)
+    {
+   		parallaxScroll();
+   	});
+ 
+   	function parallaxScroll()
+    {
+   		var scrolledY = $(window).scrollTop();
+		$('.parallax2').css('background-position','center -'+((scrolledY*.2))+'px');
+   	}
+});
