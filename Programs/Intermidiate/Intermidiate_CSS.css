@@ -230,22 +230,24 @@
 
 body
 {
-  margin: 0;
-  padding: 0;
-	font-family: 'Work Sans', sans-serif;
-  overflow-x: hidden;
-  overflow-y: scroll;
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+    background-color: #212121;
+    overflow-x: hidden;
+    overflow-y: scroll;
 	font-weight: 400;
 }
 
 aside.background
 {
-  position: relative;
-  top: 0;
-  height: 80%;
-  width: 100%;
-  background:url(../../Home%20Page/Images/intermidiate.jpg) no-repeat top center;
-  background-size: cover;
+    position: relative;
+    top: 0;
+    height: 80%;
+    width: 100%;
+    background:url(../../Home%20Page/Images/intermidiate.jpg) no-repeat top center;
+    background-size: cover;
+    filter: grayscale(50%);
 }
 
 .container
@@ -387,6 +389,7 @@ div.quotediv
     height: 300px;
     width: 100%;
     background-image: url('../Images/1.jpeg');
+    background-color: #212121;
     background-size: cover;
     z-index: 5;
 }
@@ -417,11 +420,11 @@ p.quotep
     z-index: 6;
 }
 
-div.aboutdiv
+div.descdiv
 {
     position: relative;
     top: 0;
-    height: 900px;
+    height: 700px;
     margin: 0 auto;
     background: #212121;
     border: 1px solid gold;
@@ -430,14 +433,14 @@ div.aboutdiv
     z-index: 6;
 }
 
-div.aboutdiv2
+div.descdiv2
 {
     position: absolute;
     left: 50%;
     right: 50%;
 }
 
-.abouth1
+.desch1
 {
     position: absolute;
     top: 100px;
@@ -453,7 +456,7 @@ div.aboutdiv2
     z-index: 6;
 }
 
-p.aboutp
+p.descp
 {
     position: absolute;
     top: 200px;
@@ -465,59 +468,48 @@ p.aboutp
     z-index: 6;
 }
 
-img.aboutimg
+img.descimg
 {
     position: relative;
     top: 0;
     left: 50px;
-    height: 250px;
+    height: 300px;
     width: 480px;
     border-radius: 20px;
     z-index: 6;
 }
 
-img.aboutimg2
-{
-    position: relative;
-    top: 0;
-    left: 50px;
-    height: 250px;
-    width: 480px;
-    border-radius: 20px;
-    z-index: 6;
-}
-
-ul.aboutul
+ul.descul
 {
     position: absolute;
-    top: 215px;
+    top: 200px;
 }
 
-li.aboutli
+li.descli
 {
     list-style-type: none;
 }
 
-p.goldline
+a.descbeg
 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 80%;
-    margin: 0 auto;
-    border: 1px dotted #e6cd45;
-    z-index: 6;
+    transition: .3s;
+    color: #a39546;
+}
+
+a.descbeg:hover
+{
+    transition: .3s;
+    color: #e6cd45;
 }
 
 div.whydiv
 {
     position: relative;
     top: -16px;
-    height: 800px;
+    height: 500px;
     border: 1px solid #e6cd45;
     border-bottom: 1px solid rgba(230, 205, 69, .4);
-    background: rgb(33, 33, 33);
+    background: rgb(82, 82, 82);
     border-top: 0;
     z-index: 6;
 }
@@ -529,58 +521,13 @@ div.whydiv2
     right: 50%;
 }
 
-img.whyimg
+p.whytitle
 {
-    position: absolute;
-    top: 260px;
-    right: 80px;
-    height: 300px;
-    border-radius: 20px;
-    z-index: 6;
-}
-
-h1.whyh1
-{
-    position: absolute;
-    top: 100px;
-    left: 300px;
-    width: 70px;
-    padding-bottom: 5px;
-    font-family: sans-serif;
+    width: 1000px;
+    margin: 0 auto;
     color: #d4d4d4;
     text-align: center;
-    border-bottom-style: dashed;
-    border-bottom-width: medium;
-    border-bottom-color: #e6cd45;
-    z-index: 6;
-
-}
-
-p.whyp
-{
-    position: absolute;
-    top: 200px;
-    left: 110px;
-    width: 500px;
-    color: #d4d4d4;
-    font-family: Ripped;
     font-size: 20px;
-    z-index: 6;
-}
-
-a.whya
-{
-    -webkit-transition: .3s;
-    transition: .3s;
-    color: #a39546;
-    text-transform: uppercase;
-}
-
-a.whya:hover
-{
-    -webkit-transition: .3s;
-    transition: .3s;
-    color: #e6cd45;
 }
 
 div.quotedowdiv
@@ -590,6 +537,7 @@ div.quotedowdiv
     height: 185px;
     width: 100%;
     background-image: url('../Images/2.jpg');
+    background-color: #212121;
     background-size: cover;
     z-index: 5;
 }

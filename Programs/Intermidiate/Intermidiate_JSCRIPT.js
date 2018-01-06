@@ -16,16 +16,14 @@ $(window).scroll(function()
 {
     if($(this).scrollTop() > 900)
     {
-        $('.aboutp').addClass('fadeInUp');
-        $('.aboutp').removeClass('opacity');
+        $('.descp').addClass('fadeInUp');
+        $('.descp').removeClass('opacity');
     }
     
     if($(this).scrollTop() > 900)
     {
-        $('.aboutimg').addClass('bounceInRight');
-        $('.aboutimg2').addClass('bounceInRight2');
-        $('.aboutimg').removeClass('opacity');
-        $('.aboutimg2').removeClass('opacity2');
+        $('.descimg').addClass('bounceInRight');
+        $('.descimg').removeClass('opacity');
     }
     
     if($(this).scrollTop() > 1600)
