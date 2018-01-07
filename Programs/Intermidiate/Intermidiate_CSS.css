@@ -561,6 +561,91 @@ img.subprogimg
     width: 50px;
 }
 
+.explosivnes
+{
+    position: absolute;
+    left: -50px;
+    width: 500px;
+    text-align: left;
+    list-style-type: none;
+    font-family: Ripped;
+    font-size: 20px;
+    color: #d4d4d4;
+}
+
+.subproglispan
+{
+    position: absolute;
+    list-style: none;
+    left: 13px;
+    color: #e6cd45;
+    font-size: 23px;
+}
+
+.explosivnes2
+{
+    position: absolute;
+    left: -50px;
+    width: 500px;
+    text-align: left;
+    list-style-type: none;
+    font-family: Ripped;
+    font-size: 20px;
+    color: #d4d4d4;
+}
+
+.subproglispan2
+{
+    position: absolute;
+    list-style: none;
+    left: 32px;
+    color: #e6cd45;
+    font-size: 23px;
+}
+
+.explosivnes3
+{
+    position: absolute;
+    left: -50px;
+    width: 500px;
+    text-align: left;
+    list-style-type: none;
+    font-family: Ripped;
+    font-size: 20px;
+    color: #d4d4d4;
+}
+
+.subproglispan3
+{
+    position: absolute;
+    list-style: none;
+    width: 300px;
+    left: -10px;
+    color: #e6cd45;
+    font-size: 23px;
+}
+
+.explosivnes4
+{
+    position: absolute;
+    left: -50px;
+    width: 500px;
+    text-align: left;
+    list-style-type: none;
+    font-family: Ripped;
+    font-size: 20px;
+    color: #d4d4d4;
+}
+
+.subproglispan4
+{
+    position: absolute;
+    list-style: none;
+    left: 26px;
+    color: #e6cd45;
+    font-size: 23px;
+}
+
 div.quotedowdiv
 {
     position: relative;
