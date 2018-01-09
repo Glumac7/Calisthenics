@@ -14,28 +14,32 @@ $(document).ready(function()
 
 $(window).scroll(function()
 {
-    if($(this).scrollTop() > 900)
+    if($(this).scrollTop() > 700)
     {
         $('.descp').addClass('fadeInUp');
         $('.descp').removeClass('opacity');
-    }
-    
-    if($(this).scrollTop() > 900)
-    {
         $('.descimg').addClass('bounceInRight');
         $('.descimg').removeClass('opacity');
     }
     
-    if($(this).scrollTop() > 1600)
+    if($(this).scrollTop() > 1250)
     {
-        $('.whyp').addClass('fadeInUp');
-        $('.whyp').removeClass('opacity');
+        $('.subprogli').addClass('zoomInDown');
+        $('.subprogli').removeClass('opacity');
+        $('.subprogli2').addClass('zoomInDown2');
+        $('.subprogli2').removeClass('opacity');
+        $('.subprogli3').addClass('zoomInDown3');
+        $('.subprogli3').removeClass('opacity');
+        $('.subprogli4').addClass('zoomInDown4');
+        $('.subprogli4').removeClass('opacity');
     }
-    
-    if($(this).scrollTop() > 1600)
+
+    if($(this).scrollTop() > 1800)
     {
-        $('.whyimg').addClass('bounceInLeft');
-        $('.whyimg').removeClass('opacity');
+        $('.subprogsp').addClass('fadeInUp');
+        $('.subprogsp').removeClass('opacity');
+        $('.subprogsimg').addClass('bounceInLeft');
+        $('.subprogsimg').removeClass('opacity');
     }
 });
 

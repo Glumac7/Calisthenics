@@ -7,8 +7,95 @@
 @font-face
 {
     font-family: "Ripped";
-    src: url('../../Fonts/Asket Extended Light.ttf');
+    src: url('../../Fonts/Cool.ttf');
 }
+
+.zoomInDown 
+{
+    -webkit-animation-name: zoomInDown;
+    animation-name: zoomInDown;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-delay: .1s;
+    animation-delay: .1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.zoomInDown2
+{
+    -webkit-animation-name: zoomInDown;
+    animation-name: zoomInDown;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-delay: .2s;
+    animation-delay: .2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.zoomInDown3
+{
+    -webkit-animation-name: zoomInDown;
+    animation-name: zoomInDown;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-delay: .3s;
+    animation-delay: .3s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.zoomInDown4
+{
+    -webkit-animation-name: zoomInDown;
+    animation-name: zoomInDown;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-delay: .4s;
+    animation-delay: .4s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes zoomInDown 
+{
+    0% 
+    {
+        opacity: 0;
+        -webkit-transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
+        transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
+        -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+        animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    }
+    60% 
+    {
+        opacity: 1;
+        -webkit-transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
+        transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
+        -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+        animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    }
+}
+@keyframes zoomInDown 
+{
+    0% 
+    {
+        opacity: 0;
+        -webkit-transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
+        transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
+        -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+        animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    }
+    60% 
+    {
+        opacity: 1;
+        -webkit-transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
+        transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
+        -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+        animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    }
+} 
 
 .bounceInLeft
 {
@@ -247,7 +334,7 @@ aside.background
     width: 100%;
     background:url(../../Home%20Page/Images/intermidiate.jpg) no-repeat top center;
     background-size: cover;
-    filter: grayscale(50%);
+    filter: grayscale(30%);
 }
 
 .container
@@ -428,7 +515,7 @@ div.descdiv
 {
     position: relative;
     top: 0;
-    height: 700px;
+    height: 600px;
     margin: 0 auto;
     background: #212121;
     border: 1px solid gold;
@@ -440,6 +527,7 @@ div.descdiv
 div.descdiv2
 {
     position: absolute;
+    top: -50px;
     left: 50%;
     right: 50%;
 }
@@ -477,8 +565,8 @@ img.descimg
     position: relative;
     top: 0;
     left: 50px;
-    height: 285px;
-    width: 450px;
+    height: 250px;
+    width: 410px;
     border-radius: 20px;
     z-index: 6;
 }
@@ -510,7 +598,7 @@ div.subprogdiv
 {
     position: relative;
     top: -16px;
-    height: 500px;
+    height: 440px;
     border: 1px solid #e6cd45;
     border-top: 1px solid rgba(230, 205, 69, .4);
     border-bottom: 1px solid rgba(230, 205, 69, .4);
@@ -555,6 +643,33 @@ li.subprogli
     padding: 70px;
 }
 
+li.subprogli2
+{
+    float:left;
+    position:relative;
+    top: -50px;
+    margin: 70px;
+    padding: 70px;
+}
+
+li.subprogli3
+{
+    float:left;
+    position:relative;
+    top: -50px;
+    margin: 70px;
+    padding: 70px;
+}
+
+li.subprogli4
+{
+    float:left;
+    position:relative;
+    top: -50px;
+    margin: 70px;
+    padding: 70px;
+}
+
 img.subprogimg
 {
     height: 50px;
@@ -564,7 +679,7 @@ img.subprogimg
 .explosivnes
 {
     position: absolute;
-    left: -50px;
+    left: -30px;
     width: 500px;
     text-align: left;
     list-style-type: none;
@@ -582,10 +697,10 @@ img.subprogimg
     font-size: 23px;
 }
 
-.explosivnes2
+.strength
 {
     position: absolute;
-    left: -50px;
+    left: -30px;
     width: 500px;
     text-align: left;
     list-style-type: none;
@@ -603,10 +718,10 @@ img.subprogimg
     font-size: 23px;
 }
 
-.explosivnes3
+.muscle
 {
     position: absolute;
-    left: -50px;
+    left: -20px;
     width: 500px;
     text-align: left;
     list-style-type: none;
@@ -625,10 +740,10 @@ img.subprogimg
     font-size: 23px;
 }
 
-.explosivnes4
+.endurance
 {
     position: absolute;
-    left: -50px;
+    left: -30px;
     width: 500px;
     text-align: left;
     list-style-type: none;
@@ -645,6 +760,74 @@ img.subprogimg
     color: #e6cd45;
     font-size: 23px;
 }
+
+div.subprogsdiv
+{
+    position: relative;
+    top: -16px;
+    height: 640px;
+    border: 1px solid #e6cd45;
+    border-bottom: 1px solid rgba(230, 205, 69, .4);
+    background: #212121;
+    border-top: 0;
+    z-index: 6;
+}
+
+div.subprogsdiv2
+{
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    right: 50%;
+}
+
+img.subprogsimg
+{
+    position: absolute;
+    top: 220px;
+    right: 80px;
+    height: 300px;
+    filter: grayscale(30%);
+    border-radius: 20px;
+    z-index: 6;
+}
+
+h1.subprogsh1
+{
+    position: absolute;
+    top: 100px;
+    left: 240px;
+    width: 210px;
+    padding-bottom: 5px;
+    font-family: sans-serif;
+    color: #d4d4d4;
+    text-align: center;
+    border-bottom-style: dashed;
+    border-bottom-width: medium;
+    border-bottom-color: #e6cd45;
+    z-index: 6;
+
+}
+
+p.subprogsp
+{
+    position: absolute;
+    top: 200px;
+    left: 110px;
+    width: 500px;
+    color: #d4d4d4;
+    font-family: Ripped;
+    font-size: 20px;
+    z-index: 6;
+}
+
+a.whya:hover
+{
+    -webkit-transition: .3s;
+    transition: .3s;
+    color: #e6cd45;
+}
+
 
 div.quotedowdiv
 {
@@ -663,12 +846,12 @@ span.quotedowspan
     position: absolute;
     height: 185px;
     width: 100%;
-    background: -moz-radial-gradient(center, ellipse cover, rgba(133,133,133,1) 0%, rgba(0,0,0,0.6) 71%); /* ff3.6+ */
-    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(133,133,133,1)), color-stop(71%, rgba(0,0,0,0.6))); /* safari4+,chrome */
-    background:-webkit-radial-gradient(center, ellipse cover, rgba(133,133,133,1) 0%, rgba(0,0,0,0.6) 71%); /* safari5.1+,chrome10+ */
-    background: -o-radial-gradient(center, ellipse cover, rgba(133,133,133,1) 0%, rgba(0,0,0,0.6) 71%); /* opera 11.10+ */
-    background: -ms-radial-gradient(center, ellipse cover, rgba(133,133,133,1) 0%, rgba(0,0,0,0.6) 71%); /* ie10+ */
-    background:radial-gradient(ellipse at center, rgba(133,133,133,1) 0%, rgba(0,0,0,0.6) 41%); /* w3c */
+    background: -moz-radial-gradient(center, ellipse cover, rgba(73, 73, 73,1) 0%, rgba(0,0,0,0.6) 71%); /* ff3.6+ */
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(73, 73, 73,1)), color-stop(71%, rgba(0,0,0,0.6))); /* safari4+,chrome */
+    background:-webkit-radial-gradient(center, ellipse cover, rgba(73, 73, 73,1) 0%, rgba(0,0,0,0.6) 71%); /* safari5.1+,chrome10+ */
+    background: -o-radial-gradient(center, ellipse cover, rgba(73, 73, 73,1) 0%, rgba(0,0,0,0.6) 71%); /* opera 11.10+ */
+    background: -ms-radial-gradient(center, ellipse cover, rgb(73, 73, 73) 0%, rgba(0,0,0,0.6) 71%); /* ie10+ */
+    background:radial-gradient(ellipse at center, rgba(73, 73, 73,1) 0%, rgba(0,0,0,0.6) 41%); /* w3c */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#858585', endColorstr='#000000',GradientType=1 ); /* ie6-9 */ 
     opacity: .4;
     z-index: 6;
@@ -677,7 +860,7 @@ span.quotedowspan
 a.quotedowp
 {
     position: absolute;
-    top: 70px;
+    top: 78px;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -695,6 +878,7 @@ a.quotedowp
 
 .quotedowp:hover
 {
+    top: 73px;
     font-size: 40px;
     transition: .3s;
     color: #e6cd45;
@@ -742,7 +926,7 @@ footer
     background: -ms-linear-gradient(bottom, #141414, #212121);
     background: -o-linear-gradient(bottom, #141414, #212121);
     background: linear-gradient(to top, #141414, #212121);
-    height: 200px;
+    height: 130px;
     border-top: 1px solid rgba(230, 205, 69, .4);
     border-left: 1px solid #e6cd45;
     border-right: 1px solid #e6cd45;
@@ -789,7 +973,7 @@ li.footerleft
 {
     position: absolute;
     list-style-type: none;
-    right: 79%;
+    right: 80%;
     margin-left: auto;
     margin-right: auto;
     color: #d4d4d4;
@@ -804,23 +988,38 @@ p.footerp
 img.footerleftimage
 {
     position: absolute;
-    top: -20px;
-    left: -95px;
-    width: 100px;
-    height: 100px;
+    top: 15px;
+    left: -100px;
+    width: 90px;
+    height: 70px;
 }
 
 span.sapnnull
 {
-    font-size: 25px;
+    position: absolute;
+    top: 32px;
+    left: -30px;
+    width: 200px;
+    font-size: 30px;
+}
+
+li.footermiddle
+{
+    text-align: center;
+    margin: 0 auto;
+    padding: 3px;
+    list-style: none;
+    width: 290px;
 }
 
 span.footerspan
 {
-    position: absolute;
-    left: -45px;
+    position: relative;
+    top: 18px;
+    left: -20px;
+    margin: 0 auto;
     font-family: Ripped;
-    width: 300px;
+    width: 600px;
 }
 
 i
@@ -828,42 +1027,15 @@ i
     font-family: serif;
 }
 
-ul.middle
-{
-    position: absolute;
-    top: 35px;
-    left: 0;
-    right: 0;
-    list-style-type: none;
-    margin: 0 auto;
-    width: 500px;
-    z-index: 7;
-}
-
-a.footercenter
-{
-    display: block;
-    color: #d4d4d4;
-}
-
-li.footermiddle
-{
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    padding: 3px;
-    margin-left: 178px;
-    width: 100px;
-}
-
 ul.right
 {
     position: absolute;
-    top: 20px;
+    top: 10px;
     margin: auto 0;
     list-style-type: none;
     margin: 0 0 0 10px;
     color: #d4d4d4;
-    left: 79%;
+    left: 75%;
     z-index: 6;
 }
 
@@ -872,7 +1044,7 @@ li.footerright
     position: absolute;
     right: -110px;
     text-align: center;
-    margin: 10px;
+    margin: 20px;
 }
 
 li.footerright2
@@ -888,6 +1060,8 @@ li.footerright2
 
 img.rightimage
 {
+    position: relative;
+    top: -4px;
     float: left;
     width: 30px;
     height: 30px;

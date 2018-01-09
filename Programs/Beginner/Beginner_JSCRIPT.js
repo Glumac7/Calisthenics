@@ -32,10 +32,6 @@ $(window).scroll(function()
     {
         $('.whyp').addClass('fadeInUp');
         $('.whyp').removeClass('opacity');
-    }
-    
-    if($(this).scrollTop() > 1600)
-    {
         $('.whyimg').addClass('bounceInLeft');
         $('.whyimg').removeClass('opacity');
     }

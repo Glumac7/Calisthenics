@@ -12,7 +12,7 @@
 @font-face
 {
     font-family: "Ripped";
-    src: url('../../Fonts/Asket Extended Light.ttf');
+    src: url('../../Fonts/Cool.ttf');
 }
 
 .bounceInLeft
@@ -429,7 +429,7 @@ div.aboutdiv
 {
     position: relative;
     top: 0;
-    height: 900px;
+    height: 800px;
     margin: 0 auto;
     background: #212121;
     border: 1px solid gold;
@@ -489,8 +489,8 @@ img.aboutimg
     position: relative;
     top: 0px;
     left: 50px;
-    height: 250px;
-    width: 450px;
+    height: 200px;
+    width: 400px;
     border-radius: 20px;
     z-index: 6;
 }
@@ -500,8 +500,8 @@ img.aboutimg2
     position: relative;
     top: 0px;
     left: 50px;
-    height: 250px;
-    width: 450px;
+    height: 200px;
+    width: 400px;
     border-radius: 20px;
     z-index: 6;
 }
@@ -522,7 +522,7 @@ div.whydiv
 {
     position: relative;
     top: -16px;
-    height: 800px;
+    height: 700px;
     border: 1px solid #e6cd45;
     border-bottom: 1px solid rgba(230, 205, 69, .4);
     background: #212121;
@@ -540,7 +540,7 @@ div.whydiv2
 img.whyimg
 {
     position: absolute;
-    top: 260px;
+    top: 220px;
     right: 80px;
     height: 300px;
     border-radius: 20px;
@@ -595,7 +595,7 @@ div.quotedowdiv
 {
     position: relative;
     top: -20px;
-    height: 200px;
+    height: 185px;
     width: 100%;
     background-image: url('../Images/image.jpg');
     background-blend-mode: color;
@@ -605,14 +605,14 @@ div.quotedowdiv
 span.quotedowspan
 {
     position: absolute;
-    height: 200px;
+    height: 185px;
     width: 100%;
-    background: -moz-radial-gradient(center, ellipse cover, rgba(133,133,133,1) 0%, rgba(0,0,0,0.6) 71%); /* ff3.6+ */
-    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(133,133,133,1)), color-stop(71%, rgba(0,0,0,0.6))); /* safari4+,chrome */
-    background:-webkit-radial-gradient(center, ellipse cover, rgba(133,133,133,1) 0%, rgba(0,0,0,0.6) 71%); /* safari5.1+,chrome10+ */
-    background: -o-radial-gradient(center, ellipse cover, rgba(133,133,133,1) 0%, rgba(0,0,0,0.6) 71%); /* opera 11.10+ */
-    background: -ms-radial-gradient(center, ellipse cover, rgba(133,133,133,1) 0%, rgba(0,0,0,0.6) 71%); /* ie10+ */
-    background:radial-gradient(ellipse at center, rgba(133,133,133,1) 0%, rgba(0,0,0,0.6) 41%); /* w3c */
+    background: -moz-radial-gradient(center, ellipse cover, rgba(73, 73, 73,1) 0%, rgba(0,0,0,0.6) 71%); /* ff3.6+ */
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(73, 73, 73,1)), color-stop(71%, rgba(0,0,0,0.6))); /* safari4+,chrome */
+    background:-webkit-radial-gradient(center, ellipse cover, rgba(73, 73, 73,1) 0%, rgba(0,0,0,0.6) 71%); /* safari5.1+,chrome10+ */
+    background: -o-radial-gradient(center, ellipse cover, rgba(73, 73, 73,1) 0%, rgba(0,0,0,0.6) 71%); /* opera 11.10+ */
+    background: -ms-radial-gradient(center, ellipse cover, rgb(73, 73, 73) 0%, rgba(0,0,0,0.6) 71%); /* ie10+ */
+    background:radial-gradient(ellipse at center, rgba(73, 73, 73,1) 0%, rgba(0,0,0,0.6) 41%); /* w3c */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#858585', endColorstr='#000000',GradientType=1 ); /* ie6-9 */
     opacity: 1;
     z-index: 6;
@@ -621,7 +621,7 @@ span.quotedowspan
 a.quotedowp
 {
     position: absolute;
-    top: 75px;
+    top: 78px;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -639,6 +639,7 @@ a.quotedowp
 
 .quotedowp:hover
 {
+    top: 73px;
     font-size: 40px;
     transition: .3s;
     color: #e6cd45;
@@ -681,12 +682,12 @@ footer
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 0;
-    background: -webkit-linear-gradient(#393939, #212121);
-    background: -moz-linear-gradient(bottom, #393939, #212121);
-    background: -ms-linear-gradient(bottom, #393939, #212121);
-    background: -o-linear-gradient(bottom, #393939, #212121);
-    background: linear-gradient(to top, #393939, #212121);
-    height: 200px;
+    background: -webkit-linear-gradient(#141414, #212121);
+    background: -moz-linear-gradient(bottom, #141414, #212121);
+    background: -ms-linear-gradient(bottom, #141414, #212121);
+    background: -o-linear-gradient(bottom, #141414, #212121);
+    background: linear-gradient(to top, #141414, #212121);
+    height: 130px;
     border-top: 1px solid rgba(230, 205, 69, .4);
     border-left: 1px solid #e6cd45;
     border-right: 1px solid #e6cd45;
@@ -733,7 +734,7 @@ li.footerleft
 {
     position: absolute;
     list-style-type: none;
-    right: 79%;
+    right: 80%;
     margin-left: auto;
     margin-right: auto;
     color: #d4d4d4;
@@ -748,23 +749,38 @@ p.footerp
 img.footerleftimage
 {
     position: absolute;
-    top: -20px;
-    left: -95px;
-    width: 100px;
-    height: 100px;
+    top: 15px;
+    left: -100px;
+    width: 90px;
+    height: 70px;
 }
 
 span.sapnnull
 {
-    font-size: 25px;
+    position: absolute;
+    top: 32px;
+    left: -30px;
+    width: 200px;
+    font-size: 30px;
+}
+
+li.footermiddle
+{
+    text-align: center;
+    margin: 0 auto;
+    padding: 3px;
+    list-style: none;
+    width: 290px;
 }
 
 span.footerspan
 {
-    position: absolute;
-    left: -45px;
+    position: relative;
+    top: 18px;
+    left: -20px;
+    margin: 0 auto;
     font-family: Ripped;
-    width: 300px;
+    width: 600px;
 }
 
 i
@@ -772,42 +788,15 @@ i
     font-family: serif;
 }
 
-ul.middle
-{
-    position: absolute;
-    top: 35px;
-    left: 0;
-    right: 0;
-    list-style-type: none;
-    margin: 0 auto;
-    width: 500px;
-    z-index: 7;
-}
-
-a.footercenter
-{
-    display: block;
-    color: #d4d4d4;
-}
-
-li.footermiddle
-{
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    padding: 3px;
-    margin-left: 178px;
-    width: 100px;
-}
-
 ul.right
 {
     position: absolute;
-    top: 20px;
+    top: 10px;
     margin: auto 0;
     list-style-type: none;
     margin: 0 0 0 10px;
     color: #d4d4d4;
-    left: 79%;
+    left: 75%;
     z-index: 6;
 }
 
@@ -816,7 +805,7 @@ li.footerright
     position: absolute;
     right: -110px;
     text-align: center;
-    margin: 10px;
+    margin: 20px;
 }
 
 li.footerright2
@@ -832,6 +821,8 @@ li.footerright2
 
 img.rightimage
 {
+    position: relative;
+    top: -4px;
     float: left;
     width: 30px;
     height: 30px;
