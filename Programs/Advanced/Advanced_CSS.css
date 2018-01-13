@@ -514,7 +514,7 @@ div.descdiv
 {
     position: relative;
     top: 0;
-    height: 600px;
+    height: 700px;
     margin: 0 auto;
     background: #212121;
     border: 1px solid gold;
@@ -562,10 +562,10 @@ p.descp
 img.descimg
 {
     position: relative;
-    top: 0;
+    top: 30px;
     left: 50px;
-    height: 250px;
-    width: 410px;
+    height: 300px;
+    width: 400px;
     border-radius: 20px;
     z-index: 6;
 }
@@ -826,7 +826,7 @@ a.quotedowp
     right: 0;
     margin: 0 auto;
     width: 300px;
-    transition: .3s;
+    transition: .2s;
     font-size: 35px;
     text-transform: uppercase;
     font-family: Ripped;
@@ -841,7 +841,7 @@ a.quotedowp
 {
     top: 73px;
     font-size: 40px;
-    transition: .3s;
+    transition: .2s;
     color: #e6cd45;
 }
 
@@ -849,16 +849,16 @@ a.quotedowp
 {
     -webkit-transform: scale(1.3);
     transform: scale(1.3);
-    -webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
+    -webkit-transition: .2s ease-in-out;
+	transition: .2s ease-in-out;
 }
 
 .zoomleave
 {
     -webkit-transform: scale(1);
 	transform: scale(1);
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
+	-webkit-transition: .2s ease-in-out;
+	transition: .2s ease-in-out;
 }
 
 .opacity

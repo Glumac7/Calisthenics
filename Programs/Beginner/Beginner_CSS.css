@@ -598,7 +598,7 @@ div.quotedowdiv
     height: 185px;
     width: 100%;
     background-image: url('../Images/image.jpg');
-    background-blend-mode: color;
+    background-size: cover;
     z-index: 5;
 }
 
@@ -614,7 +614,7 @@ span.quotedowspan
     background: -ms-radial-gradient(center, ellipse cover, rgb(73, 73, 73) 0%, rgba(0,0,0,0.6) 71%); /* ie10+ */
     background:radial-gradient(ellipse at center, rgba(73, 73, 73,1) 0%, rgba(0,0,0,0.6) 41%); /* w3c */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#858585', endColorstr='#000000',GradientType=1 ); /* ie6-9 */
-    opacity: 1;
+    opacity: .6;
     z-index: 6;
 }
 
@@ -626,7 +626,7 @@ a.quotedowp
     right: 0;
     margin: 0 auto;
     width: 300px;
-    transition: .3s;
+    transition: .2s;
     font-size: 35px;
     text-transform: uppercase;
     font-family: Ripped;
@@ -641,7 +641,7 @@ a.quotedowp
 {
     top: 73px;
     font-size: 40px;
-    transition: .3s;
+    transition: .2s;
     color: #e6cd45;
 }
 
@@ -649,16 +649,16 @@ a.quotedowp
 {
     -webkit-transform: scale(1.3);
     transform: scale(1.3);
-    -webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
+    -webkit-transition: .2s ease-in-out;
+	transition: .2s ease-in-out;
 }
 
 .zoomleave
 {
     -webkit-transform: scale(1);
 	transform: scale(1);
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
+	-webkit-transition: .2s ease-in-out;
+	transition: .2s ease-in-out;
 }
 
 .opacity
