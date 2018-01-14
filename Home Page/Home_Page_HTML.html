@@ -1,19 +1,15 @@
-<!DOCTYPE html>
 <html>
 
     <head>
-        <title>Welcome Athlete!</title>
-        <link rel="stylesheet" type="text/css" href="Home_Page_CSS.css"/>
+        <title>Intermidiate</title>
+        <link rel="stylesheet" type="text/css" href="Home_Page_CSS.css">
         <script src="jquery-3.2.1.js"></script>
         <script src="Home_Page_JSCRIPT.js"></script>
-        <meta charset="UTF-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
     </head>
-
     <body>
-
-        <!--Main head of the home page-->
-        <header class="navbar">
+        <header class="fixed">
             <div class="container">
 
                     <a href="Home_Page_HTML.html">
@@ -24,19 +20,19 @@
 
                     <nav>
                         <ul>
-                            <li><a href="#programs">Programs</a></li>
+                            <li><a href="Home_Page_HTML.html#programs">Programs</a></li>
                             <span class="straight">|</span>
 
-                            <li><a href="#tutorials">Tutorials</a></li>
+                            <li><a href="#">Tutorials</a></li>
                             <span class="straight">|</span>
 
-                            <li><a href="#transformations">Transformations</a></li>
+                            <li><a href="#">Transformations</a></li>
                             <span class="straight">|</span>
 
-                            <li><a href="#qna">QnA</a></li>
+                            <li><a href="#">QnA</a></li>
                             <span class="straight">|</span>
 
-                            <li><a href="#faq">FAQ</a></li>
+                            <li><a href="#">FAQ</a></li>
                             <span class="straight">|</span>
 
                             <li><a href="../Log%20In/Log_In_HTML.html">log in</a></li>
@@ -46,154 +42,190 @@
             </div>
         </header>
 
-        <!--Background image with arrows-->
-        <aside>
-            <img class="background" src="Images/background_gif.gif" alt="background"/>
-        </aside>
+        <aside class="background parallax"></aside>
 
-        <!--Main content of the home page-->
         <section>
 
-            <div id="programsdiv">
-                <h1 id="programs"></h1>
-                <h1 id="program">PROGRAMS</h1>
-                <pre class="beginnerpre opacity">
-<a class="beginnerhref" href="../Programs/Beginner/Beginner_HTML.html"><img class="beginnerimage"
-src="Images/beginner.jpg" alt="Beginner"/></a>
-<span class="beginnerspan">BEGINNER</span>
+            <div class="beginnerdiv">
 
+                <h1 class="beginnerh1">INTERMIDIATE</h1>
 
-If you want to be a
-master of calisthenics,
-do all of those cool stuff,
-you need to start from
-somewhere, and that
-somewhere is here,
-"THE BEGINNING"!
-                </pre>
-
-
-
-                <pre class="intermidiatepre opacity">
-<a class="intemidiatehref" href="../Programs/Intermidiate/Intermidiate_HTML.html"><img class="intermidiateimage"
-src="Images/intermidiate.jpg" alt="intermidiate"/></a>
-<span class="intermidiatespan">INTERMIDIATE</span>
-
-
-Next on the road is the
-INTERMIDIATE section,
-designed for your
-goals: Explosivnes,
-Muscle Building...
-You will have your
-hands on all of them,
-so you can use one
-or all of them
-in combination.
-                </pre>
-
-
-
-
-                <pre class="advancedpre opacity">
-<a class="advancedhref" href="../Programs/Advanced/Advanced_HTML.html"><img class="advancedimage"
-src="Images/advanced.jpg" alt="Advanced"/></a>
-<span class="advancedspan">ADVANCED</span>
-
-
-The finish line.
-Here you will get
-the same amount of
-programs as in the
-INTERMIDIATE section
-with more advanced
-exercises and
-two new programs:
-Tips and Nutrition.
-                </pre>
             </div>
 
-            <div id="tutorials">
+
+            <div class="quotediv parallax "> <span class="quotespan"></span>
+
+                <p class="quotep">The only thing you can be afraid of is yourself.</p>
+
+            </div>
+
+
+            <div class="descdiv">
+                <div class="descdiv2">
+                    <h1 class="desch1">DESCRIPTION</h1>
+                    <p class="descp opacity">
+
+                        <span style="text-transform: uppercase;">Welcome to the <span style="color: #a39546;">INTERMIDIATE</span> page.</span><br/><br/>
+                        Before continuing, please finish the <a class="descbeg" href="../Programs/Beginner/Beginner_HTML.html">BEGINNER</a> program.<br/><br/> If you don't have
+                        a good technique and solid strenth,
+                         you can't continue.<br/><br/> Now that you have finished the <span style="color: #a39546;">BEGINNER</span>
+                        program, this is your next step.
+                    </p>
+
+                    <ul class="descul">
+                        <li class="descli"><img class="descimg opacity" src="Images/intermidiate.jpg"/></li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+            <div class="subprogdiv">
+
+                <p class="subprogtitle">In the <span style="color:#e6cd45;">INTEMIDIATE</span> 
+                program you will get 4 sub programs...</p>
                 
-                <h1 class="tutorialsh1">TUTORIALS</h1>
-                <p class="tutorialsp"></p>
-                <p class="tutorialspre"><span class="tutorialsspan opacity">
-If you don't have the technique down, you are not ready to start
-calisthenics. Form(technique) is everithing in calisthenics,
-<br/>without it you will never be at your full potenical.<br/>
-                    If you are ready to start your juorney,</span><br/><br/><br/><span><a class="clickhere" href="">CLICK HERE!</a></span>
+                <div class="subprogdiv2">
+                
+                    <ul class="subprogul">
+                        <li class="subprogli opacity"><img class="subprogimg" src="../Programs/Images/roman1.png"/>
+                            <ul>
+                                <li class="subproglispan">
+                                    <span>
+                                        <br/>EXPLOSIVNES
+                                    </span>
+                                </li>
+                                    
+                                <li class="explosivnes">
+                                    <p>
+                                       <br/><br/>
+                                        If you want to jump higher,<br/>
+                                        run faster, and be overall<br/>
+                                        more explosive, this sub<br/>
+                                        program was made for you.
+                                    </p>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="subprogli2 opacity"><img class="subprogimg" src="../Programs/Images/roman2.png"/>
+                            <ul>
+                                <li class="subproglispan2">
+                                    <span>
+                                        <br/>STRENGTH
+                                    </span>
+                                </li>
+                                            
+                                 <li class="strength">
+                                    <p>
+                                        <br/><br/>
+                                        This sub program is for all<br/>
+                                        of those who want to master<br/>
+                                        calisthenics supermoves:<br/>
+                                        one arm pushup, muscle up...<br/>
+                                    </p>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="subprogli3 opacity"><img class="subprogimg" src="../Programs/Images/roman3.png"/>
+                            <ul>
+                                <li class="subproglispan3">
+                                    <span>
+                                        <br/>MUSCLE BUILDING
+                                    </span>
+                                </li>
+                                                    
+                                <li class="muscle">
+                                    <p>
+                                        <br/><br/>
+                                        If you want to become a<br/>
+                                        "bodyweight bodybuilder"<br/>
+                                        this sub program is perfect<br/>
+                                        for you.
+                                    </p>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="subprogli4 opacity"><img class="subprogimg" src="../Programs/Images/roman4.png"/>
+                            <ul>
+                                <li class="subproglispan4">
+                                    <span>
+                                        <br/>ENDURANCE
+                                    </span>
+                                </li>
+                                                    
+                                <li class="endurance">
+                                    <p>
+                                        <br/><br/>
+                                        This sub program was made<br/>
+                                        for all of those who want<br/>
+                                        to do as meny reps as posible<br/>
+                                        and get a good cardio in.
+                                    </p>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                    </ul>
+
+                </div>
+            </div>
+
+            <div class="subprogsdiv">
+
+                <div class="subprogsdiv2">
                     
-                    <img class="tutorialsimage opacity" src="Images/tutorials.jpg">
-                    
-                </p>
-                <p class="tutorialshadow"></p>
+                    <img class="subprogsimg opacity" src="../Programs/Images/subprogs.jpg"/>
+                    <h1 class="subprogsh1">SUB PROGRAMS</h1>
+                    <p class="subprogsp opacity">
+
+                    Each sub program was made for a 
+                    specific goal or a specific purpose.<br/><br/>
+                    My recomendation is that you check every
+                    single sub program out so that you can combine them
+                    if you want to.<br/><br/> Each sub program 
+                    comes with a pdf file in which you will
+                    find the program itself.<br/><br/> If you don't know 
+                    how to do a specific movement, check the <a class="descbeg" href="#">TUTORIALS</a>
+                    section.
+
+                    </p>
+                </div>
             </div>
 
+            <div class="quotedowdiv parallax2"> <span class="quotedowspan"></span>
 
-            <div id="transformations">
-                <p class="transformborder"></p>
-                <h1 class="transformh1">TRANSFORMATIONS</h1>
-                <p class="transformp">
-                    <span class="transformspan opacity">In this section you will be able to see and read some
-                    <b>SUCCESS</b> stories of the programs listed above.<br/>
-                     Want to see the whole <q>PICTURE</q>?</span>
-                    <br/><br/><br/><a class="clickhere" href="">CLICK HERE!</a><br/><br/>
-                    <img class="transformimage opacity"src="Images/transformation.jpg"/>
-                </p>
+                <a class="quotedowp" href="">GET IT NOW!</a>
+
             </div>
-
-
-            <div id="qna">
-                <p class="qnaborder"></p>
-                <h1 class="qnah1">QnA</h1>
-                <p class="qnap">
-                  <span class="qnaspan opacity">In this section you will be able to read-write
-                  <q>questions and answers</q>.<br/>Want to ask or answer some questions?</span>
-                  <br/><br/><br/><a class="clickhere" href="">CLICK HERE!</a>
-                  <br/><br/>
-                </p>
-            </div>
-
-            <div id="faq">
-                <p class="faqborder"></p>
-                <h1 class="faqh1">FAQ</h1>
-                <p class="faqp">
-                    <span class="faqspan opacity">In this section you will find the most asked questions,
-                    Thats why it's called,<br/> an FAQ(Frequantly Asked Questions).
-                    <br/>Want to read them?</span><br/><br/><br/>
-                    <a class="clickhere" href="">CLICK HERE!</a>
-                </p>
-            </div>
-
-        </section>
-
+               
         <!--The end section of a home page-->
-        <p class="footertop"></p>
+        
+                  
         <footer>
             <ul class="left">
                 <li class="footerleft">
-                    <img class="footerleftimage" src="Images/Logo1.png"/><p class="footerp">
+                    <img class="footerleftimage" src="../Programs/Images/Logo2.png"/><p class="footerp">
                     <span class="sapnnull">Null-Gym!</span><br/><br/><br/>
-                    <span class="footerspan"><q>
-                        Do not pray for an easy life,
-                        pray for the strength to endure a difficult one.
-                    </q><i>Bruce Lee.</i></span>
                     </p>
                 </li>
+                <li class="footermiddle">
+                    <span class="footerspan"><q>
+                        Do not pray for an easy life,
+                        pray for the strength to endure a difficult one.</q>
+                    <i>Bruce Lee.</i></span>
+                </li>
             </ul>
-            <ul class="middle">
-                <li class="footermiddle"><a class="footercenter" href="#programs">Programs</a></li>
-                <li class="footermiddle"><a class="footercenter" href="">Tutorials</a></li>
-                <li class="footermiddle"><a class="footercenter" href="">Transformations</a></li>
-                <li class="footermiddle"><a class="footercenter" href="">QnA</a></li>
-                <li class="footermiddle"><a class="footercenter" href="">FAQ</a></li>
-            </ul>
+            
             <ul class="right">
                 <li class="footerright contact">CONTACT :</li>
-                <li class="footerright2"><img class="rightimage" src="Images/email.png"/>nullgym@gmail.com</li>
+                <li class="footerright2"><img class="rightimage" src="../Programs/Images/email.png"/>nullgym@gmail.com</li>
             </ul>
         </footer>
 
-    </body>
+        </section>
 
+    </body>
 </html>

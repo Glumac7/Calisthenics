@@ -1,75 +1,71 @@
-$(window).scroll(function()
+$(document).ready(function()
 {
-    if($(this).scrollTop() > 400)
+	$(window).bind('scroll',function(e)
     {
-        $(".beginnerpre").addClass("flip");
-        $(".intermidiatepre").addClass("flip2");
-        $(".advancedpre").addClass("flip3");
-        $(".beginnerpre").removeClass("opacity");
-        $(".beginnerpre").addClass("opacity2");
-        $(".intermidiatepre").removeClass("opacity");
-        $(".intermidiatepre").addClass("opacity2");
-        $(".advancedpre").removeClass("opacity");
-        $(".advancedpre").addClass("opacity2");
-    }
+   		parallaxScroll();
+   	});
+ 
+   	function parallaxScroll()
+    {
+   		var scrolledY = $(window).scrollTop();
+		$('.parallax').css('background-position','center -'+((scrolledY*.5))+'px');
+   	}
 });
 
 $(window).scroll(function()
 {
-    if($(this).scrollTop() > 1200)
+    if($(this).scrollTop() > 700)
     {
-        $(".tutorialsspan").addClass("flipInX");
-        $(".tutorialsspan").removeClass("opacity");
-        $(".tutorialsspan").addClass("opacity2");
+        $('.descp').addClass('fadeInUp');
+        $('.descp').removeClass('opacity');
+        $('.descimg').addClass('bounceInRight');
+        $('.descimg').removeClass('opacity');
+    }
+    
+    if($(this).scrollTop() > 1250)
+    {
+        $('.subprogli').addClass('zoomInDown');
+        $('.subprogli').removeClass('opacity');
+        $('.subprogli2').addClass('zoomInDown2');
+        $('.subprogli2').removeClass('opacity');
+        $('.subprogli3').addClass('zoomInDown3');
+        $('.subprogli3').removeClass('opacity');
+        $('.subprogli4').addClass('zoomInDown4');
+        $('.subprogli4').removeClass('opacity');
+    }
+
+    if($(this).scrollTop() > 1800)
+    {
+        $('.subprogsp').addClass('fadeInUp');
+        $('.subprogsp').removeClass('opacity');
+        $('.subprogsimg').addClass('bounceInLeft');
+        $('.subprogsimg').removeClass('opacity');
     }
 });
 
-$(window).scroll(function()
+$(() =>
 {
-    if($(this).scrollTop() > 1500)
+    $('.quotedowp').hover(function() 
     {
-        $(".tutorialsimage").addClass("flipInX");
-        $(".tutorialsimage").removeClass("opacity");
-        $(".tutorialsimage").addClass("opacity2");
-    }
+        $('.quotedowdiv').addClass('zoomhover')
+        $('.quotedowdiv').removeClass('zoomleave')
+    }, function()
+    {
+        $('.quotedowdiv').removeClass('zoomhover')
+        $('.quotedowdiv').addClass('zoomleave')
+    });
 });
 
-$(window).scroll(function()
+$(document).ready(function()
 {
-    if($(this).scrollTop() > 2000)
+	$(window).bind('scroll',function(e)
     {
-        $(".transformspan").addClass("flipInX");
-        $(".transformspan").removeClass("opacity");
-        $(".transformspan").addClass("opacity2");
-    }
-});
-
-$(window).scroll(function()
-{
-    if($(this).scrollTop() > 2200)
+   		parallaxScroll();
+   	});
+ 
+   	function parallaxScroll()
     {
-        $(".transformimage").addClass("flipInX");
-        $(".transformimage").removeClass("opacity");
-        $(".transformimage").addClass("opacity2");
-    }
-});
-
-$(window).scroll(function()
-{
-    if($(this).scrollTop() > 2500)
-    {
-        $(".qnaspan").addClass("fadeIn");
-        $(".qnaspan").removeClass("o50city");
-        $(".qnaspan").addClass("opacity2");
-    }
-});
-
-$(window).scroll(function()
-{
-    if($(this).scrollTop() > 2880)
-    {
-        $(".faqspan").addClass("fadeIn");
-        $(".faqspan").removeClass("opacity");
-        $(".faqspan").addClass("opacity2");
-    }
+   		var scrolledY = $(window).scrollTop();
+		$('.parallax2').css('background-position','center -'+((scrolledY*.2))+'px');
+   	}
 });
