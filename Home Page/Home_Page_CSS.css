@@ -1,13 +1,13 @@
 @font-face
 {
     font-family: "Tagline";
-    src: url('../../Fonts/octin-prison-rg.ttf');
+    src: url('../Fonts/octin-prison-rg.ttf');
 }
 
 @font-face
 {
     font-family: "Ripped";
-    src: url('../../Fonts/Cool.ttf');
+    src: url('../Fonts/Cool.ttf');
 }
 
 .zoomInDown 
@@ -444,7 +444,7 @@ section
     z-index: 4;
 }
 
-.beginnerdiv
+.programsdiv2
 {
     position: relative;
     height: 100px;
@@ -454,13 +454,13 @@ section
     z-index: 5;
 }
 
-.beginnerh1
+.programsh1
 {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
-    width: 200px;
+    width: 150px;
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 5px;
@@ -473,136 +473,164 @@ section
     border-bottom-color: #e6cd45;
     z-index: 6;
 }
+/*//////////////////////////////////////////*/
 
-div.quotediv
+div.programsdiv 
 {
     position: relative;
-    height: 300px;
-    width: 100%;
-    background-image: url('../Programs/Images/1.jpeg');
-    background-color: #212121;
-    background-size: cover;
-    z-index: 5;
+    text-align: center;
+    padding: 50px 0;
+    background: url('Images/programs_parallax.png');
 }
 
-span.quotespan
+div.grayscale
 {
     position: absolute;
-    height: 300px;
-    width: 100%;
-    background-color: #212121;
-    opacity: .3;
-    z-index: 6;
-}
-
-p.quotep
-{
-    position: absolute;
-    top: 130px;
+    top: 0;
+    bottom: 0;
     left: 0;
     right: 0;
     margin: 0 auto;
-    font-size: 35px;
-    text-transform: uppercase;
-    font-family: Ripped;
-    font-weight: bold;
-    color: #d4d4d4;
-    text-align: center;
-    z-index: 6;
+    width: 100%;
+    background-color: #303030ea;
+    height: 700px;
 }
 
-div.descdiv
+.programsdiv ul 
 {
     position: relative;
-    top: 0;
-    height: 600px;
-    margin: 0 auto;
-    background: #212121;
-    border: 1px solid gold;
-    border-top: 1px solid rgba(230, 205, 69, .4);
-    border-bottom: 0;
-    z-index: 6;
+    display: inline-block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    /* For IE, the outcast */
+    zoom: 1;
+    *display: inline;
+    z-index: 1;
 }
 
-div.descdiv2
+.programsdiv li 
 {
-    position: absolute;
-    top: -50px;
-    left: 50%;
-    right: 50%;
+    float: left;
+    height: 460px;
+    width: 270px;
+    margin: 0 60px;
+    text-overflow: ellipsis;
+    background: #21212173;
+    overflow: hidden;
 }
 
-.desch1
+/*----------BEGINNER----------*/
+div.beginnerdiv
 {
-    position: absolute;
-    top: 100px;
-    right: 240px;
-    width: 180px;
-    padding-bottom: 5px;
-    font-family: sans-serif;
+    height: 170px;
+    width: 270px;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+img.beginnerimg
+{
+    height: 170px;
+    width: 270px;
+    padding: 0;
+    margin: 0;
+}
+
+h1.beginnerh1
+{
     color: #d4d4d4;
-    text-align: center;
-    border-bottom-style: dashed;
-    border-bottom-width: medium;
-    border-bottom-color: #e6cd45;
-    z-index: 6;
+    text-shadow: 3px 2px 3px #a395467c;
+    font-family: sans-serif;
 }
 
-p.descp
+p.beginnerp
 {
-    position: absolute;
-    top: 200px;
-    right: 50px;
-    width: 500px;
     color: #d4d4d4;
     font-family: Ripped;
     font-size: 20px;
-    z-index: 6;
+    padding: 5px;
 }
 
-img.descimg
+/*----------INTERMIDIATE----------*/
+div.intermidiatediv
 {
-    position: relative;
-    top: 0;
-    left: 50px;
-    height: 250px;
-    width: 410px;
-    border-radius: 20px;
-    z-index: 6;
+    height: 170px;
+    width: 270px;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
 }
 
-ul.descul
+img.intermidiateimg
 {
-    position: absolute;
-    top: 200px;
+    height: 170px;
+    width: 270px;
+    padding: 0;
+    margin: 0;
 }
 
-li.descli
+h1.intermidiateh1
 {
-    list-style-type: none;
+    color: #d4d4d4;
+    text-shadow: 3px 2px 3px #a395467c;
+    font-family: sans-serif;
 }
 
-a.descbeg
+p.intermidiatep
 {
-    transition: .3s;
-    color: #a39546;
+    color: #d4d4d4;
+    font-family: Ripped;
+    font-size: 20px;
+    padding: 5px;
 }
 
-a.descbeg:hover
+/*----------ADVANCED----------*/
+div.advanceddiv
 {
-    transition: .3s;
-    color: #e6cd45;
+    height: 170px;
+    width: 270px;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
 }
+
+img.advancedimg
+{
+    height: 170px;
+    width: 270px;
+    padding: 0;
+    margin: 0;
+}
+
+h1.advancedh1
+{
+    color: #d4d4d4;
+    text-shadow: 3px 2px 3px #a395467c;
+    font-family: sans-serif;
+    padding: 5px 0 0 0 ;
+}
+
+p.advancedp
+{
+    color: #d4d4d4;
+    font-family: Ripped;
+    font-size: 20px;
+    padding: 5px;
+}
+
+/*-----------------------------------*/
 
 div.subprogdiv
 {
     position: relative;
-    top: -16px;
+    top: 0;
     height: 440px;
     border: 1px solid #e6cd45;
     border-top: 1px solid rgba(230, 205, 69, .4);
     border-bottom: 1px solid rgba(230, 205, 69, .4);
-    background: rgb(82, 82, 82);
+    background: #212121;
     z-index: 6;
 }
 
@@ -828,6 +856,17 @@ a.whya:hover
     color: #e6cd45;
 }
 
+.descbeg
+{
+    transition: .2s;
+    color: #a39546;
+}
+
+.descbeg:hover
+{
+    transition: .2s;
+    color: #e6cd45;
+}
 
 div.quotedowdiv
 {

@@ -8,7 +8,7 @@ $(document).ready(function()
    	function parallaxScroll()
     {
    		var scrolledY = $(window).scrollTop();
-		$('.parallax').css('background-position','center -'+((scrolledY*.5))+'px');
+		$('.parallax').css('background-position','center -'+((scrolledY*.3))+'px');
    	}
 });
 
@@ -45,14 +45,43 @@ $(window).scroll(function()
 
 $(() =>
 {
-    $('.quotedowp').hover(function() 
+    $('.beginnerimg').hover(function() 
     {
-        $('.quotedowdiv').addClass('zoomhover')
-        $('.quotedowdiv').removeClass('zoomleave')
+        $(this)
+            .addClass('zoomhover')
+            .removeClass('zoomleave')
+
     }, function()
     {
-        $('.quotedowdiv').removeClass('zoomhover')
-        $('.quotedowdiv').addClass('zoomleave')
+        $(this)
+            .removeClass('zoomhover')
+            .addClass('zoomleave')
+    });
+
+    $('.intermidiateimg').hover(function() 
+    {
+        $(this)
+            .addClass('zoomhover')
+            .removeClass('zoomleave')
+
+    }, function()
+    {
+        $(this)
+            .removeClass('zoomhover')
+            .addClass('zoomleave')
+    });
+
+    $('.advancedimg').hover(function() 
+    {
+        $(this)
+            .addClass('zoomhover')
+            .removeClass('zoomleave')
+
+    }, function()
+    {
+        $(this)
+            .removeClass('zoomhover')
+            .addClass('zoomleave')
     });
 });
 
