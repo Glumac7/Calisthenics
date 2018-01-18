@@ -8,7 +8,7 @@ $(document).ready(function()
    	function parallaxScroll()
     {
    		var scrolledY = $(window).scrollTop();
-		$('.parallax').css('background-position','center -'+((scrolledY*.5))+'px');
+		$('.parallax').css('background-position','center -'+((scrolledY*.3))+'px');
    	}
 });
 

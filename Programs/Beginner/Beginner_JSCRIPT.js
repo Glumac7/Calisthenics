@@ -60,6 +60,6 @@ $(document).ready(function()
    	function parallaxScroll()
     {
    		var scrolledY = $(window).scrollTop();
-		$('.parallax2').css('background-position','center -'+((scrolledY*.2))+'px');
+		$('.parallax2').css('background-position','center -'+((scrolledY*.3))+'px');
    	}
 });
