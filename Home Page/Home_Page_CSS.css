@@ -708,6 +708,7 @@ div.grayscale2
     right: 0;
     margin: 0 auto;
     height: auto;
+    
     width: 100%;
     background-color: #303030e5;
     z-index: 8;
@@ -731,6 +732,7 @@ div.tutorialsdiv
     text-align: center;
     padding: 50px 0;
     background: url('Images/tutorials_parallax.jpg');
+    margin-bottom: 16px;
 }
 
 .tutorialsdiv ul
