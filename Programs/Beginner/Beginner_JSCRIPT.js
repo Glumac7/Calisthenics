@@ -14,6 +14,13 @@ $(document).ready(function()
 
 $(window).scroll(function()
 {
+    if($(this).scrollTop() > 650)
+    {
+        $('aside').removeClass('parallax2');
+    }
+    else
+        $('aside').addClass('parallax2');
+
     if($(this).scrollTop() > 900)
     {
         $('.aboutp').addClass('fadeInUp');

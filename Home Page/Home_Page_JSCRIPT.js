@@ -24,6 +24,21 @@ $(window).scroll(() => {
         $('.programsul li:nth-child(3)').addClass('rotateInDownRight');
         $('.programsul li:nth-child(3)').removeClass('opacity');
     }
+
+    if($(this).scrollTop() > 1000)
+    {
+        $('.tutorialsp').addClass('fadeInDown');
+        $('.tutorialsp').removeClass('opacity');
+
+        $('.tutorialsul li:nth-child(1)').addClass('fadeInLeft');
+        $('.tutorialsul li:nth-child(1)').removeClass('opacity');
+
+        $('.tutorialsul li:nth-child(2)').addClass('fadeIn');
+        $('.tutorialsul li:nth-child(2)').removeClass('opacity');
+
+        $('.tutorialsul li:nth-child(3)').addClass('fadeInRight');
+        $('.tutorialsul li:nth-child(3)').removeClass('opacity');
+    }
 });
 
 $(() =>
@@ -78,6 +93,6 @@ $(document).ready(function()
    	function parallaxScroll()
     {
    		var scrolledY = $(window).scrollTop();
-		$('.parallax2').css('background-position','center -'+((scrolledY*.4))+'px');
+		$('.parallax2').css('background-position','center -'+((scrolledY*.3))+'px');
    	}
 });
