@@ -81,6 +81,19 @@ $(() =>
             .removeClass('zoomhover')
             .addClass('zoomleave')
     });
+
+    $('.ism-img-frame').hover(function() 
+    {
+        $(this)
+            .addClass('zoomhover2')
+            .removeClass('zoomleave2')
+
+    }, function()
+    {
+        $(this)
+            .removeClass('zoomhover2')
+            .addClass('zoomleave2')
+    });
 });
 
 $(document).ready(function()
