@@ -9,6 +9,7 @@
   -ms-user-select: none;
   user-select: none;
   cursor: default;
+  opacity: .6;
   z-index: 2;
   height: 400px;
   width: 900px;
