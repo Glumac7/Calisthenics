@@ -501,7 +501,7 @@ aside.background
     top: 0;
     height: 80%;
     width: 100%;
-    background:url(Images/intermidiate.jpg) no-repeat top center;
+    background:url(Images/home_page_background.jpg) no-repeat top center;
     background-size: cover;
     filter: grayscale(30%);
 }
@@ -961,16 +961,24 @@ h1.transformationsh1
 
 div.transformationsdiv3
 {
+    position: relative;
     width: 100%;
-    padding: 40px 40px 40px 0;
-    background: url(Images/transformations_parallax.jpg);
+    height: auto;
+    padding: 50px 0;
+    background: url(Images/transformations_parallax.png);
 }
 
-div.transformationsdiv
+div.grayscale3
 {
-    position: relative;
-    margin: 0 auto 35px auto;
-    width: 1000px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 100%;
+    background-color: #303030b1;
+    height: auto;
 }
 
 p.transformationsp
@@ -986,67 +994,118 @@ p.transformationsp
     z-index: 11;
 }
 
-/*----------------------------------------------------*/
-
-div.quotedowdiv
+.transformationsdiv
 {
     position: relative;
-    top: -20px;
-    height: 185px;
-    width: 100%;
-    background-image: url('../Programs/Images/9.jpg');
-    background-color: #212121;
-    background-size: cover;
-    z-index: 5;
-}
-
-span.quotedowspan
-{
-    position: absolute;
-    height: 185px;
-    width: 100%;
-    background: -moz-radial-gradient(center, ellipse cover, rgba(73, 73, 73,1) 0%, rgba(0,0,0,0.6) 71%); /* ff3.6+ */
-    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(73, 73, 73,1)), color-stop(71%, rgba(0,0,0,0.6))); /* safari4+,chrome */
-    background:-webkit-radial-gradient(center, ellipse cover, rgba(73, 73, 73,1) 0%, rgba(0,0,0,0.6) 71%); /* safari5.1+,chrome10+ */
-    background: -o-radial-gradient(center, ellipse cover, rgba(73, 73, 73,1) 0%, rgba(0,0,0,0.6) 71%); /* opera 11.10+ */
-    background: -ms-radial-gradient(center, ellipse cover, rgb(73, 73, 73) 0%, rgba(0,0,0,0.6) 71%); /* ie10+ */
-    background:radial-gradient(ellipse at center, rgba(73, 73, 73,1) 0%, rgba(0,0,0,0.6) 41%); /* w3c */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#858585', endColorstr='#000000',GradientType=1 ); /* ie6-9 */ 
-    opacity: .4;
-    z-index: 6;
-}
-
-a.quotedowp
-{
-    position: absolute;
-    top: 78px;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    width: 300px;
-    transition: .2s;
-    font-size: 35px;
-    text-transform: uppercase;
-    font-family: Ripped;
-    font-weight: bold;
-    color: #a39546;
-    text-decoration: none;
     text-align: center;
-    z-index: 6;
+    padding: 0;
+    margin: 0;
+    z-index: 9;
 }
 
-.quotedowp:hover
+.transformationsdiv ul
 {
-    top: 73px;
-    font-size: 40px;
-    transition: .2s;
-    color: #e6cd45;
+    position: relative;
+    display: inline-block;
+    list-style: none;
+    background-color: #2121217d;
+    margin: 0;
+    padding: 50px 0 20px 0;
+    /* For IE, the outcast */
+    zoom: 1;
+    *display: inline;
+    z-index: 1;
 }
+
+.transformationsdiv li
+{
+    position: relative;
+    box-sizing: border-box;
+    float: left;
+    height: 170px;
+    padding: 0;
+    width: 270px;
+    margin: 0 60px;
+    text-overflow: ellipsis;
+    background: #000000a1;
+    overflow: hidden;
+}
+
+#box1, #box2, #box3, #box4 
+{
+    width: 270px;
+    height: 170px;
+    -webkit-box-shadow: 0px 1px 1px;
+    float: left;
+    background: url(http://www.ilhamrock.com/wp-content/uploads/2014/10/cropped-I-copy.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+  
+#slideshow-container 
+{
+    width: 270px;
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+    margin-top: 0px;
+    box-shadow: 0px 10px 10px #333;
+}
+
+#slideshow 
+{
+    width: 1000%;
+    -webkit-animation: slideshow 20s infinite;
+    -moz-animation: slideshow 20s infinite;
+    -o-animation: slideshow 20s infinite;
+    -ms-animation: slideshow 20s infinite;
+}
+  
+  /* Animation
+  =============================*/
+  
+@-webkit-keyframes slideshow 
+{
+    0%, 10%, 100% {margin-left: 0; }
+    20%, 30% {margin-left: -270px; }
+    40%, 50% {margin-left: -540px;}
+    60%, 70% {margin-left: -810px;}
+    80% {margin-left: 0;}
+}
+  
+@-moz-keyframes slideshow 
+{
+    0%, 10%, 100% {margin-left: 0; }
+    20%, 30% {margin-left: -700px; }
+    40%, 50% {margin-left: -1400px;}
+    60%, 70% {margin-left: -2100px;}
+    80% {margin-left: 0;}
+}
+  
+@-o-keyframes slideshow 
+{
+    0%, 10%, 100% {margin-left: 0; }
+    20%, 30% {margin-left: -700px; }
+    40%, 50% {margin-left: -1400px;}
+    60%, 70% {margin-left: -2100px;}
+    80% {margin-left: 0;}
+}
+  
+@-ms-keyframes slideshow 
+{
+    0%, 10%, 100% {margin-left: 0; }
+    20%, 30% {margin-left: -700px; }
+    40%, 50% {margin-left: -1400px;}
+    60%, 70% {margin-left: -2100px;}
+    80% {margin-left: 0;}
+}
+
+/*----------------------------------------------------*/
 
 .zoomhover
 {
-    -webkit-transform: scale(1.3);
-    transform: scale(1.3);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
     -webkit-transition: .2s ease-in-out;
 	transition: .2s ease-in-out;
 }
@@ -1059,28 +1118,7 @@ a.quotedowp
 	transition: .2s ease-in-out;
 }
 
-.zoomhover2
-{
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-    -webkit-transition: .2s ease-in-out;
-	transition: .2s ease-in-out;
-}
-
-.zoomleave2
-{
-    -webkit-transform: scale(1);
-	transform: scale(1);
-	-webkit-transition: .2s ease-in-out;
-	transition: .2s ease-in-out;
-}
-
 .opacity
-{
-    opacity: 0;
-}
-
-.opacity2
 {
     opacity: 0;
 }
@@ -1089,7 +1127,7 @@ a.quotedowp
 footer
 {
     position: relative;
-    top: -20px;
+    top: 0px;
     left: 0;
     right: 0;
     margin-top: 0;

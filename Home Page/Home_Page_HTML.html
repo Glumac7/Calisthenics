@@ -4,11 +4,9 @@
         <title>Welcome Athlete!</title>
         <link rel="shortcut icon" type="image/x-icon" href="Images/favicon.ico" />
         <link rel="stylesheet" type="text/css" href="Home_Page_CSS.css">
-        <link href="http://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" href="ism/css/my-slider.css"/>
-        <script src="ism/js/ism-2.2.min.js"></script>
         <script src="jquery-3.2.1.js"></script>
         <script src="Home_Page_JSCRIPT.js"></script>
+        <script src="slider.js"></script>
         <meta charset="UTF-8"> 
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
     </head>
@@ -160,35 +158,49 @@
                 
             </div>
 
-            <div class="transformationsdiv3 parallax2"><div class="grayscale2"></div>
+            <div class="transformationsdiv3 parallax2"><div class="grayscale3"></div>
 
                 <p class="transformationsp">In this section you will be able to see and read some
                         SUCCESS stories of the programs listed above.<br/> The reason it exists is
                     to show <span style="color:#a39546">YOU</span> that <span style="color:#a39546">anything is possible!</span></p>
 
+                
                 <div class="transformationsdiv">
-                    <div class="ism-slider" data-play_type="loop" data-image_fx="zoompan" id="transformations-slider">
-                        <ol>
-                            <li>
-                                <a href="../Programs/Beginner/_HTML.html"><img class="transfimg1" src="ism/image/slides/_u/1516735730778_251855.jpg"></a>
-                                <div class="ism-caption ism-caption-0">Beginner!</div>
-                            </li>
-
-                            <li>
-                                <a href="../Programs/Intermidiate/Intermidiate_HTML.html"><img src="ism/image/slides/_u/1516735832254_320700.jpg"></a>
-                                <div class="ism-caption ism-caption-0">Intermidiate!</div>
-                            </li>
-                            
-                            <li>
-                                <a href="../Programs/Advanced/Advanced_HTML.html"><img src="ism/image/slides/_u/1516735828603_945999.jpg"></a>
-                                <div class="ism-caption ism-caption-0">Advanced!</div>
-                            </li>
-                        </ol>
-                    </div>
+                    <ul>
+                        <li>
+                            <div id="slideshow-container">
+                                <div id="slideshow">
+                                    <div id="box1"><img class="tutorialsimg" src="Images/beginner.jpg"></div>
+                                    <div id="box2"><img class="tutorialsimg" src="Images/intermidiate.jpg"></div>
+                                    <div id="box3"><img class="tutorialsimg" src="Images/advanced.jpg"></div>
+                                    <div id="box4"><img class="tutorialsimg" src="Images/core.jpg"></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div id="slideshow-container">
+                                <div id="slideshow">
+                                    <div id="box1"><img class="tutorialsimg" src="Images/beginner.jpg"></div>
+                                    <div id="box2"><img class="tutorialsimg" src="Images/intermidiate.jpg"></div>
+                                    <div id="box3"><img class="tutorialsimg" src="Images/advanced.jpg"></div>
+                                    <div id="box4"><img class="tutorialsimg" src="Images/core.jpg"></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div id="slideshow-container">
+                                <div id="slideshow">
+                                    <div id="box1"><img class="tutorialsimg" src="Images/beginner.jpg"></div>
+                                    <div id="box2"><img class="tutorialsimg" src="Images/intermidiate.jpg"></div>
+                                    <div id="box3"><img class="tutorialsimg" src="Images/advanced.jpg"></div>
+                                    <div id="box4"><img class="tutorialsimg" src="Images/core.jpg"></div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
+                        
             </div>
-
-           
                
         <!--The end section of a home page-->
         
