@@ -856,6 +856,7 @@ div.tutorialsdiv
     text-align: center;
     padding: 50px 0;
     background: url('Images/tutorials_parallax.jpg');
+    background-size: cover;
     z-index: 9;
 }
 
@@ -966,6 +967,7 @@ div.transformationsdiv3
     height: auto;
     padding: 50px 0;
     background: url(Images/transformations_parallax.png);
+    background-size: cover;
 }
 
 div.grayscale3
