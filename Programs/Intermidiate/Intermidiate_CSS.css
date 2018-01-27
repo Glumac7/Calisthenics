@@ -546,8 +546,8 @@ div.descdiv
     background: #212121;
     border: 1px solid gold;
     border-top: 1px solid rgba(230, 205, 69, .4);
-    border-bottom: 0;
-    z-index: 6;
+    border-bottom: 1px solid rgba(230, 205, 69, .4);
+    z-index: 7;
 }
 
 div.descdiv2
@@ -624,12 +624,27 @@ div.subprogdiv
 {
     position: relative;
     top: -16px;
-    height: 440px;
+    height: 490px;
     border: 1px solid #e6cd45;
-    border-top: 1px solid rgba(230, 205, 69, .4);
-    border-bottom: 1px solid rgba(230, 205, 69, .4);
-    background: rgb(82, 82, 82);
+    border-top: 0;
+    border-bottom: 0;
+    background: url(../Images/intermidiate_subprograms.jpg);
+    background-size: cover;
     z-index: 6;
+}
+
+div.grayscale
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    height: auto;
+    width: 100%;
+    background-color: #303030d2;
+    z-index: 0;
 }
 
 div.subprogdiv2
@@ -645,6 +660,7 @@ p.subprogtitle
     position: absolute;
     top: 20px;
     margin: 0 auto;
+    padding: 20px 0 0 0;
     width: 100%;
     color: #d4d4d4;
     text-align: center;
@@ -656,6 +672,7 @@ ul.subprogul
 {
     list-style:none;
     position:relative;
+    margin-top: 60px;
     padding: 0;
     left:50%;
 }
@@ -793,10 +810,10 @@ div.subprogsdiv
     top: -16px;
     height: 640px;
     border: 1px solid #e6cd45;
+    border-top: 1px solid rgba(230, 205, 69, .4);
     border-bottom: 1px solid rgba(230, 205, 69, .4);
     background: #212121;
-    border-top: 0;
-    z-index: 6;
+    z-index: 7;
 }
 
 div.subprogsdiv2

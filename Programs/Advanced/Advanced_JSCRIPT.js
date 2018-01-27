@@ -41,7 +41,7 @@ $(window).scroll(function()
     }
 });
 
-$(() =>
+$(document).ready(function()
 {
     $('.quotedowp').hover(function() 
     {
