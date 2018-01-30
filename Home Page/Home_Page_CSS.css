@@ -513,6 +513,45 @@ aside.background
 	margin: 0 auto;
 }
 
+@media screen and (max-width: 1100px) 
+{
+  .container ul li:not(:last-child) {display: none;}
+  .container ul span{display: none;}
+  
+  .container a.icon 
+  {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 1100px) 
+{
+  .container.responsive {position: relative;}
+
+  .container.responsive a.icon 
+  {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .container.responsive ul li, span 
+  {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.icon 
+{
+    display: none;
+}
+ 
+
 header
 {
 
@@ -627,20 +666,15 @@ section
 .programsh1
 {
     position: absolute;
-    top: 0;
+    top: 20;
     left: 0;
     right: 0;
-    width: 150px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 5px;
+    width: auto;
+    margin: 0 auto;
     font-family: Tagline;
-    font-size: 30px;
+    font-size: 50px;
     color: #d4d4d4;
     text-align: center;
-    border-bottom-style: dashed;
-    border-bottom-width: medium;
-    border-bottom-color: #e6cd45;
     z-index: 6;
 }
 /*//////////////////////////////////////////*/
@@ -807,21 +841,16 @@ div#tutorialsdiv2
 h1.tutorialsh1
 {
     position: absolute;
-    top: 0;
+    top: 20;
     left: 0;
     right: 0;
-    width: 150px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 5px;
+    width: auto;
+    margin: 0 auto;
     font-family: Tagline;
-    font-size: 30px;
+    font-size: 50px;
     color: #d4d4d4;
     text-align: center;
-    border-bottom-style: dashed;
-    border-bottom-width: medium;
-    border-bottom-color: #e6cd45;
-    z-index: 12;
+    z-index: 6;
 }
 
 div.grayscale2
@@ -944,21 +973,16 @@ div#transformationsdiv2
 h1.transformationsh1
 {
     position: absolute;
-    top: 0;
+    top: 20;
     left: 0;
     right: 0;
-    width: 270px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 5px;
+    width: auto;
+    margin: 0 auto;
     font-family: Tagline;
-    font-size: 30px;
+    font-size: 50px;
     color: #d4d4d4;
     text-align: center;
-    border-bottom-style: dashed;
-    border-bottom-width: medium;
-    border-bottom-color: #e6cd45;
-    z-index: 12;
+    z-index: 6;
 }
 
 div.transformationsdiv3

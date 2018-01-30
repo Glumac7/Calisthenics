@@ -8,11 +8,34 @@ $(document).ready(function()
    	function parallaxScroll()
     {
    		var scrolledY = $(window).scrollTop();
-		$('.parallax').css('background-position','center -'+((scrolledY*.3))+'px');
-   	}
+		$('.parallax').css('background-position','center -'+((scrolledY*.2))+'px');
+    }
+    var wdth = $('header').width();
+
+    if(wdth < 900)
+    {
+        $(window).scroll(() =>
+        {
+            if($(this).scrollTop() > 150)
+            {
+                $('aside').removeClass('parallax');
+        
+            }
+            else
+                $('aside').addClass('parallax');
+        });
+        $('header').removeClass();
+    }
+        
+    else
+        $('header').addClass('fixed');
 });
 
+
+
 $(window).scroll(() => {
+    
+
     if($(this).scrollTop() > 400)
     {
         $('.programsul li:nth-child(1)').addClass('rotateInDownLeft');

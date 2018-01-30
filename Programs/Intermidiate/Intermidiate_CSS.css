@@ -483,20 +483,15 @@ section
 .beginnerh1
 {
     position: absolute;
-    top: 0;
+    top: 20;
     left: 0;
     right: 0;
-    width: 200px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 5px;
+    width: auto;
+    margin: 0 auto;
     font-family: Tagline;
-    font-size: 30px;
+    font-size: 50px;
     color: #d4d4d4;
     text-align: center;
-    border-bottom-style: dashed;
-    border-bottom-width: medium;
-    border-bottom-color: #e6cd45;
     z-index: 6;
 }
 
@@ -562,15 +557,13 @@ div.descdiv2
 {
     position: absolute;
     top: 100px;
-    right: 240px;
+    right: 270px;
     width: 180px;
     padding-bottom: 5px;
+    font-size: 35px;
     font-family: sans-serif;
     color: #d4d4d4;
     text-align: center;
-    border-bottom-style: dashed;
-    border-bottom-width: medium;
-    border-bottom-color: #e6cd45;
     z-index: 6;
 }
 
@@ -839,15 +832,13 @@ h1.subprogsh1
 {
     position: absolute;
     top: 100px;
-    left: 240px;
-    width: 210px;
+    left: 210px;
+    width: 300px;
     padding-bottom: 5px;
+    font-size: 35px;
     font-family: sans-serif;
     color: #d4d4d4;
     text-align: center;
-    border-bottom-style: dashed;
-    border-bottom-width: medium;
-    border-bottom-color: #e6cd45;
     z-index: 6;
 
 }
