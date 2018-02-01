@@ -9,7 +9,26 @@ $(document).ready(function()
     {
    		var scrolledY = $(window).scrollTop();
 		$('.parallax').css('background-position','center -'+((scrolledY*.5))+'px');
-   	}
+    }
+    var wdth = $('header').width();
+
+    if(wdth < 900)
+    {
+        $(window).scroll(() =>
+        {
+            if($(this).scrollTop() > 150)
+            {
+                $('aside').removeClass('parallax');
+        
+            }
+            else
+                $('aside').addClass('parallax');
+        });
+        $('header').removeClass();
+    }
+        
+    else
+        $('header').addClass('fixed');   
 });
 
 $(window).scroll(function()

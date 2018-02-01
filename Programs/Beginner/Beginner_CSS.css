@@ -285,6 +285,44 @@ aside.background
 	margin: 0 auto;
 }
 
+@media screen and (max-width: 1300px) 
+{
+  .container ul li:not(:last-child) {display: none;}
+  .container ul span{display: none;}
+  
+  .container a.icon 
+  {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 1300px) 
+{
+  .container.responsive {position: relative;}
+
+  .container.responsive a.icon 
+  {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .container.responsive ul li, span 
+  {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.icon 
+{
+    display: none;
+}
+
 header
 {
     background: -webkit-linear-gradient(rgba(33, 33, 33, 0), #000000);

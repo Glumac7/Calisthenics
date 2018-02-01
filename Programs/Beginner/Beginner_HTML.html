@@ -11,7 +11,7 @@
     </head>
     <body>
         <header class="fixed">
-            <div class="container">
+            <div class="container" id="c">
 
                     <a href="../../Home%20Page/Home_Page_HTML.html">
                         <img class="logo" src="../Images/Logo1.png"></img>
@@ -37,11 +37,32 @@
                             <span class="straight">|</span>
 
                             <li><a href="../../Log%20In/Log_In_HTML.html">log in</a></li>
+
+                            <li><a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a></li>
                         </ul>
                     </nav>
 
             </div>
         </header>
+
+        <script>
+
+            function myFunction() 
+            {
+                var x = document.getElementById("c");
+
+                if (x.className === "container") 
+                {
+                    x.className += " responsive";
+                }
+
+                else 
+                {
+                    x.className = "container";
+                }
+            }
+
+        </script>
 
         <aside class="background parallax2"></aside>
 
