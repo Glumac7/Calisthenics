@@ -31,8 +31,6 @@ $(document).ready(function()
         $('header').addClass('fixed');
 });
 
-
-
 $(window).scroll(() => {
     
 
@@ -128,7 +126,6 @@ $(document).ready(function()
             .addClass('zoomleave')
     });
 });
-
 
 $(document).ready(function()
 {
