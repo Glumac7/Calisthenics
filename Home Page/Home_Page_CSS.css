@@ -523,6 +523,12 @@ aside.background
     float: right;
     display: block;
   }
+  .footer-distributed .footer-right .footer-company-about span
+  {
+      position: relative;
+      left: 0;
+      right: 0;
+  }
 }
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
@@ -1167,119 +1173,7 @@ p.transformationsp
     80% {margin-left: 0;}
 }
 
-/*----------------------------------------------------*/
-/*---------------QNA---------------*/
-
-div#qnadiv2
-{
-    position: relative;
-    height: 100px;
-    border: 1px solid #e6cd45;
-    border-top: 1px solid rgba(230, 205, 69, .4);
-    border-bottom: 1px solid rgba(230, 205, 69, .4);
-    background: #212121;
-    z-index: 12;
-}
-
-h1.qnah1
-{
-    position: absolute;
-    top: 20;
-    left: 0;
-    right: 0;
-    width: auto;
-    margin: 0 auto;
-    font-family: Tagline;
-    font-size: 50px;
-    color: #d4d4d4;
-    text-align: center;
-    z-index: 6;
-}
-
-div.qnadiv
-{
-    background-color: #525252;
-    padding: 50px;
-}
-
-p.qnap
-{
-    position: relative;
-    color: #d4d4d4;
-    padding: 0;
-    text-align: center;
-    font-size: 22px;
-    font-family: Ripped;
-    margin: 0 auto;
-    width: auto;
-    z-index: 11;
-}
-
-.sub-main
-{
-    width: 200px;
-    margin: 20px auto 0 auto;
-}
-  
-.button-two
-{
-    text-align: center;
-    cursor: pointer;
-    font-size:24px;
-    align-content: center;
-    margin: 0 auto;
-}
-
-.button-two 
-{
-    border-radius: 4px;
-    background-color:#a39546;
-    border: none;
-    padding: 20px;
-    width: 200px;
-    transition: all 0.5s;
-}
-  
-  
-.button-two span 
-{
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    transition: 0.5s;
-    color: #212121;
-    font-family: Ripped;
-}
-  
-.button-two span:after 
-{
-    content: '»';
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    right: -20px;
-    transition: 0.5s;
-}
-  
-.button-two:hover span 
-{
-    padding-right: 25px;
-}
-
-.button-two:hover
-{
-    padding-right: 25px;
-    background-color: #e6cd45;
-}
-
-.button-two:hover span:after 
-{
-    opacity: 1;
-    right: 0;
-    color: #000000;
-}
-  
-/*--------------------------------------*/
+/*-----------------------------------*/
 .zoomhover
 {
     -webkit-transform: scale(1.2);
@@ -1304,14 +1198,7 @@ p.qnap
 /*----------FOOTER----------*/
 .footer-distributed
 {
-	background: rgba(71,71,71,1);
-background: -moz-linear-gradient(top, rgba(71,71,71,1) 0%, rgba(0,0,0,1) 100%);
-background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(71,71,71,1)), color-stop(100%, rgba(0,0,0,1)));
-background: -webkit-linear-gradient(top, rgba(71,71,71,1) 0%, rgba(0,0,0,1) 100%);
-background: -o-linear-gradient(top, rgba(71,71,71,1) 0%, rgba(0,0,0,1) 100%);
-background: -ms-linear-gradient(top, rgba(71,71,71,1) 0%, rgba(0,0,0,1) 100%);
-background: linear-gradient(to bottom, rgba(71,71,71,1) 0%, rgba(0,0,0,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#474747', endColorstr='#000000', GradientType=0 );
+	background: #212121;
 	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
 	box-sizing: border-box;
 	width: 100%;
