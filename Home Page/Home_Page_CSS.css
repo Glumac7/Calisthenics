@@ -493,6 +493,7 @@ body
     background-color: #212121;
     overflow-x: hidden;
     overflow-y: scroll;
+    
 	font-weight: 400;
 }
 
@@ -670,13 +671,13 @@ section
 .programsh1
 {
     position: absolute;
-    top: 20;
+    top: 25;
     left: 0;
     right: 0;
     width: auto;
     margin: 0 auto;
     font-family: Tagline;
-    font-size: 50px;
+    font-size: 40px;
     color: #d4d4d4;
     text-align: center;
     z-index: 6;
@@ -845,13 +846,13 @@ div#tutorialsdiv2
 h1.tutorialsh1
 {
     position: absolute;
-    top: 20;
+    top: 25;
     left: 0;
     right: 0;
     width: auto;
     margin: 0 auto;
     font-family: Tagline;
-    font-size: 50px;
+    font-size: 40px;
     color: #d4d4d4;
     text-align: center;
     z-index: 6;
@@ -977,13 +978,13 @@ div#transformationsdiv2
 h1.transformationsh1
 {
     position: absolute;
-    top: 20;
+    top: 25;
     left: 0;
     right: 0;
     width: auto;
     margin: 0 auto;
     font-family: Tagline;
-    font-size: 50px;
+    font-size: 40px;
     color: #d4d4d4;
     text-align: center;
     z-index: 6;

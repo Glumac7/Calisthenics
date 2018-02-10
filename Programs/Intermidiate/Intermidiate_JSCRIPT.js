@@ -10,25 +10,23 @@ $(document).ready(function()
    		var scrolledY = $(window).scrollTop();
 		$('.parallax').css('background-position','center -'+((scrolledY*.3))+'px');
     }
-    var wdth = $('header').width();
+    var header_width = $('header').width();
 
-    if(wdth < 900)
-    {
-        $(window).scroll(() =>
-        {
-            if($(this).scrollTop() > 150)
-            {
-                $('aside').removeClass('parallax');
-        
-            }
-            else
-                $('aside').addClass('parallax');
-        });
+    if(header_width < 950)
         $('header').removeClass();
-    }
         
     else
         $('header').addClass('fixed');      
+
+    var body_width = $('body').width();
+    if(body_width < 950)
+    {
+        $('body').find('.parallax2').removeClass('parallax2');
+
+        $('body').find('.parallax').removeClass('parallax');
+    
+        $('aside.background').css({'height': '100%'});
+    }
 });
 
 $(window).scroll(function()

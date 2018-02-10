@@ -10,25 +10,25 @@ $(document).ready(function()
    		var scrolledY = $(window).scrollTop();
 		$('.parallax').css('background-position','center -'+((scrolledY*.2))+'px');
     }
-    var wdth = $('header').width();
+    var header_width = $('header').width();
 
-    if(wdth < 900)
-    {
-        $(window).scroll(() =>
-        {
-            if($(this).scrollTop() > 150)
-            {
-                $('aside').removeClass('parallax');
-        
-            }
-            else
-                $('aside').addClass('parallax');
-        });
+    if(header_width < 900)
         $('header').removeClass();
-    }
         
     else
         $('header').addClass('fixed');
+    
+
+    var body_width = $('body').width();
+
+    if(body_width < 800)
+    {
+        $('.tutorialsdiv ul li .overlay').css({'height': '35%'});
+
+        $('.transformationsdiv ul li .overlay2').css({'bottom': '0', 'height': '100%'});
+
+        $('aside').removeClass('parallax');
+    }
 });
 
 $(window).scroll(() => {
@@ -137,6 +137,6 @@ $(document).ready(function()
    	function parallaxScroll()
     {
    		var scrolledY = $(window).scrollTop();
-		$('.parallax2').css('background-position','center -'+((scrolledY*.3))+'px');
+		$('.parallax2').css('background-position','center -'+((scrolledY*.2))+'px');
    	}
 });

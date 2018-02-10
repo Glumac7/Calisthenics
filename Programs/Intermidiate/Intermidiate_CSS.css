@@ -508,7 +508,7 @@ section
     z-index: 4;
 }
 
-.beginnerdiv
+.intermidiatediv
 {
     position: relative;
     height: 100px;
@@ -518,16 +518,16 @@ section
     z-index: 5;
 }
 
-.beginnerh1
+.intermidiateh1
 {
     position: absolute;
-    top: 20;
+    top: 25;
     left: 0;
     right: 0;
     width: auto;
     margin: 0 auto;
     font-family: Tagline;
-    font-size: 50px;
+    font-size: 40px;
     color: #d4d4d4;
     text-align: center;
     z-index: 6;
@@ -654,14 +654,29 @@ a.descbeg:hover
 div.subprogdiv
 {
     position: relative;
-    top: -16px;
-    height: 490px;
+    height: 496px;
     border: 1px solid #e6cd45;
     border-top: 0;
     border-bottom: 0;
     background: url(../Images/intermidiate_subprograms.jpg);
     background-size: cover;
     z-index: 6;
+}
+
+@media (max-width: 1400px)
+{
+    div.subprogdiv
+    {
+        height: 750px;
+    }
+}
+
+@media (max-width: 700px)
+{
+    div.subprogdiv
+    {
+        height: 1450px;
+    }
 }
 
 div.grayscale
@@ -683,7 +698,7 @@ div.subprogdiv2
     float:right;
     position:relative;
     left:-50%;
-    text-align:left
+    text-align:left;
 }
 
 p.subprogtitle

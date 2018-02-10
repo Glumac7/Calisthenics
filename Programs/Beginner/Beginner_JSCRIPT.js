@@ -10,30 +10,20 @@ $(document).ready(function()
    		var scrolledY = $(window).scrollTop();
 		$('.parallax').css('background-position','center -'+((scrolledY*.5))+'px');
     }
-    var header_width = $('header').width();
 
-    if(header_width < 900)
-    {
-        /*$(window).scroll(() =>
-        {
-            if($(this).scrollTop() > 150)
-            {
-                $('aside').removeClass('parallax');
-        
-            }
-            else
-                $('aside').addClass('parallax');
-        });*/
+    var header_width = $('header').width();
+    if(header_width < 950)
         $('header').removeClass();
-    }
         
     else
         $('header').addClass('fixed');
        
+
     var body_width = $('body').width();
-    if(body_width < 800)
+    if(body_width < 950)
     {
         $('body').find('.parallax2').removeClass('parallax2');
+
         $('aside.background').css({'height': '100%'});
     }
     else
@@ -42,13 +32,13 @@ $(document).ready(function()
 
 $(window).scroll(function()
 {
-    if($(this).scrollTop() > 900)
+    if($(this).scrollTop() > 600)
     {
         $('.aboutp').addClass('fadeInUp');
         $('.aboutp').removeClass('opacity');
     }
     
-    if($(this).scrollTop() > 900)
+    if($(this).scrollTop() > 600)
     {
         $('.aboutimg').addClass('bounceInRight');
         $('.aboutimg2').addClass('bounceInRight2');
@@ -56,7 +46,7 @@ $(window).scroll(function()
         $('.aboutimg2').removeClass('opacity2');
     }
     
-    if($(this).scrollTop() > 1600)
+    if($(this).scrollTop() > 1200)
     {
         $('.whyp').addClass('fadeInUp');
         $('.whyp').removeClass('opacity');

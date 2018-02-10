@@ -442,13 +442,13 @@ section
 .beginnerh1
 {
     position: absolute;
-    top: 20;
+    top: 25;
     left: 0;
     right: 0;
     width: auto;
     margin: 0 auto;
     font-family: Tagline;
-    font-size: 50px;
+    font-size: 40px;
     color: #d4d4d4;
     text-align: center;
     z-index: 6;
@@ -491,18 +491,29 @@ p.quotep
     z-index: 6;
 }
 
+
 div.aboutdiv
-{
+{   
     position: relative;
     text-align: center;
-    
-    height: auto;
+    padding: 50px 0;
+    border: 1px solid #e6cd45;
+    border-top: 1px solid rgba(230, 205, 69, .4);
+    border-bottom: 0;
+    z-index: 9;
 }
 
-ul.aboutul
+p.aboutp
 {
-    position: absolute;
-    bottom: 0;
+    text-align: left;
+    color: #d4d4d4;
+    font-family: Ripped;
+    font-size: 20px;
+}
+
+.aboutdiv ul
+{
+    position: relative;
     display: inline-block;
     list-style: none;
     margin: 0;
@@ -510,83 +521,45 @@ ul.aboutul
     /* For IE, the outcast */
     zoom: 1;
     *display: inline;
-    z-index: 10;
+    z-index: 9;
 }
 
-
-.aboutFirstLi
+.aboutdiv li
 {
+    position: relative;
     float: left;
-    margin: 20px 60px;
+    height: 170px;
+    width: 270px;
+    margin: 0 60px;
     text-overflow: ellipsis;
-    background: #21212173;
     overflow: hidden;
-}
+}/* ie needs position:relative here*/
 
-div.aboutdiv2
+.abouth2
 {
-    position: absolute;
-    left: 50%;
-    right: 50%;
-}
-
-.abouth1
-{
-    position: absolute;
-    top: 100px;
-    right: 340px;
-    width: 100px;
-    padding-bottom: 5px;
-    font-size: 35px;
-    font-family: sans-serif;
-    color: #d4d4d4;
-    text-align: center;
-    z-index: 6;
-}
-
-p.aboutp
-{
-    position: absolute;
-    top: 200px;
-    right: 110px;
-    width: 500px;
+    position: relative;
+    text-shadow: 3px 3px 4px #e6ce458a;
+    left: -20px;
+    bottom: 10px;
     color: #d4d4d4;
     font-family: Ripped;
-    font-size: 20px;
-    z-index: 6;
-}
-
-ul.aboutul
-{
-    position: absolute;
-    top: 215px;
-}
-
-li.aboutli
-{
-    list-style-type: none;
 }
 
 img.aboutimg
 {
-    position: relative;
-    top: 0px;
-    left: 50px;
-    height: 200px;
-    width: 400px;
-    border-radius: 20px;
-    z-index: 6;
+    display: block;
+    height: 170px;
+    width: 270px;
+    padding: 0;
+    margin: 0;  
 }
-
 img.aboutimg2
 {
-    position: relative;
-    top: 0px;
-    left: 50px;
-    height: 200px;
-    width: 400px;
-    border-radius: 20px;
-    z-index: 6;
+    display: block;
+    height: 170px;
+    width: 270px;
+    padding: 0;
+    margin: 0;  
 }
 
 p.goldline
