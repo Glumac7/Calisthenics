@@ -10,11 +10,11 @@ $(document).ready(function()
    		var scrolledY = $(window).scrollTop();
 		$('.parallax').css('background-position','center -'+((scrolledY*.5))+'px');
     }
-    var wdth = $('header').width();
+    var header_width = $('header').width();
 
-    if(wdth < 900)
+    if(header_width < 900)
     {
-        $(window).scroll(() =>
+        /*$(window).scroll(() =>
         {
             if($(this).scrollTop() > 150)
             {
@@ -23,23 +23,25 @@ $(document).ready(function()
             }
             else
                 $('aside').addClass('parallax');
-        });
+        });*/
         $('header').removeClass();
     }
         
     else
-        $('header').addClass('fixed');   
+        $('header').addClass('fixed');
+       
+    var body_width = $('body').width();
+    if(body_width < 800)
+    {
+        $('body').find('.parallax2').removeClass('parallax2');
+        $('aside.background').css({'height': '100%'});
+    }
+    else
+        $('section:nth-child(1)').addClass('parallax2');
 });
 
 $(window).scroll(function()
 {
-    if($(this).scrollTop() > 650)
-    {
-        $('aside').removeClass('parallax2');
-    }
-    else
-        $('aside').addClass('parallax2');
-
     if($(this).scrollTop() > 900)
     {
         $('.aboutp').addClass('fadeInUp');
