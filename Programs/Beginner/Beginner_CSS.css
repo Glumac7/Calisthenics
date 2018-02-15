@@ -500,6 +500,7 @@ div.aboutdiv
     border: 1px solid #e6cd45;
     border-top: 1px solid rgba(230, 205, 69, .4);
     border-bottom: 0;
+    background-color: #212121;
     z-index: 10;
 }
 
@@ -551,7 +552,7 @@ img.aboutimg
     height: 200px;
     width: 300px;
     padding: 0;
-    margin: 0;  
+    margin-bottom: 10px;  
 }
 img.aboutimg2
 {
@@ -560,6 +561,15 @@ img.aboutimg2
     width: 300px;
     padding: 0;
     margin: 0;  
+}
+
+@media (max-width: 1433px)
+{
+    img.aboutimg, img.aboutimg2
+    {
+        display: inline;
+        margin: 0;
+    }
 }
 
 p.goldline
@@ -582,6 +592,7 @@ div.whydiv
     border: 1px solid #e6cd45;
     border-top: 0;
     border-bottom: 1px solid rgba(230, 205, 69, .4);
+    background-color: #212121;
     z-index: 10;
 }
 
@@ -593,7 +604,7 @@ p.whyp
     font-size: 20px;
 }
 
-.whydiv ul
+.whyul
 {
     position: relative;
     display: inline-block;
@@ -606,7 +617,7 @@ p.whyp
     z-index: 9;
 }
 
-.whydiv li
+.whydiv ul li
 {
     position: relative;
     float: left;
@@ -657,6 +668,15 @@ a.whya:hover
     {
         height: 200px;
         width: 300px;
+    }
+}
+
+@media (max-width: 1900px)
+{
+    img.whyimg
+    {
+        height: 230px;
+        width: 350px;
     }
 }
 

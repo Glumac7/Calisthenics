@@ -357,7 +357,7 @@ aside.background
     top: 0;
     height: 80%;
     width: 100%;
-    background:url(../../Home%20Page/Images/intermidiate.png) no-repeat top center;
+    background:url(../../Home%20Page/Images/intermidiate.jpg) no-repeat top center;
     background-size: cover;
     background-color: #212121;
     filter: grayscale(30%);
@@ -538,7 +538,7 @@ div.quotediv
     position: relative;
     height: 300px;
     width: 100%;
-    background-image: url('../Images/1.jpeg');
+    background-image: url('../Images/1.jpg');
     background-color: #212121;
     background-size: cover;
     z-index: 5;

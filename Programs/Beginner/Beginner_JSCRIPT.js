@@ -28,6 +28,10 @@ $(document).ready(function()
     }
     else
         $('section:nth-child(1)').addClass('parallax2');
+    if(body_width < 1262)
+    {
+        $('.quotedowdiv').removeClass('parallax2');
+    }
 });
 
 $(window).scroll(function()
@@ -63,8 +67,8 @@ $(document).ready(function()
         $('.quotedowdiv').removeClass('zoomleave')
     }, function()
     {
-        $('.quotedowdiv').addClass('zoomleave')
         $('.quotedowdiv').removeClass('zoomhover')
+        $('.quotedowdiv').addClass('zoomleave')
     });
 });
 
