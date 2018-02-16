@@ -28,6 +28,8 @@ $(document).ready(function()
         $('.transformationsdiv ul li .overlay2').css({'bottom': '0', 'height': '100%'});
 
         $('aside').removeClass('parallax');
+
+        $('.programsdiv, .tutorialsdiv, .transformationsdiv3').removeClass('parallax2');
     }
 });
 

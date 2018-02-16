@@ -715,7 +715,7 @@ div.grayscale
     /* For IE, the outcast */
     zoom: 1;
     *display: inline;
-    z-index: 1;
+    z-index: 5;
 }
 
 .programsdiv li 
@@ -1047,6 +1047,42 @@ p.transformationsp
     zoom: 1;
     *display: inline;
     z-index: 1;
+}
+
+@media screen and (max-width: 400px)
+{
+    .transformationsdiv ul
+    {
+        width: 350px;
+    }
+
+    .programsul
+    {
+        width: 350px;
+    }
+
+    .tutorialsul
+    {
+        width: 350px;
+    }
+
+    .transformationsdiv li
+    {
+        margin: 0;
+        margin-left: 30px;
+    }
+
+    .programsul li
+    {
+        margin: 0;
+        margin-left: 30px;
+    }
+
+    .tutorialsul li
+    {
+        margin: 0;
+        margin-left: 30px;
+    }
 }
 
 .transformationsdiv li
@@ -1401,5 +1437,4 @@ p.transformationsp
     {
 		margin-left: 0;
 	}
-
 }
