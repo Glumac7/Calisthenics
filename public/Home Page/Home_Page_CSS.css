@@ -644,7 +644,6 @@ nav a:hover
   color: #e6cd45;
 }
 
-
 /*--------------------------------*/
 
 section
@@ -657,7 +656,9 @@ section
     background: #212121;
     z-index: 4;
 }
+
 /*---------------PROGRAMS----------------*/
+
 #programsdiv2
 {
     position: relative;
@@ -682,6 +683,7 @@ section
     text-align: center;
     z-index: 6;
 }
+
 /*//////////////////////////////////////////*/
 
 div.programsdiv 
@@ -730,6 +732,7 @@ div.grayscale
 }
 
 /*----------BEGINNER----------*/
+
 div.beginnerdiv
 {
     height: 170px;
