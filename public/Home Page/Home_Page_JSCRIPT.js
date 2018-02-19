@@ -29,14 +29,33 @@ $(document).ready(function()
 
         $('aside').removeClass('parallax');
 
+        $('.opacity').removeClass('opacity');
+        $('.opacity2').removeClass('opacity2');
+
+        $('p.tutorialsp')
+            .html("Before starting any of the programs listed above please make sure that you have the best tehnique posible. Without it you are putting your self at risk of getting hurt, and, you will never be at your full potencial.<br/><br/><span>Listed below are 3 general groups of tutorials...</span><br/><br/>")
+            .css({"padding": "0 10px"});
+        
+        $('.programsul li:nth-child(1)').css({"margin-bottom": "17px"});
+        $('.programsul li:nth-child(2)').css({"margin-bottom": "17px"});
+
+        $('.tutorialsul li:nth-child(1)').css({"margin-bottom": "17px"});
+        $('.tutorialsul li:nth-child(2)').css({"margin-bottom": "17px"});
+
+        $('.transformationsp')
+            .html("Listed below are some <q>SUCCESS</q> stories of the programs listed above. The reason it exists isto show <span>YOU</span> that <span>anything is possible!</span><br/><br/><br/>")
+            .css({"padding": "0 10px", "font-size": "17px"});
+
+        $('#s li:nth-child(1)').css({"margin-bottom": "17px"});
+        $('#s li:nth-child(2)').css({"margin-bottom": "17px"});
+
         $('.programsdiv, .tutorialsdiv, .transformationsdiv3').removeClass('parallax2');
     }
 });
 
 $(window).scroll(() => {
-    
 
-    if($(this).scrollTop() > 400)
+    if($(this).scrollTop() > 400 && $('body').width() > 800)
     {
         $('.programsul li:nth-child(1)').addClass('rotateInDownLeft');
         $('.programsul li:nth-child(1)').removeClass('opacity');
@@ -48,7 +67,7 @@ $(window).scroll(() => {
         $('.programsul li:nth-child(3)').removeClass('opacity');
     }
 
-    if($(this).scrollTop() > 1000)
+    if($(this).scrollTop() > 1000 && $('body').width() > 800)
     {
         $('.tutorialsp').addClass('fadeInDown');
         $('.tutorialsp').removeClass('opacity');
@@ -63,7 +82,7 @@ $(window).scroll(() => {
         $('.tutorialsul li:nth-child(3)').removeClass('opacity');
     }
 
-    if($(this).scrollTop() > 1500)
+    if($(this).scrollTop() > 1500 && $('body').width() > 800)
     {
         $('.transformationsp').addClass('fadeInDown');
         $('.transformationsp').removeClass('opacity');

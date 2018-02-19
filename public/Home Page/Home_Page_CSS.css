@@ -888,6 +888,32 @@ p.tutorialsp
     z-index: 11;
 }
 
+@media (max-width: 800px)
+{
+    p.tutorialsp
+    {
+        text-align: left;
+        font-size: 20px;
+    }
+
+    p.tutorialsp span
+    {
+        color: #a39546;
+    }
+
+    p.transformationsp
+    {
+        text-align: left;
+        font-size: 20px;
+    }
+
+    p.transformationsp span
+    {
+        color: #a39546;
+        display: inline-block;
+    }
+}
+
 div.tutorialsdiv
 {   
     position: relative;
@@ -998,6 +1024,7 @@ div.transformationsdiv3
     position: relative;
     width: 100%;
     height: auto;
+    text-align: center;
     padding: 50px 0;
     background: url(Images/transformations_parallax.png);
     background-size: cover;
@@ -1021,7 +1048,6 @@ p.transformationsp
     position: relative;
     color: #d4d4d4;
     padding: 0 60px 50px 60px;
-    text-align: center;
     font-size: 22px;
     font-family: Ripped;
     margin: 0 auto;
