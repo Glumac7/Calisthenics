@@ -44,7 +44,7 @@ $(document).ready(function()
 
         $('.transformationsp')
             .html("Listed below are some <q>SUCCESS</q> stories of the programs listed above. The reason it exists isto show <span>YOU</span> that <span>anything is possible!</span><br/><br/><br/>")
-            .css({"padding": "0 10px", "font-size": "17px"});
+            .css({"padding": "0 10px", "font-size": "20px"});
 
         $('#s li:nth-child(1)').css({"margin-bottom": "17px"});
         $('#s li:nth-child(2)').css({"margin-bottom": "17px"});

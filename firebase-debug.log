@@ -1,0 +1,26 @@
+[debug] [2018-02-19T18:32:56.000Z] ----------------------------------------------------------------------
+[debug] [2018-02-19T18:32:56.016Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\necag\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase deploy
+[debug] [2018-02-19T18:32:56.016Z] CLI Version:   3.17.4
+[debug] [2018-02-19T18:32:56.016Z] Platform:      win32
+[debug] [2018-02-19T18:32:56.016Z] Node Version:  v9.5.0
+[debug] [2018-02-19T18:32:56.016Z] Time:          Mon Feb 19 2018 19:32:56 GMT+0100 (Central Europe Standard Time)
+[debug] [2018-02-19T18:32:56.016Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-02-19T18:32:56.047Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-02-19T18:32:56.047Z] > authorizing via signed-in user
+[debug] [2018-02-19T18:32:56.062Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/null-gym  
+  
+ Mon Feb 19 2018 19:32:56 GMT+0100 (Central Europe Standard Time)
+[debug] [2018-02-19T18:32:57.094Z] <<< HTTP RESPONSE 200
+[debug] [2018-02-19T18:32:57.094Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/null-gym/tokens  
+  
+ Mon Feb 19 2018 19:32:57 GMT+0100 (Central Europe Standard Time)
+[debug] [2018-02-19T18:32:58.094Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'null-gym'...
+[info] 
+[info] i  deploying hosting
+[info] i  hosting: preparing public directory for upload...
+[debug] [2018-02-19T18:33:04.985Z] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/null-gym/uploads/-L5jKm-kXTr2tOkP0yZG?fileCount=119&message=  
+  
+ Mon Feb 19 2018 19:33:04 GMT+0100 (Central Europe Standard Time)
