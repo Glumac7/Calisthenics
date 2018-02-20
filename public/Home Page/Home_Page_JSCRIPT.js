@@ -39,6 +39,27 @@ $(document).ready(function()
         $('.programsul li:nth-child(1)').css({"margin-bottom": "17px"});
         $('.programsul li:nth-child(2)').css({"margin-bottom": "17px"});
 
+        var ul = $('.programsul').width();
+        var li = $('.programsul li').width();
+
+        var margin = (ul - li) / 2;
+
+        $('.programsul li').css('margin-left', margin);
+
+        ul = $('.tutorialsul').width();
+        li = $('.tutorialsul li').width();
+
+        margin = (ul - li) / 2;
+
+        $('.tutorialsul li').css('margin-left', margin);
+
+        ul = $('.transformationsdiv ul').width();
+        li = $('.transformationsdiv ul li').width();
+
+        margin = (ul - li) / 2;
+
+        $('.transformationsdiv ul li').css('margin-left', margin);
+
         $('.tutorialsul li:nth-child(1)').css({"margin-bottom": "17px"});
         $('.tutorialsul li:nth-child(2)').css({"margin-bottom": "17px"});
 
