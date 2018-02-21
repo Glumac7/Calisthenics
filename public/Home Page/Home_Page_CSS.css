@@ -665,6 +665,8 @@ section
     height: 100px;
     border: 1px solid #e6cd45;
     border-bottom: 1px solid rgba(230, 205, 69, .4);
+    border-left: 0;
+    border-right: 0;
     background: #212121;
     z-index: 5;
 }
@@ -840,7 +842,7 @@ div#tutorialsdiv2
 {
     position: relative;
     height: 100px;
-    border: 1px solid #e6cd45;
+    border: 0;
     border-top: 1px solid rgba(230, 205, 69, .4);
     border-bottom: 1px solid rgba(230, 205, 69, .4);
     background: #212121;
@@ -998,7 +1000,7 @@ div#transformationsdiv2
 {
     position: relative;
     height: 100px;
-    border: 1px solid #e6cd45;
+    border: 0;
     border-top: 1px solid rgba(230, 205, 69, .4);
     border-bottom: 1px solid rgba(230, 205, 69, .4);
     background: #212121;
