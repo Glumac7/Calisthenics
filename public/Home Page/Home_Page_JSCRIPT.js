@@ -1,33 +1,32 @@
 $(document).ready(function()
 {
-	$(window).bind('scroll',function(e)
-    {
-   		parallaxScroll();
-   	});
- 
-   	function parallaxScroll()
-    {
-   		var scrolledY = $(window).scrollTop();
-		$('.parallax').css('background-position','center -'+((scrolledY*.2))+'px');
-    }
-    var header_width = $('header').width();
 
-    if(header_width < 900)
+    /*------VARIABLES-----*/
+    var $body_width = $('body').width();
+    var $header_width = $('header').width();
+    var $tutorials_ul_li =  $('.tutorialsdiv ul li');
+
+    /*------FOR MOBILE PHONES------*/
+    if($body_width < 600)
+	{
+		$('.footer-icons a:nth-child(1)').attr("href", "fb://facewebmodal/f?href=https://www.facebook.com/nemanja.glumicic");
+		$('.footer-icons a:nth-child(3)').attr("href", "instagram://user?username=nemanjaglumicic");
+		$('.footer-mail').attr("href", "mailto:necaglumicic@gmail.com");
+	}
+
+    if($header_width < 900)
         $('header').removeClass();
         
     else
         $('header').addClass('fixed');
-    
 
-    var body_width = $('body').width();
-
-    if(body_width < 800)
+    if($body_width < 800)
     {
-        $('.tutorialsdiv ul li .overlay').css({'height': '35%'});
+        $($tutorials_ul_li,'.overlay').css({'height': '35%'});
 
         $('.transformationsdiv ul li .overlay2').css({'bottom': '0', 'height': '100%'});
 
-        $('aside').removeClass('parallax');
+        $('aside').removeClass('parallax2');
 
         $('.opacity').removeClass('opacity');
         $('.opacity2').removeClass('opacity2');
@@ -72,90 +71,67 @@ $(document).ready(function()
 
         $('.programsdiv, .tutorialsdiv, .transformationsdiv3').removeClass('parallax2');
     }
+
+    $('.icon').on('click', function()
+    {
+        $(this).toggleClass('image');
+        if(!$(this).is('.image'))
+            $(this).html("&#9776");
+        else
+            $(this).html("&#10060");
+    });
 });
 
 $(window).scroll(() => {
 
     if($(this).scrollTop() > 400 && $('body').width() > 800)
     {
-        $('.programsul li:nth-child(1)').addClass('rotateInDownLeft');
-        $('.programsul li:nth-child(1)').removeClass('opacity');
+        $('.programsul li:nth-child(1)').addClass('rotateInDownLeft').removeClass('opacity');
 
-        $('.programsul li:nth-child(2)').addClass('fadeInUp');
-        $('.programsul li:nth-child(2)').removeClass('opacity');
+        $('.programsul li:nth-child(2)').addClass('fadeInUp').removeClass('opacity');
 
-        $('.programsul li:nth-child(3)').addClass('rotateInDownRight');
-        $('.programsul li:nth-child(3)').removeClass('opacity');
+        $('.programsul li:nth-child(3)').addClass('rotateInDownRight').removeClass('opacity');
     }
 
     if($(this).scrollTop() > 1000 && $('body').width() > 800)
     {
-        $('.tutorialsp').addClass('fadeInDown');
-        $('.tutorialsp').removeClass('opacity');
+        $('.tutorialsp').addClass('fadeInDown').removeClass('opacity');
 
-        $('.tutorialsul li:nth-child(1)').addClass('fadeInLeft');
-        $('.tutorialsul li:nth-child(1)').removeClass('opacity');
+        $('.tutorialsul li:nth-child(1)').addClass('fadeInLeft').removeClass('opacity');
 
-        $('.tutorialsul li:nth-child(2)').addClass('fadeIn');
-        $('.tutorialsul li:nth-child(2)').removeClass('opacity');
+        $('.tutorialsul li:nth-child(2)').addClass('fadeIn').removeClass('opacity');
 
-        $('.tutorialsul li:nth-child(3)').addClass('fadeInRight');
-        $('.tutorialsul li:nth-child(3)').removeClass('opacity');
+        $('.tutorialsul li:nth-child(3)').addClass('fadeInRight').removeClass('opacity');
     }
 
     if($(this).scrollTop() > 1500 && $('body').width() > 800)
     {
-        $('.transformationsp').addClass('fadeInDown');
-        $('.transformationsp').removeClass('opacity');
+        $('.transformationsp').addClass('fadeInDown').removeClass('opacity');
 
-        $('.transformationsdiv ul li:nth-child(1)').addClass('fadeInUp')
-                                                    .css({"animation-delay": ".2s"})
-        $('.transformationsdiv ul li:nth-child(1)').removeClass('opacity');
+        $('.transformationsdiv ul li:nth-child(1)')
+            .addClass('fadeInUp')
+            .css({"animation-delay": ".2s"})
+            .removeClass('opacity');
 
-        $('.transformationsdiv ul li:nth-child(2)').addClass('fadeInUp')
-                                                    .css({"animation-delay": ".3s"});
+        $('.transformationsdiv ul li:nth-child(2)')
+            .addClass('fadeInUp')
+            .css({"animation-delay": ".3s"})
+            .removeClass('opacity');
 
-        $('.transformationsdiv ul li:nth-child(2)').removeClass('opacity');
+        $('.transformationsdiv ul li:nth-child(3)')
+            .addClass('fadeInUp')
+            .css({"animation-delay": ".4s"})
+            .removeClass('opacity');
 
-        $('.transformationsdiv ul li:nth-child(3)').addClass('fadeInUp')
-                                                    .css({"animation-delay": ".4s"});
 
-        $('.transformationsdiv ul li:nth-child(3)').removeClass('opacity');
-
-        $('.transformationsdiv ul').addClass('fadeIn');
-        $('.transformationsdiv ul').removeClass('opacity');
+        $('.transformationsdiv ul').addClass('fadeIn').removeClass('opacity');
     }
 });
 
+/*------PROGRAMS IMAGE HOVER------*/
 $(document).ready(function()
 {
-    $('.beginnerimg').hover(function() 
-    {
-        $(this)
-            .addClass('zoomhover')
-            .removeClass('zoomleave')
-
-    }, function()
-    {
-        $(this)
-            .removeClass('zoomhover')
-            .addClass('zoomleave')
-    });
-
-    $('.intermidiateimg').hover(function() 
-    {
-        $(this)
-            .addClass('zoomhover')
-            .removeClass('zoomleave')
-
-    }, function()
-    {
-        $(this)
-            .removeClass('zoomhover')
-            .addClass('zoomleave')
-    });
-
-    $('.advancedimg').hover(function() 
+    $('.programsimg').hover(function() 
     {
         $(this)
             .addClass('zoomhover')
@@ -169,6 +145,7 @@ $(document).ready(function()
     });
 });
 
+/*------SMOOTH TRANSITION FOR THE NAV LINKS------*/
 jQuery.easing.def = "easeInOutCubic";
 
 $(document).ready(function($) 
@@ -180,6 +157,7 @@ $(document).ready(function($)
 	});
 });
 
+/*-----PARALLAX-----*/
 $(document).ready(function()
 {
 	$(window).bind('scroll',function(e)

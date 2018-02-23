@@ -555,6 +555,12 @@ aside.background
 .icon 
 {
     display: none;
+    font-size: 20px;
+}
+
+.image
+{
+    color: #e6cd45;
 }
 
 header
@@ -631,7 +637,7 @@ nav li
 nav a
 {
   color: #d4d4d4;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Kavivanar', cursive;
   font-weight: 100;
   text-decoration: none;
   text-transform: uppercase;
