@@ -503,7 +503,7 @@ aside.background
     top: 0;
     height: 80%;
     width: 100%;
-    background:url(Images/home_page_background.jpg) no-repeat top center;
+    background:url(Images/home_page_background.jpg) center no-repeat fixed;
     background-size: cover;
     filter: grayscale(30%);
 }
@@ -959,6 +959,13 @@ div.tutorialsdiv
     background: #000000a1;
     overflow: hidden;
 }/* ie needs position:relative here*/
+
+.tutorialsdiv li::after, .tutorialsdiv ul::after, div.tutorialsdiv::after
+{
+    content: "";
+    display: block;
+    clear: both;
+}
 
 
 img.tutorialsimg

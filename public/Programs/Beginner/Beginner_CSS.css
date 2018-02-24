@@ -1,6 +1,7 @@
 body::-webkit-scrollbar-track
 {
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
 	border-radius: 10px;
 	background-color: #212121;
 }
@@ -14,7 +15,8 @@ body::-webkit-scrollbar
 body::-webkit-scrollbar-thumb
 {
 	border-radius: 10px;
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    box-shadow: inset 0 0 6px rgba(0,0,0,.3);
 	background-color: #a39546;
 }
 
@@ -275,7 +277,7 @@ aside.background
     top: 0;
     height:80%;
     width: 100%;
-    background:url(../../Home%20Page/Images/beginner.jpg) no-repeat top center;
+    background:url(../../Home%20Page/Images/beginner.jpg)  center no-repeat fixed;
     background-size: cover;
     background-color: #212121;
 }
@@ -328,6 +330,11 @@ aside.background
 .icon 
 {
     display: none;
+}
+
+.image
+{
+    color: #e6cd45;
 }
 
 header
@@ -403,7 +410,7 @@ nav li
 nav a
 {
   color: #d4d4d4;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Kavivanar', cursive;
   font-weight: 100;
   text-decoration: none;
   text-transform: uppercase;
@@ -433,9 +440,9 @@ section
 {
     position: relative;
     height: 100px;
-    border: 1px solid #e6cd45;
+    border-top: 1px solid #e6cd45;
     border-bottom: 1px solid rgba(230, 205, 69, .4);
-    background: #212121;
+    background: url(../Images/beginner_background.png);
     z-index: 5;
 }
 
@@ -496,11 +503,10 @@ div.aboutdiv
 {   
     position: relative;
     text-align: center;
-    padding: 70px 0;
     border: 1px solid #e6cd45;
     border-top: 1px solid rgba(230, 205, 69, .4);
     border-bottom: 0;
-    background-color: #212121;
+    background: url(../Images/beginner_content_background.png);
     z-index: 10;
 }
 
@@ -509,7 +515,14 @@ p.aboutp
     text-align: left;
     color: #d4d4d4;
     font-family: Ripped;
+    margin: 0;
     font-size: 20px;
+}
+
+.firstli
+{
+    margin: 0 20px;
+    padding-top: 70px; 
 }
 
 .aboutdiv ul
@@ -529,17 +542,22 @@ p.aboutp
 {
     position: relative;
     float: left;
-    height: 170px;
-    width: 270px;
-    margin: 0 60px;
     text-overflow: ellipsis;
     overflow: hidden;
 }/* ie needs position:relative here*/
+
+.aboutdiv li::after
+{
+    content: "";
+    display: block;
+    clear: both;
+}
 
 .abouth2
 {
     position: relative;
     text-shadow: 3px 3px 4px #e6ce458a;
+    margin: 6px 0 10px 0;
     left: -20px;
     bottom: 10px;
     color: #d4d4d4;
@@ -549,18 +567,18 @@ p.aboutp
 img.aboutimg
 {
     display: block;
-    height: 200px;
-    width: 300px;
-    padding: 0;
-    margin-bottom: 10px;  
+    padding: 0; 
 }
 img.aboutimg2
 {
     display: block;
-    height: 200px;
-    width: 300px;
     padding: 0;
     margin: 0;  
+}
+
+.aboutimgli
+{
+    margin: 60px;
 }
 
 @media (max-width: 1433px)
@@ -570,7 +588,24 @@ img.aboutimg2
         display: inline;
         margin: 0;
     }
+    
 }
+@media (min-width: 1433px)
+{
+    img.aboutimg
+    {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 600px)
+{
+    .abouth2
+    {
+        left: 0;
+    }
+}
+
 
 p.goldline
 {
@@ -588,11 +623,10 @@ div.whydiv
 {   
     position: relative;
     text-align: center;
-    padding: 70px 0;
     border: 1px solid #e6cd45;
     border-top: 0;
     border-bottom: 1px solid rgba(230, 205, 69, .4);
-    background-color: #212121;
+    background: url(../Images/beginner_content_background.png);
     z-index: 10;
 }
 
@@ -601,6 +635,7 @@ p.whyp
     text-align: left;
     color: #d4d4d4;
     font-family: Ripped;
+    margin: 0;
     font-size: 20px;
 }
 
@@ -621,18 +656,28 @@ p.whyp
 {
     position: relative;
     float: left;
-    height: 170px;
-    width: 270px;
-    margin: 0 60px;
     text-overflow: ellipsis;
     overflow: hidden;
 }/* ie needs position:relative here*/
+
+.whydiv ul li::after
+{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.lastli
+{
+    padding: 70px 0 70px 0;
+    margin: 0 20px;
+}
 
 .whyh2
 {
     position: relative;
     text-shadow: 3px 3px 4px #e6ce458a;
-    left: -20px;
+    margin-top: 6px;
     bottom: 10px;
     color: #d4d4d4;
     font-family: Ripped;
@@ -641,10 +686,14 @@ p.whyp
 img.whyimg
 {
     display: block;
-    height: 250px;
-    width: 400px;
     padding: 0;
     margin: 0;  
+}
+
+.whyimgli
+{
+    padding: 122px 0 100px 0;
+    margin: 0 60px;
 }
 
 a.whya
@@ -662,23 +711,6 @@ a.whya:hover
     color: #e6cd45;
 }
 
-@media (max-width: 650px)
-{
-    img.whyimg
-    {
-        height: 200px;
-        width: 300px;
-    }
-}
-
-@media (max-width: 1900px)
-{
-    img.whyimg
-    {
-        height: 230px;
-        width: 350px;
-    }
-}
 
 div.quotedowdiv
 {
@@ -764,7 +796,7 @@ a.quotedowp
 .footer-distributed
 {
     position: relative;
-	background: #212121;
+	background: url(../Images/footer_background.png);
 	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
     box-sizing: border-box;
     border-top: 1px solid rgba(230, 205, 69, .4);

@@ -4,7 +4,7 @@ $(document).ready(function()
     /*------VARIABLES-----*/
     var $body_width = $('body').width();
     var $header_width = $('header').width();
-    var $tutorials_ul_li =  $('.tutorialsdiv ul li');
+    var $tutorials_ul_li =  $('.tutorialsdiv ul li .overlay');
 
     /*------FOR MOBILE PHONES------*/
     if($body_width < 600)
@@ -22,7 +22,7 @@ $(document).ready(function()
 
     if($body_width < 800)
     {
-        $($tutorials_ul_li,'.overlay').css({'height': '35%'});
+        $($tutorials_ul_li).css({'height': '35%'});
 
         $('.transformationsdiv ul li .overlay2').css({'bottom': '0', 'height': '100%'});
 
@@ -82,9 +82,10 @@ $(document).ready(function()
     });
 });
 
+/*-----ANIMATIONS-----*/
 $(window).scroll(() => {
 
-    if($(this).scrollTop() > 400 && $('body').width() > 800)
+    if($(this).scrollTop() > 400 && $body_width > 800)
     {
         $('.programsul li:nth-child(1)').addClass('rotateInDownLeft').removeClass('opacity');
 
@@ -93,7 +94,7 @@ $(window).scroll(() => {
         $('.programsul li:nth-child(3)').addClass('rotateInDownRight').removeClass('opacity');
     }
 
-    if($(this).scrollTop() > 1000 && $('body').width() > 800)
+    if($(this).scrollTop() > 1000 && $body_width > 800)
     {
         $('.tutorialsp').addClass('fadeInDown').removeClass('opacity');
 
@@ -104,7 +105,7 @@ $(window).scroll(() => {
         $('.tutorialsul li:nth-child(3)').addClass('fadeInRight').removeClass('opacity');
     }
 
-    if($(this).scrollTop() > 1500 && $('body').width() > 800)
+    if($(this).scrollTop() > 1500 && $body_width > 800)
     {
         $('.transformationsp').addClass('fadeInDown').removeClass('opacity');
 
