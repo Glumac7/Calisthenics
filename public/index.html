@@ -2,51 +2,30 @@
     <head>
         <title>Welcome Athlete!</title>
         <link rel="shortcut icon" type="image/x-icon" href="Home Page/Images/favicon.ico" />
-        <link rel="stylesheet" type="text/css" href="Home Page/Home_Page_CSS.css?v=1.21">
+        <link rel="stylesheet" type="text/css" href="Home Page/Home_Page_CSS.css?v=1.27">
         <link rel="stylesheet" href="on-server/css/fontawesome-all.css">
         <link href="https://fonts.googleapis.com/css?family=Kavivanar" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="Home Page/Home_Page_JSCRIPT.js?v=1.21"></script>
+        <script src="Home Page/Home_Page_JSCRIPT.js?v=1.27"></script>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
     </head>
     <body>
-        <div style="background: url('Home Page/Images/dark_brick.png'); border-bottom: 2px solid #212121">
-            <header class="fixed">
-                <div class="container" id="c">
-
-                    <a href="index.html">
-                        <img class="logo" src="Home Page/Images/Logo1.png"></img>
-                    </a>
-
-                    <p class="logo1">NULL-GYM!</p>
-
-                    <nav>
-                        <ul>
-                            <li><a href="#programsdiv2" class="scroll">Programs</a></li>
-                            <span class="straight">|</span>
-
-                            <li><a href="#tutorialsdiv2" class="scroll">Tutorials</a></li>
-                            <span class="straight">|</span>
-
-                            <li><a href="#transformationsdiv2" class="scroll">Transformations</a></li>
-                            <span class="straight">|</span>
-
-                            <li><a href="#" class="scroll">QnA</a></li>
-                            <span class="straight">|</span>
-
-                            <li><a href="#" class="scroll">FAQ</a></li>
-                            <span class="straight">|</span>
-
-                            <li><a href="../Log In/Log_In_HTML.html" class="scroll">log in</a></li>
-
-                            <li><a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a></li>
-                        </ul>
-                    </nav>
-
-                </div>
-            </header>
-        </div>
+        <header>
+            <div class="wrapper">
+                <a href="index.html" style="width: 208px;"><h1 class="logo"></h1></a>
+                <nav>
+                    <div id="burger-nav"></div>
+                    <ul>
+                        <li><a href="#programsdiv2" class="current scroll">Programs</a></li>
+                        <li><a href="#tutorialsdiv2" class="scroll">Tutorials</a></li>
+                        <li><a href="#transformationsdiv2" class="scroll">Transformations</a></li>
+                        <li><a href="" class="scroll">FAQ</a></li>
+                        <li><a href="../Log In/Log_In_HTML.html" class="scroll">Log In</a></li>
+                    </ul>
+                 </nav>
+            </div>
+        </header>
 
         <script>
 
@@ -70,7 +49,7 @@
         <aside class="background parallax2"></aside>
 
         <section>
-
+        
             <div id="programsdiv2">
 
                 <h1 class="programsh1">PROGRAMS</h1>
@@ -133,6 +112,7 @@
 
             </div>
 
+            
             <div id="tutorialsdiv2">
 
                 <h1 class="tutorialsh1">TUTORIALS</h1>
@@ -175,6 +155,7 @@
 
             </div>
 
+            
             <div id="transformationsdiv2">
 
                 <h1 class="transformationsh1">TRANSFORMATIONS</h1>

@@ -77,7 +77,7 @@ $(document).ready(function()
         {
             $($why_li_img)
                 .width($body_width - 122)
-                .height($lastli / 1.4);
+                .height('140');
         }
         else
         {
@@ -96,10 +96,10 @@ $(document).ready(function()
 
         $($about_li_img)
             .width($body_width - 122)
-            .height($lastli / 1.4);
+            .height('140');
         $($about_li_img2)
             .width($body_width - 122)
-            .height($lastli / 1.4);
+            .height('140');
 
     }
     else

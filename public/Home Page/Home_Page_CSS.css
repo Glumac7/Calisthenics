@@ -493,7 +493,6 @@ body
     background-color: #212121;
     overflow-x: hidden;
     overflow-y: scroll;
-    
 	font-weight: 400;
 }
 
@@ -508,146 +507,195 @@ aside.background
     filter: grayscale(30%);
 }
 
-.container
+wrapper
 {
-	width: 80%;
-	margin: 0 auto;
-}
-
-@media screen and (max-width: 1300px) 
-{
-  .container ul li:not(:last-child) {display: none;}
-  .container ul span{display: none;}
-  
-  .container a.icon 
-  {
-    float: right;
-    display: block;
-  }
-  .footer-distributed .footer-right .footer-company-about span
-  {
-      position: relative;
-      left: 0;
-      right: 0;
-  }
-}
-
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 1300px) 
-{
-  .container.responsive {position: relative;}
-
-  .container.responsive a.icon 
-  {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-
-  .container.responsive ul li, span 
-  {
-    float: none;
-    display: block;
-  }
-}
-
-/* Hide the link that should open and close the topnav on small screens */
-.icon 
-{
-    display: none;
-    font-size: 20px;
-}
-
-.image
-{
-    color: #e6cd45;
+    width: 96%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2%;
 }
 
 header
 {
-
-    background: -webkit-linear-gradient(rgba(214, 31, 31, 0), #000000);
-    background: -moz-linear-gradient(bottom, rgba(33, 33, 33, 0), #000000);
-    background: -ms-linear-gradient(bottom, rgba(33, 33, 33, 0), #000000);
-    background: -o-linear-gradient(bottom, rgba(33, 33, 33, 0), #000000);
-    background: linear-gradient(to top, rgba(33, 33, 33, 0), #000000);
+    background: #212121;
+    padding: 20px 0;
 }
 
-.fixed
+header h1
 {
-    position: -webkit-fixed;
-    position: -moz-fixed;
-    position: -ms-fixed;
-    position: -o-fixed;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 10;
+    margin: 0;
+    margin-left: 30px;
+    text-indent: -10000px;
+    text-align: center;
+    background: url(Images/Screenshot_1.png) no-repeat;
+    height: 40px;
+    width: 208px;
+    float: left;
 }
-
-header::after
+header h1::after
 {
-    content: '';
-    display: table;
+    content: "";
+    display: block;
     clear: both;
 }
 
-.logo
+header h2
 {
-  float: left;
-  height: 90px;
-  width: 90px;
+    float: left;
+    margin: 0;
+    padding: 5px 10px 5px;
+    font-family: Tagline;
+    font-size: 28px;
+    color: #d4d4d4;
 }
 
-.logo1
+header nav
 {
-  float: left;
-  margin-top: 26px;
-  font-family: Tagline;
-  font-size: 30px;
-  color: #d4d4d4;
+    float: right;
+    margin-right: 30px;
 }
 
-.straight
+header nav h2
 {
-  padding-left: 35px;
-  color: #e6cd45;
+    line-height: 0;
+    margin: 0;
+    text-indent: -10000px;
 }
 
-nav
+header nav ul
 {
-  float: right;
+    margin: 0;
+    padding: 0;
 }
 
-nav ul
+header nav li
 {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+    list-style-type: none;
+    float: left;
+    margin-left: 20px;
+    margin-top: 10px;
 }
 
-nav li
+header nav a
 {
-  display: inline-block;
-  margin-left: 30px;
-  padding-top: 36px;
-  position: relative;
+    text-decoration: none;
+    color: #eee;
+    font-family: 'Kavivanar', cursive;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
-nav a
+header nav a:hover
 {
-  color: #d4d4d4;
-  font-family: 'Kavivanar', cursive;
-  font-weight: 100;
-  text-decoration: none;
-  text-transform: uppercase;
-  transition: .5s;
-  font-size: 16px;
+    color: #e6cd45;
+    transition: all ease .3s;
 }
 
-nav a:hover
+header:after
 {
-  color: #e6cd45;
+    display: block;
+    content: "";
+    clear: both;
+}
+
+@media screen and (max-width: 780px)
+{
+    
+    header nav
+    {
+        float: none;
+        margin: 0;
+    }
+    
+    header nav li
+    {
+        margin-left: 0;
+        width: 20%;
+        text-align: center;
+        font-size: 14px;
+    }
+    
+    header h1.logo
+    {
+        float: none;
+        margin: 0 auto 15px;
+    }
+        
+    #latest-work li
+    {
+        width: 60%;
+         margin: 30px 20% !important;
+        float: none;
+    }
+        
+    #latest-work h2
+    {
+        text-align: center;
+    }
+    
+}
+    
+    
+@media screen and (max-width: 640px)
+{  
+    header nav li
+    {
+        float: none;
+        width: 100%;
+        margin: 0;
+    }
+        
+    header nav
+    {
+        background: #555;
+    }
+        
+    header .wrapper
+    {
+        padding: 0;
+        width: 100%;
+        
+    }
+        
+    header
+    {
+        padding-bottom: 0;
+    }
+        
+    header nav li a
+    {
+        display: block;
+        text-align: center;
+        padding: 10px;
+        color: #999;
+        border-top: 1px solid #4f4f4f
+    }
+
+    header nav li a:hover
+    {
+        color: #e6cd45;
+        background-color: #212121;
+    }
+        
+    #burger-nav
+    {
+        width: 100%;
+        height: 40px;
+        background: url(Images/burger.png) no-repeat 98% center;
+        cursor: pointer;
+    }
+        
+    header nav ul
+    {
+        height: 0;
+        overflow: hidden;
+     }
+        
+    header nav ul.open
+    {
+        height: auto;
+    }
+        
 }
 
 /*--------------------------------*/
@@ -1465,7 +1513,7 @@ p.transformationsp
     .footer-distributed .footer-company-about span
     {
         position: relative;
-        left: 45%;
+        text-align: center;
     }
 
     .footer-distributed

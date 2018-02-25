@@ -14,11 +14,17 @@ $(document).ready(function()
 		$('.footer-mail').attr("href", "mailto:necaglumicic@gmail.com");
     }
     
-    if($header_width < 900)
-        $('header').removeClass();
+    if($body_width >= 640)
+    {
+        $('header').css({"position": "fixed", "width": "100%", "z-index": "5"})
+    }
+
+    $("#burger-nav").on("click", function()
+    {
         
-    else
-        $('header').addClass('fixed');
+        $("header nav ul").toggleClass("open");
+                
+    });
 
     if($body_width < 800)
     {
@@ -107,7 +113,7 @@ $(window).scroll(() => {
         $('.tutorialsul li:nth-child(3)').addClass('fadeInRight').removeClass('opacity');
     }
 
-    if($(this).scrollTop() > 1500 && $body_width > 800)
+    if($(this).scrollTop() > 1600 && $body_width > 800)
     {
         $('.transformationsp').addClass('fadeInDown').removeClass('opacity');
 
