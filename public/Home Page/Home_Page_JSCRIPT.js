@@ -12,8 +12,8 @@ $(document).ready(function()
 		$('.footer-icons a:nth-child(1)').attr("href", "fb://facewebmodal/f?href=https://www.facebook.com/nemanja.glumicic");
 		$('.footer-icons a:nth-child(3)').attr("href", "instagram://user?username=nemanjaglumicic");
 		$('.footer-mail').attr("href", "mailto:necaglumicic@gmail.com");
-	}
-
+    }
+    
     if($header_width < 900)
         $('header').removeClass();
         
@@ -84,6 +84,8 @@ $(document).ready(function()
 
 /*-----ANIMATIONS-----*/
 $(window).scroll(() => {
+
+    $body_width = $('body').width();
 
     if($(this).scrollTop() > 400 && $body_width > 800)
     {

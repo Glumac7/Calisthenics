@@ -25,6 +25,20 @@ $(document).ready(function()
         $('.quotedowdiv').removeClass('parallax2');
     }
 
+    /*------QUOTE SIZE------*/
+    if($body_width < 500)
+        $('p.quotep').css({"font-size": "32px"});
+
+    /*------BURGER ICON FOR MOBILE PHONES------*/
+    $('.icon').on('click', function()
+    {
+        $(this).toggleClass('image');
+        if(!$(this).is('.image'))
+            $(this).html("&#9776");
+        else
+            $(this).html("&#10060");
+    });
+
     /*------DOWNLOAD BUTTOM ANIMATIONS-----*/
     $('.quotedowp').hover(function() 
     {
@@ -35,14 +49,13 @@ $(document).ready(function()
     });
 
     /*-----ANIMATION REMOVAL-----*/
-    $($body_width < 800)
+    if($body_width < 800)
     {
         $('.opacity').removeClass('opacity');
         $('.opacity2').removeClass('opacity2');
     }
     
     /*-----WHY, ABOUT IMG FOR MOBILE PHONES------*/
-
     var $why_img  = $('.whydiv ul li:nth-child(1)');
     var $why_li_img = $('.whyimg, .whyimgli');
     var $lastli_width = $('.lastli').width();
@@ -53,23 +66,22 @@ $(document).ready(function()
     var $firstli_width = $('.firstli').width();
     var $firstli = $('.firstli').height();
 
-    if($body_width < 1561)
+    if($body_width < 1475)
     {
         $($why_img).css({"margin-top": "72px", "padding": "0"});
         $($('.lastli')).css({"padding-bottom": "70px"});
 
+        $($why_li_img).width()
+
         if($body_width < 800)
         {
-            if($body_width < 450)
-            {
-                $($why_li_img)
-                    .width($body_width - 122)
-                    .height($lastli / 2);
-            } 
+            $($why_li_img)
+                .width($body_width - 122)
+                .height($lastli / 1.4);
         }
         else
         {
-            $($why_li_img).outerWidth($lastli_width).height($lastli_width / 2 );
+            $($why_li_img).width($lastli_width - 122).height($lastli_width / 2 );
         }
     }
     else
@@ -82,20 +94,19 @@ $(document).ready(function()
         $($about_img).css({"margin": "0 0 70px 0"});
         $('.firstli').css({"padding-bottom": "70px"});
 
-        if($body_width < 450)
-        {
-            $($about_li_img)
-                .width($body_width - 122)
-                .height($lastli / 2);
-            $($about_li_img2)
-                .width($body_width - 122)
-                .height($lastli / 2);
-        }
+        $($about_li_img)
+            .width($body_width - 122)
+            .height($lastli / 1.4);
+        $($about_li_img2)
+            .width($body_width - 122)
+            .height($lastli / 1.4);
+
     }
     else
     {
         $($about_li_img).width('300').height('200');
         $($about_li_img2).width('300').height('200');
+        $($about_img).css({"margin": "70px 60px"});
     }
 
     /*------LINKS FOR MOBILE PHONES------*/
@@ -119,8 +130,10 @@ function parallaxScroll()
 	$('.parallax2').css('background-position','center -'+((scrolledY*.2))+'px');
 }
 
+/*------ANIMATIONS------*/
 $(window).scroll(function()
 {
+    $body_width = $('body').width();
 
     if($(this).scrollTop() > 600 && $body_width > 800)
     {
