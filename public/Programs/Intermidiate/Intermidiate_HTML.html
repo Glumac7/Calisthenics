@@ -4,66 +4,30 @@
         <title>Intermidiate</title>
         <link rel="shortcut icon" type="image/x-icon" href="../../Home%20Page/Images/favicon.ico" />
         <link rel="stylesheet" type="text/css" href="Intermidiate_CSS.css">
+        <link rel="stylesheet" href="../../on-server/css/fontawesome-all.css">
+        <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Kavivanar" rel="stylesheet">
         <script src="jquery-3.2.1.js"></script>
         <script src="Intermidiate_JSCRIPT.js"></script>
         <meta charset="UTF-8"> 
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
     </head>
     <body>
-        <div style="background: url('../Images/header_background.jpeg'); background-repeat: no-repeat; background-size: cover; border-bottom: 2px solid #212121">
-            <header class="fixed">
-                <div class="container" id="c">
-
-                    <a href="../../Home%20Page/Home_Page_HTML.html">
-                        <img class="logo" src="../Images/Logo1.png"></img>
-                    </a>
-
-                    <p class="logo1">NULL-GYM!</p>
-
-                    <nav>
-                        <ul>
-                            <li><a href="../../Home%20Page/Home_Page_HTML.html#programsdiv2">Programs</a></li>
-                            <span class="straight">|</span>
-
-                            <li><a href="../../Home%20Page/Home_Page_HTML.html#tutorialsdiv2">Tutorials</a></li>
-                            <span class="straight">|</span>
-
-                            <li><a href="../../Home%20Page/Home_Page_HTML.html#transformationsdiv2">Transformations</a></li>
-                            <span class="straight">|</span>
-
-                            <li><a href="#">QnA</a></li>
-                            <span class="straight">|</span>
-
-                            <li><a href="#">FAQ</a></li>
-                            <span class="straight">|</span>
-
-                            <li><a href="../../Log%20In/Log_In_HTML.html">log in</a></li>
-
-                            <li><a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a></li>
-                        </ul>
-                    </nav>
-
-                </div>
-            </header>
-        </div>
-        <script>
-
-            function myFunction() 
-            {
-                var x = document.getElementById("c");
-
-                if (x.className === "container") 
-                {
-                    x.className += " responsive";
-                }
-
-                else 
-                {
-                    x.className = "container";
-                }
-            }
-
-        </script>
+        <header>
+            <div class="wrapper">
+                <a href="../../index.html" style="width: 208px;"><h1 class="logo"></h1></a>
+                <nav>
+                    <div id="burger-nav"></div>
+                    <ul>
+                        <li><a href="../../index.html#programsdiv2" class="current scroll">Programs</a></li>
+                        <li><a href="../../index.html#tutorialsdiv2" class="scroll">Tutorials</a></li>
+                        <li><a href="../../index.html#transformationsdiv2" class="scroll">Transformations</a></li>
+                        <li><a href="" class="scroll">FAQ</a></li>
+                        <li><a href="../../Log In/Log_In_HTML.html" class="scroll">Log In</a></li>
+                    </ul>
+                 </nav>
+            </div>
+        </header>
 
         <aside class="background parallax2"></aside>
 
@@ -82,28 +46,27 @@
 
             </div>
 
+            <div id="descdiv2">
 
-            <div class="descdiv">
-                <div class="descdiv2">
-                    <h1 class="desch1">DESCRIPTION</h1>
-                    <p class="descp opacity">
-
-                        <span style="text-transform: uppercase;">Welcome to the <span style="color: #a39546;">INTERMIDIATE</span> page.</span><br/><br/>
-                        Before continuing, please finish the <a class="descbeg" href="../Beginner/Beginner_HTML.html">BEGINNER</a> program.<br/><br/> If you don't have
-                        a good technique and solid strenth,
-                         you can't continue.<br/><br/> Now that you have finished the <span style="color: #a39546;">BEGINNER</span>
-                        program, this is your next step.
-                    </p>
-
-                    <ul class="descul">
-                        <li class="descli"><img class="descimg opacity" src="../../Home%20Page/Images/intermidiate.jpg"/></li>
-                    </ul>
-                </div>
+                <h1 class="desch1">ABOUT</h1>
+        
             </div>
+            <div class="aboutdiv"><div class="grayscale"></div>
+                
+                <ul>
+                    <li class="firstli">
+                        <p class="aboutp">
+                            <span style="text-transform: uppercase;">Welcome to the <span style="color: #a39546;">INTERMIDIATE</span> page.</span><br/><br/>
+                            Before continuing, please finish the <a class="linksa" href="../Beginner/Beginner_HTML.html">BEGINNER</a> program.<br/><br/> If you don't have
+                            a good technique and solid strenth,
+                             you can't continue.<br/><br/> Now that you have finished the <span style="color: #a39546;">BEGINNER</span>
+                            program, this is your next step.<br/><br/><span style="display: inline; color: #a39546">WARNING!:</span> Do NOT attempt any of the exercises in this program without a proper tehnique.<br/><br/> *Check my <a class="linksa" href="../Intermidiate/Intermidiate_HTML.html" >TUTORIALS</a> section for the propper tehnique.
+                        </p>
+                    </li>
+                </ul>
+            </div>            
 
-
-
-            <div class="subprogdiv parallax2"><div class="grayscale"></div>
+            <div class="subprogdiv">
 
                 <p class="subprogtitle">In the <span style="display: inline; color:#e6cd45;">INTEMIDIATE</span> 
                 program you will get 4 sub programs...</p>
@@ -196,29 +159,29 @@
                 </div>
             </div>
 
-            <div class="subprogsdiv">
+            <div id="subdiv2">
 
-                <div class="subprogsdiv2">
-                    
-                    <img class="subprogsimg opacity" src="../Images/subprogs.jpg"/>
-                    <h1 class="subprogsh1">SUB PROGRAMS</h1>
-                    <p class="subprogsp opacity">
-
-                    Each sub program was made for a 
+                <h1 class="subh1">SUB PROGRAMS</h1>
+        
+            </div>
+            <div class="subdiv">
+                
+                <ul>
+                    <li class="firstli">
+                        <p class="subp">
+                            Each sub program was made for a 
                     specific goal or a specific purpose.<br/><br/>
                     My recomendation is that you check every
                     single sub program out so that you can combine them
                     if you want to.<br/><br/> Each sub program 
                     comes with a pdf file in which you will
-                    find the program itself.<br/><br/> If you don't know 
-                    how to do a specific movement, check the <a class="descbeg" href="#">TUTORIALS</a>
-                    section.
-
-                    </p>
-                </div>
+                    find the program itself.
+                        </p>
+                    </li>
+                </ul>
             </div>
 
-            <div class="quotedowdiv parallax2"> <span class="quotedowspan"></span>
+            <div class="quotedowdiv parallax2"> <div class="grayscale"></div>
 
                 <a class="quotedowp" href="">GET IT NOW!</a>
 
@@ -226,28 +189,63 @@
             
             <!--FOOTER-->
             
-        <footer>
-            <ul class="left">
-                <li class="footerleft">
-                    <img class="footerleftimage" src="../Images/Logo2.png"/>
-                    <p class="footerp">
-                        <span class="sapnnull">Null-Gym!</span><br/><br/><br/>
-                    </p>
-                </li>
+            <footer class="footer-distributed">
 
-                <li class="footermiddle">
-                    <span class="footerspan"><q>
-                        Do not pray for an easy life,
-                        pray for the strength to endure a difficult one.</q>
-                    <i>Bruce Lee.</i></span>
-                </li>
-            </ul>
-            
-            <ul class="right">
-                <li class="footerright contact">CONTACT :</li>
-                <li class="footerright2"><img class="rightimage" src="../Images/email.png"/>nullgym@gmail.com</li>
-            </ul>
-        </footer>
+                <div class="footer-left">
+    
+                    <a href="Home_Page_HTML.html"><img src="../Images/Logo2.png" style="width:10%;"/></a>
+    
+                    <p class="footer-links">
+                        <a href="../../index.html#programsdiv2">Programs</a>
+                        ·
+                        <a href="../../index.html#tutorialsdiv2">Tutorials</a>
+                        ·
+                        <a href="../../index.html#transformationsdiv2">Transformations</a>
+                        ·
+                        <a href="#">QNA</a>
+                        ·
+                        <a href="#">FAQ</a>
+                        ·
+                        <a href="../../Log In/Log_In_HTML.html">Log In</a>
+                    </p>
+    
+                    <p class="footer-company-name">NULL GYM &copy; 2018</p>
+                </div>
+    
+                <div class="footer-center">
+    
+                    <div>
+                        <i class="fa fa-map-marker"></i>
+                        <p>Vienna, Austria</p>
+                    </div>
+    
+                    <div>
+                        <i class="fa fa-envelope"></i>
+                        <p><a href="mailto:nullgym@gmail.com">nullgym@gmail.com</a></p>
+                    </div>
+    
+                </div>
+    
+                <div class="footer-right">
+    
+                    <p class="footer-company-about">
+                        <span>About Me</span>
+                        I'm an 18 year old software and web<br/>
+                        developer whose passion is calisthenics!
+                    </p>
+    
+                    <div class="footer-icons">
+    
+                        <a href="https://www.facebook.com/nemanja.glumicic" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://twitter.com/C0NE99" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/nemanjaglumicic/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/Glumac7" target="_blank"><i class="fab fa-github"></i></a>
+    
+                    </div>
+    
+                </div>
+    
+            </footer>
 
         </section>
 

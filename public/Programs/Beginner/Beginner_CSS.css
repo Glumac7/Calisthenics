@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Ropa+Sans);
+
 body::-webkit-scrollbar-track
 {
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
@@ -282,145 +284,195 @@ aside.background
     background-color: #212121;
 }
 
-.container
+wrapper
 {
-	width: 80%;
-	margin: 0 auto;
-}
-
-@media screen and (max-width: 1300px) 
-{
-  .container ul li:not(:last-child) {display: none;}
-  .container ul span{display: none;}
-  
-  .container a.icon 
-  {
-    float: right;
-    display: block;
-  }
-  .footer-distributed .footer-right .footer-company-about span
-  {
-      position: relative;
-      left: 0;
-      right: 0;
-  }
-}
-
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 1300px) 
-{
-  .container.responsive {position: relative;}
-
-  .container.responsive a.icon 
-  {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-
-  .container.responsive ul li, span 
-  {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-}
-
-/* Hide the link that should open and close the topnav on small screens */
-.icon 
-{
-    display: none;
-}
-
-.image
-{
-    color: #e6cd45;
+    width: 96%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2%;
 }
 
 header
 {
-    background: -webkit-linear-gradient(rgba(33, 33, 33, 0), #000000);
-    background: -moz-linear-gradient(bottom, rgba(33, 33, 33, 0), #000000);
-    background: -ms-linear-gradient(bottom, rgba(33, 33, 33, 0), #000000);
-    background: -o-linear-gradient(bottom, rgba(33, 33, 33, 0), #000000);
-    background: linear-gradient(to top, rgba(33, 33, 33, 0), #000000);
+    background: #212121;
+    padding: 20px 0;
 }
 
-.fixed
+header h1
 {
-    position: -webkit-fixed;
-    position: -moz-fixed;
-    position: -ms-fixed;
-    position: -o-fixed;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 10;
+    margin: 0;
+    margin-left: 50px;
+    text-indent: -10000px;
+    text-align: center;
+    background: url(../../Home%20Page/Images/Screenshot_1.png) no-repeat;
+    height: 40px;
+    width: 208px;
+    float: left;
 }
-
-header::after
+header h1::after
 {
-    content: '';
-    display: table;
+    content: "";
+    display: block;
     clear: both;
 }
 
-.logo
+header h2
 {
-  float: left;
-  height: 90px;
-  width: 90px;
+    float: left;
+    margin: 0;
+    padding: 5px 10px 5px;
+    font-family: Tagline;
+    font-size: 28px;
+    color: #d4d4d4;
 }
 
-.logo1
+header nav
 {
-  float: left;
-  margin-top: 26px;
-  font-family: Tagline;
-  font-size: 30px;
-  color: #d4d4d4;
+    float: right;
+    margin-right: 50px;
 }
 
-.straight
+header nav h2
 {
-  padding-left: 35px;
-  color: #e6cd45;
+    line-height: 0;
+    margin: 0;
+    text-indent: -10000px;
 }
 
-nav
+header nav ul
 {
-  float: right;
+    margin: 0;
+    padding: 0;
 }
 
-nav ul
+header nav li
 {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+    list-style-type: none;
+    float: left;
+    margin-left: 50px;
+    margin-top: 10px;
 }
 
-nav li
+header nav a
 {
-  display: inline-block;
-  margin-left: 30px;
-  padding-top: 36px;
-  position: relative;
+    text-decoration: none;
+    color: #eee;
+    font-family: 'Kavivanar', cursive;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
-nav a
+header nav a:hover
 {
-  color: #d4d4d4;
-  font-family: 'Kavivanar', cursive;
-  font-weight: 100;
-  text-decoration: none;
-  text-transform: uppercase;
-  transition: .5s;
-  font-size: 16px;
+    color: #e6cd45;
+    transition: all ease .3s;
 }
 
-nav a:hover
+header:after
 {
-  color: #e6cd45;
+    display: block;
+    content: "";
+    clear: both;
+}
+
+@media screen and (max-width: 780px)
+{
+    
+    header nav
+    {
+        float: none;
+        margin: 0;
+    }
+    
+    header nav li
+    {
+        margin-left: 0;
+        width: 20%;
+        text-align: center;
+        font-size: 14px;
+    }
+    
+    header h1.logo
+    {
+        float: none;
+        margin: 0 auto 15px;
+    }
+        
+    #latest-work li
+    {
+        width: 60%;
+         margin: 30px 20% !important;
+        float: none;
+    }
+        
+    #latest-work h2
+    {
+        text-align: center;
+    }
+    
+}
+    
+    
+@media screen and (max-width: 640px)
+{  
+    header nav li
+    {
+        float: none;
+        width: 100%;
+        margin: 0;
+    }
+        
+    header nav
+    {
+        background: #555;
+    }
+        
+    header .wrapper
+    {
+        padding: 0;
+        width: 100%;
+        
+    }
+        
+    header
+    {
+        padding-bottom: 0;
+    }
+        
+    header nav li a
+    {
+        display: block;
+        text-align: center;
+        padding: 10px;
+        color: #999;
+        border-top: 1px solid #4f4f4f
+    }
+
+    header nav li a:hover
+    {
+        color: #e6cd45;
+        background-color: #212121;
+    }
+        
+    #burger-nav
+    {
+        width: 100%;
+        height: 40px;
+        background: url(../../Home%20Page/Images/burger.png) no-repeat 98% center;
+        cursor: pointer;
+    }
+        
+    header nav ul
+    {
+        height: 0;
+        overflow: hidden;
+     }
+        
+    header nav ul.open
+    {
+        height: auto;
+    }
+        
 }
 
 /*---------------------------------*/
@@ -499,30 +551,87 @@ p.quotep
 }
 
 
+@media screen and (max-width: 470px)
+{
+    p.quotep
+    {
+        top: 100px;
+    }
+}
+
+@media screen and (max-width: 337px)
+{
+    p.quotep
+    {
+        top: 70px;
+    }
+}
+
 div.aboutdiv
 {   
     position: relative;
     text-align: center;
-    border: 1px solid #e6cd45;
-    border-top: 1px solid rgba(230, 205, 69, .4);
-    border-bottom: 0;
-    background: url(../Images/beginner_content_background.png);
+    background: url(../../Home%20Page/Images/photo.jpg) no-repeat center;
+    background-size: cover;
     z-index: 10;
+}
+
+div.grayscale
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 100%;
+    background-color: #000000cb;
+    border-bottom: 1px solid rgba(230, 205, 69, .4);
+    height: auto;
 }
 
 p.aboutp
 {
-    text-align: left;
+    text-align: justify;
     color: #d4d4d4;
-    font-family: Ripped;
+    font-family: 'Ropa Sans', sans-serif;
+    line-height: 1.21em;
     margin: 0;
-    font-size: 20px;
+    width: 600px;
+    font-size: 25px;
 }
 
 .firstli
 {
     margin: 0 20px;
-    padding-top: 70px; 
+    padding: 70px 0; 
+}
+
+#aboutdiv2
+{
+    position: relative;
+    height: 100px;
+    border-top: 1px solid rgba(230, 205, 69, .4);
+    border-bottom: 1px solid rgba(230, 205, 69, .4);
+    background-image: url(../../Home%20Page/Images/black_linen_v2.png);background-position: initial initial; background-repeat: initial initial; 
+    background-color: #212121;
+    z-index: 5;
+}
+
+.abouth1
+{
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    width: auto;
+    margin: 0 auto;
+    font-family: 'Kaushan Script', cursive;
+    text-shadow: 3px 3px 1px #e6ce456b;
+    font-size: 40px;
+    color: #d4d4d4;
+    text-align: center;
+    z-index: 6;
 }
 
 .aboutdiv ul
@@ -551,17 +660,6 @@ p.aboutp
     content: "";
     display: block;
     clear: both;
-}
-
-.abouth2
-{
-    position: relative;
-    text-shadow: 3px 3px 4px #e6ce458a;
-    margin: 6px 0 10px 0;
-    left: -20px;
-    bottom: 10px;
-    color: #d4d4d4;
-    font-family: Ripped;
 }
 
 img.aboutimg
@@ -598,105 +696,21 @@ img.aboutimg2
     }
 }
 
-@media (max-width: 600px)
+@media screen and (max-width: 630px)
 {
-    .abouth2
+    p.aboutp
     {
-        left: 0;
+        width: auto;
+        font-size: 21px;
+    }
+
+    div.grayscale
+    {
+        background-color: #000000a9
     }
 }
 
-
-p.goldline
-{
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 80%;
-    margin: 0 auto;
-    border: 1px dotted #e6cd45;
-    z-index: 6;
-}
-
-div.whydiv
-{   
-    position: relative;
-    text-align: center;
-    border: 1px solid #e6cd45;
-    border-top: 0;
-    border-bottom: 1px solid rgba(230, 205, 69, .4);
-    background: url(../Images/beginner_content_background.png);
-    z-index: 10;
-}
-
-p.whyp
-{
-    text-align: left;
-    color: #d4d4d4;
-    font-family: Ripped;
-    margin: 0;
-    font-size: 20px;
-}
-
-.whyul
-{
-    position: relative;
-    display: inline-block;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    /* For IE, the outcast */
-    zoom: 1;
-    *display: inline;
-    z-index: 9;
-}
-
-.whydiv ul li
-{
-    position: relative;
-    float: left;
-    text-overflow: ellipsis;
-    overflow: hidden;
-}/* ie needs position:relative here*/
-
-.whydiv ul li::after
-{
-    content: "";
-    display: block;
-    clear: both;
-}
-
-.lastli
-{
-    padding: 70px 0 70px 0;
-    margin: 0 20px;
-}
-
-.whyh2
-{
-    position: relative;
-    text-shadow: 3px 3px 4px #e6ce458a;
-    margin-top: 6px;
-    bottom: 10px;
-    color: #d4d4d4;
-    font-family: Ripped;
-}
-
-img.whyimg
-{
-    display: block;
-    padding: 0;
-    margin: 0;  
-}
-
-.whyimgli
-{
-    padding: 70px 0;
-    margin: 0 60px;
-}
-
-a.whya
+a.linksa
 {
     -webkit-transition: .3s;
     transition: .3s;
@@ -704,7 +718,7 @@ a.whya
     text-transform: uppercase;
 }
 
-a.whya:hover
+a.linksa:hover
 {
     -webkit-transition: .3s;
     transition: .3s;
@@ -980,7 +994,6 @@ a.quotedowp
     {
         position: relative;
         text-align: center;
-        left: 45%;
     }
 
     .footer-distributed

@@ -4,11 +4,28 @@ $(document).ready(function()
     var $body_width = $('body').width();
 
     /*-----HEADER FOR MOBILE PHONES------*/
-    if($header_width < 950)
-        $('header').removeClass();
-        
-    else
-        $('header').addClass('fixed');
+    if($body_width >= 640)
+    {
+        $('header').css({"position": "fixed", "width": "100%", "z-index": "5"})
+    }
+
+    var counter;
+
+    $("#burger-nav").on("click", function()
+    {
+		if(counter === 1)
+		{
+			$("#burger-nav").css({"background": "url(../../Home%20Page/Images/burger.png) no-repeat 98% center"});
+			$("header nav ul").removeClass("open");
+			counter = 0;
+		} 
+		else
+		{
+			$("#burger-nav").css({"background": "url(../../Home%20Page/Images/closed.png) no-repeat 98% center"});
+			$("header nav ul").addClass("open");
+			counter = 1;
+		}
+	});
     
     /*------PARALLAX REMOVAL-----*/
     if($body_width < 950)
@@ -55,7 +72,7 @@ $(document).ready(function()
         $('.opacity2').removeClass('opacity2');
     }
     
-    /*-----WHY, ABOUT IMG FOR MOBILE PHONES------*/
+    /*-----ABOUT IMG FOR MOBILE PHONES------*/
     var $why_img  = $('.whydiv ul li:nth-child(1)');
     var $why_li_img = $('.whyimg, .whyimgli');
     var $lastli_width = $('.lastli').width();
@@ -65,29 +82,6 @@ $(document).ready(function()
     var $about_li_img2 = $('.aboutimg2');
     var $firstli_width = $('.firstli').width();
     var $firstli = $('.firstli').height();
-
-    if($body_width < 1475)
-    {
-        $($why_img).css({"margin-top": "72px", "padding": "0"});
-        $($('.lastli')).css({"padding-bottom": "70px"});
-
-        $($why_li_img).width()
-
-        if($body_width < 800)
-        {
-            $($why_li_img)
-                .width($body_width - 122)
-                .height('140');
-        }
-        else
-        {
-            $($why_li_img).width($lastli_width - 122).height($lastli_width / 2 );
-        }
-    }
-    else
-    {
-        $($why_li_img).width('400');
-    }
 
     if($body_width < 800)
     {
@@ -129,7 +123,6 @@ function parallaxScroll()
    	var scrolledY = $(window).scrollTop();
 	$('.parallax2').css('background-position','center -'+((scrolledY*.2))+'px');
 }
-
 /*------ANIMATIONS------*/
 $(window).scroll(function()
 {

@@ -524,7 +524,7 @@ header
 header h1
 {
     margin: 0;
-    margin-left: 30px;
+    margin-left: 50px;
     text-indent: -10000px;
     text-align: center;
     background: url(Images/Screenshot_1.png) no-repeat;
@@ -552,7 +552,7 @@ header h2
 header nav
 {
     float: right;
-    margin-right: 30px;
+    margin-right: 50px;
 }
 
 header nav h2
@@ -572,7 +572,7 @@ header nav li
 {
     list-style-type: none;
     float: left;
-    margin-left: 20px;
+    margin-left: 50px;
     margin-top: 10px;
 }
 
@@ -951,7 +951,7 @@ p.tutorialsp
 {
     p.tutorialsp
     {
-        text-align: left;
+        text-align: justify;
         font-size: 20px;
     }
 
@@ -962,7 +962,7 @@ p.tutorialsp
 
     p.transformationsp
     {
-        text-align: left;
+        text-align: justify;
         font-size: 20px;
     }
 

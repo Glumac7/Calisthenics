@@ -21,12 +21,35 @@ $(document).ready(function()
     var body_width = $('body').width();
     if(body_width < 950)
     {
-        $('body').find('.parallax2').removeClass('parallax2');
+        $('.parallax2').removeClass('parallax2');
 
-        $('body').find('.parallax').removeClass('parallax');
+        $('.parallax').removeClass('parallax');
     
         $('aside.background').css({'height': '100%'});
     }
+
+    if(body_width >= 640)
+    {
+        $('header').css({"position": "fixed", "width": "100%", "z-index": "5"})
+    }
+
+    var counter;
+
+    $("#burger-nav").on("click", function()
+    {
+		if(counter === 1)
+		{
+			$("#burger-nav").css({"background": "url(../../Home%20Page/Images/burger.png) no-repeat 98% center"});
+			$("header nav ul").removeClass("open");
+			counter = 0;
+		} 
+		else
+		{
+			$("#burger-nav").css({"background": "url(../../Home%20Page/Images/closed.png) no-repeat 98% center"});
+			$("header nav ul").addClass("open");
+			counter = 1;
+		}
+	});
 });
 
 $(window).scroll(function()

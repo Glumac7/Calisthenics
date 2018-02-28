@@ -3,70 +3,31 @@
     <head>
         <title>Beginner</title>
         <link rel="shortcut icon" type="image/x-icon" href="../../Home%20Page/Images/favicon.ico" />
-        <link rel="stylesheet" type="text/css" href="Beginner_CSS.css?v=1.14">
+        <link rel="stylesheet" type="text/css" href="Beginner_CSS.css?v=1.15">
         <link rel="stylesheet" href="../../on-server/css/fontawesome-all.css">
+        <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Kavivanar" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="Beginner_JSCRIPT.js?v=1.14"></script>
+        <script src="Beginner_JSCRIPT.js?v=1.15"></script>
         <meta charset="UTF-8"> 
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
     </head>
     <body>
-        <div style="background: url('../Images/header_background.png'); border-bottom: 2px solid #212121">
-            <header class="fixed">
-                <div class="container" id="c">
-
-                    <a href="../../index.html">
-                        <img class="logo" src="../Images/Logo1.png"></img>
-                    </a>
-
-                    <p class="logo1">NULL-GYM!</p>
-
-                    <nav>
-                        <ul>
-                            <li><a href="../../index.html#programsdiv2">Programs</a></li>
-                            <span class="straight">|</span>
-
-                            <li><a href="../../index.html#tutorialsdiv2">Tutorials</a></li>
-                            <span class="straight">|</span>
-
-                            <li><a href="../../index.html#transformationsdiv2">Transformations</a></li>
-                            <span class="straight">|</span>
-
-                            <li><a href="#">QnA</a></li>
-                            <span class="straight">|</span>
-
-                            <li><a href="#">FAQ</a></li>
-                            <span class="straight">|</span>
-
-                            <li><a href="../../Log%20In/Log_In_HTML.html">log in</a></li>
-
-                            <li><a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a></li>
-                        </ul>
-                    </nav>
-
-                </div>
-            </header>
-        </div>
-
-        <script>
-
-            function myFunction() 
-            {
-                var x = document.getElementById("c");
-
-                if (x.className === "container") 
-                {
-                    x.className += " responsive";
-                }
-
-                else 
-                {
-                    x.className = "container";
-                }
-            }
-
-        </script>
+        <header>
+            <div class="wrapper">
+                <a href="../../index.html" style="width: 208px;"><h1 class="logo"></h1></a>
+                <nav>
+                    <div id="burger-nav"></div>
+                    <ul>
+                        <li><a href="../../index.html#programsdiv2" class="current scroll">Programs</a></li>
+                        <li><a href="../../index.html#tutorialsdiv2" class="scroll">Tutorials</a></li>
+                        <li><a href="../../index.html#transformationsdiv2" class="scroll">Transformations</a></li>
+                        <li><a href="" class="scroll">FAQ</a></li>
+                        <li><a href="../../Log In/Log_In_HTML.html" class="scroll">Log In</a></li>
+                    </ul>
+                 </nav>
+            </div>
+        </header>
 
         <aside class="background parallax2"></aside>
 
@@ -85,46 +46,20 @@
 
             </div>
 
-            <div class="aboutdiv">
+            <div id="aboutdiv2">
+
+                <h1 class="abouth1">ABOUT</h1>
+        
+            </div>
+            <div class="aboutdiv"><div class="grayscale"></div>
+                
                 <ul>
                     <li class="firstli">
-                        <h2 class="abouth2">ABOUT</h2>
                         <p class="opacity aboutp">
-                            Let me first introduce myself. I'm an 18 year old software and web devolper<br/>
-                            whose passion is calisthenics.<br/><br/> I first got into calisthenics when i   was 17. Before calisthenics my passion was basketball,<br/><br/>
-                            i still love it though, but, <span style="display: inline; color: #a39546">calisthenics</span> is a part of my life that i don't
-                            want to get rid of.<br/><br/> I have spent countles hours on the web <span style="display: inline; color: #a39546">searching</span>, 
-                            <span style="display: inline; color: #a39546">learning</span> and <span style="display: inline; color: #a39546">trying</span> everything that i could.
-                            <br/><br/> Because of that, i have a lot of <span style="display: inline; color: #a39546">expiriance</span> and <span style="display: inline; color: #a39546">knowladge          
-                            </span> about it.<br/><br/> My goals are strength and explosivnes.
-                        </p>
-                    </li>
-    
-                    <li class=".aboutimgli">
-                        <img class="opacity aboutimg" src="../Images/a.jpeg"/>
-                        <img class="opacity2 aboutimg2" src="../Images/advanced_subprograms.jpg"/>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="whydiv">
-
-                <p class="goldline"></p>
-                <ul class="whyul">
-                    <li class="whyimgli">
-                        <img class="opacity whyimg" src="../Images/a.jpeg"/>
-                    </li>
-    
-                    <li class="lastli">
-                        
-                        <h2 class="whyh2">WHY</h2>
-                        <p class="opacity whyp">
-                            Why this program? What's so special about it? Well, it's <span style="display: inline; color: #a39546">FREE</span> and it has been
-                            used by yours truly.<br/><br/>
-                            Those facts allone should be enough to convince you to get it, but, if
-                            you still have doughts,<br/> maybe this will change your minde.<br/><br/> Every single
-                            exercise that's in it has been used by me until i got to the <a class="whya" href="../Intermidiate/Intermidiate_HTML.html" >intermidiate</a>
-                            level,<br/><br/> so, that meens that they work, without a dought. Just follow the steps and you'll be <span style="display: inline; color: #a39546">GOLDEN!</span>
+                            In this program you will get every single exercise that i did as a beginner.<br/><br/>
+                            This programs is <span style="display: inline; color: #a39546">FREE</span> and it has 4 training styles in combination<span style="display: inline; color: #a39546"><br/><br/>(EXPLOSIVNES, STRENGTH, MUSCLE BUILDING, ENDURANCE)</span> so you can chose later on in the <a class="linksa" href="../Intermidiate/Intermidiate_HTML.html" >INTERMIDIATE</a> section which one you perfer.<br/><br/>
+                            After finishing this program you will have a solid base to grow your chosen training style on.<br/><br/>
+                            <span style="display: inline; color: #a39546">WARNING!:</span> Do NOT attempt any of the exercises in this program without a proper tehnique.<br/><br/> *Check my <a class="linksa" href="../Intermidiate/Intermidiate_HTML.html" >TUTORIALS</a> section for the propper tehnique.
                         </p>
                     </li>
                 </ul>
