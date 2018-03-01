@@ -279,7 +279,7 @@ aside.background
     top: 0;
     height:80%;
     width: 100%;
-    background:url(../../Home%20Page/Images/beginner.jpg)  center no-repeat fixed;
+    background:url(../../Home%20Page/Images/beginner.jpg) no-repeat fixed;
     background-size: cover;
     background-color: #212121;
 }

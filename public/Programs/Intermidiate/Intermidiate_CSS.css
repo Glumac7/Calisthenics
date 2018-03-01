@@ -316,8 +316,8 @@ body::-webkit-scrollbar-thumb:hover
     0%
     {
       opacity: 0;
-      -webkit-transform: translate3d(0, 100%, 0);
-      transform: translate3d(0, 100%, 0);
+      -webkit-transform: translate3d(0, 35%, 0);
+      transform: translate3d(0, 35%, 0);
     }
     100%
     {
@@ -331,8 +331,8 @@ body::-webkit-scrollbar-thumb:hover
   0%
   {
     opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
+    -webkit-transform: translate3d(0, 35%, 0);
+    transform: translate3d(0, 35%, 0);
   }
   100%
   {
@@ -359,7 +359,7 @@ aside.background
     top: 0;
     height: 80%;
     width: 100%;
-    background:url(../../Home%20Page/Images/intermidiate.jpg)  center no-repeat fixed;
+    background:url(../../Home%20Page/Images/intermidiate.jpg) no-repeat fixed;
     background-size: cover;
     background-color: #212121;
     filter: grayscale(30%);
@@ -697,6 +697,19 @@ a.linksa:hover
     text-align: center;
     z-index: 6;
 }
+.aboutdiv div.grayscale
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 100%;
+    background-color: #000000c9;
+    height: auto;
+}
+
 div.grayscale
 {
     position: absolute;
@@ -706,8 +719,7 @@ div.grayscale
     right: 0;
     margin: 0 auto;
     width: 100%;
-    background-color: #000000cb;
-    border-bottom: 1px solid rgba(230, 205, 69, .4);
+    background-color: #21212185;
     height: auto;
 }
 
@@ -801,8 +813,7 @@ div.subprogdiv
 {
     position: relative;
     height: 496px;
-    border: 1px solid #e6cd45;
-    border-top: 0;
+    border-top: 1px solid rgba(230, 205, 69, .4);
     border-bottom: 0;
     background: url(../Images/sub_programs.png);
     z-index: 6;

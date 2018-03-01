@@ -49,56 +49,17 @@ $(document).ready(function()
 			$("header nav ul").addClass("open");
 			counter = 1;
 		}
-	});
-});
-
-$(window).scroll(function()
-{
-    if($(this).scrollTop() > 700)
-    {
-        $('.descp').addClass('fadeInUp');
-        $('.descp').removeClass('opacity');
-        $('.descimg').addClass('bounceInRight');
-        $('.descimg').removeClass('opacity');
-    }
+    });
     
-    if($(this).scrollTop() > 1250)
-    {
-        $('.subprogli').addClass('zoomInDown');
-        $('.subprogli').removeClass('opacity');
-        $('.subprogli2').addClass('zoomInDown2');
-        $('.subprogli2').removeClass('opacity');
-        $('.subprogli3').addClass('zoomInDown3');
-        $('.subprogli3').removeClass('opacity');
-        $('.subprogli4').addClass('zoomInDown4');
-        $('.subprogli4').removeClass('opacity');
-    }
-
-    if($(this).scrollTop() > 1800)
-    {
-        $('.subprogsp').addClass('fadeInUp');
-        $('.subprogsp').removeClass('opacity');
-        $('.subprogsimg').addClass('bounceInLeft');
-        $('.subprogsimg').removeClass('opacity');
-    }
-});
-
-$(document).ready(function()
-{
     $('.quotedowp').hover(function() 
     {
-        $('.quotedowdiv').addClass('zoomhover')
-        $('.quotedowdiv').removeClass('zoomleave')
+        $('.quotedowdiv').addClass('zoomhover').removeClass('zoomleave');
     }, function()
     {
-        $('.quotedowdiv').removeClass('zoomhover')
-        $('.quotedowdiv').addClass('zoomleave')
+        $('.quotedowdiv').removeClass('zoomhover').addClass('zoomleave');
     });
-});
 
-$(document).ready(function()
-{
-	$(window).bind('scroll',function(e)
+    $(window).bind('scroll',function(e)
     {
    		parallaxScroll();
    	});
@@ -108,4 +69,25 @@ $(document).ready(function()
    		var scrolledY = $(window).scrollTop();
 		$('.parallax2').css('background-position','center -'+((scrolledY*.2))+'px');
    	}
+});
+
+$(window).scroll(function()
+{
+    if($(this).scrollTop() > 800)
+    {
+        $('.aboutp').addClass('fadeInUp').removeClass('opacity');
+    }
+    
+    if($(this).scrollTop() > 1250)
+    {
+        $('.subprogli').addClass('zoomInDown').removeClass('opacity');
+        $('.subprogli2').addClass('zoomInDown2').removeClass('opacity');
+        $('.subprogli3').addClass('zoomInDown3').removeClass('opacity');
+        $('.subprogli4').addClass('zoomInDown4').removeClass('opacity');
+    }
+
+    if($(this).scrollTop() > 1740)
+    {
+        $('.subp').addClass('fadeInUp').removeClass('opacity');
+    }
 });

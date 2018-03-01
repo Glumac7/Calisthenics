@@ -86,7 +86,6 @@ $(document).ready(function()
         $('#s li:nth-child(1)').css({"margin-bottom": "17px"});
         $('#s li:nth-child(2)').css({"margin-bottom": "17px"});
 
-        $('.programsdiv, .tutorialsdiv, .transformationsdiv3').removeClass('parallax2');
     }
 
     $('.icon').on('click', function()
