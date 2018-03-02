@@ -502,7 +502,8 @@ aside.background
     top: 0;
     height: 80%;
     width: 100%;
-    background:url(Images/home_page_background.jpg) center no-repeat fixed;
+    background:url(Images/home_page_background.jpg) no-repeat fixed;
+    background-position: center 0px;
     background-size: cover;
     filter: grayscale(30%);
 }

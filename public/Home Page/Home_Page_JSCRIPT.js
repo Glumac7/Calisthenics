@@ -88,14 +88,6 @@ $(document).ready(function()
 
     }
 
-    $('.icon').on('click', function()
-    {
-        $(this).toggleClass('image');
-        if(!$(this).is('.image'))
-            $(this).html("&#9776");
-        else
-            $(this).html("&#10060");
-    });
 });
 
 /*-----ANIMATIONS-----*/
