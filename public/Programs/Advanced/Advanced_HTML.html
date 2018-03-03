@@ -3,68 +3,34 @@
     <head>
         <title>Advanced</title>
         <link rel="shortcut icon" type="image/x-icon" href="../../Home%20Page/Images/favicon.ico" />
-        <link rel="stylesheet" type="text/css" href="Advanced_CSS.css">
+        <link rel="stylesheet" type="text/css" href="Advanced_CSS.css?v=1.0">
+        <link rel="stylesheet" href="../../on-server/css/fontawesome-all.css">
+        <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Kavivanar" rel="stylesheet">
         <script src="jquery-3.2.1.js"></script>
-        <script src="Advanced_JSCRIPT.js"></script>
+        <script src="Advanced_JSCRIPT.js?v=1.0"></script>
         <meta charset="UTF-8"> 
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
     </head>
     <body>
-        <header class="fixed">
-            <div class="container" id="c">
-
-                    <a href="../../Home%20Page/Home_Page_HTML.html">
-                        <img class="logo" src="../Images/Logo1.png"></img>
-                    </a>
-
-                    <p class="logo1">NULL-GYM!</p>
-
-                    <nav>
-                        <ul>
-                            <li><a href="../../Home%20Page/Home_Page_HTML.html#programsdiv2">Programs</a></li>
-                            <span class="straight">|</span>
-
-                            <li><a href="../../Home%20Page/Home_Page_HTML.html#tutorialsdiv2">Tutorials</a></li>
-                            <span class="straight">|</span>
-
-                            <li><a href="../../Home%20Page/Home_Page_HTML.html#transformationsdiv2">Transformations</a></li>
-                            <span class="straight">|</span>
-
-                            <li><a href="#">QnA</a></li>
-                            <span class="straight">|</span>
-
-                            <li><a href="#">FAQ</a></li>
-                            <span class="straight">|</span>
-
-                            <li><a href="../../Log%20In/Log_In_HTML.html">log in</a></li>
-
-                            <li><a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a></li>
-                        </ul>
-                    </nav>
-
+        <header>
+            <div class="wrapper">
+                <a href="../../index.html" style="width: 208px;"><h1 class="logo"></h1></a>
+                <nav>
+                    <div id="burger-nav"></div>
+                    <ul>
+                        <li><a href="../../index.html#programsdiv2" class="current scroll">Programs</a></li>
+                        <li><a href="../../index.html#tutorialsdiv2" class="scroll">Tutorials</a></li>
+                        <li><a href="../../index.html#transformationsdiv2" class="scroll">Transformations</a></li>
+                        <li><a href="" class="scroll">FAQ</a></li>
+                        <li><a href="../../Log In/Log_In_HTML.html" class="scroll">Log In</a></li>
+                    </ul>
+                 </nav>
             </div>
         </header>
 
-        <script>
-
-            function myFunction() 
-            {
-                var x = document.getElementById("c");
-
-                if (x.className === "container") 
-                {
-                    x.className += " responsive";
-                }
-
-                else 
-                {
-                    x.className = "container";
-                }
-            }
-
-        </script>
-
-        <aside class="background parallax"></aside>
+        <aside class="background parallax2"></aside>
 
         <section>
 
@@ -75,133 +41,118 @@
             </div>
 
 
-            <div class="quotediv parallax3"> <span class="quotespan"></span>
+            <div class="quotediv parallax2"> <span class="quotespan"></span>
 
-                <p class="quotep">don't stop when you are tired, stop when you are done.</p>
+                <p class="quotep">DON'T STOP WHEN YOU ARE TIRED, STOP WHEN YOU ARE DONE.</p>
 
             </div>
 
+            <div id="descdiv2">
 
-            <div class="descdiv">
-                <div class="descdiv2">
-                    <h1 class="desch1">DESCRIPTION</h1>
-                    <p class="descp opacity">
-
-                        <span style="text-transform: uppercase;">Welcome to the <span style="color: #a39546;">ADVANCED</span> page.</span><br/><br/>
-                        Before continuing, please finish the <a class="descbeg" href="../Intermidiate/intermidiate_HTML.html">INTERMIDIATE</a> program.<br/><br/> 
-                        Now that you have finished the <span style="color: #a39546;">INTERMIDIATE</span>
-                        program,<br/><br/> this is your next and final step!<br/><br/>
-                        In the <span style="color:#a39546">ADVANCED</span> program you will get<br/>
-                        the same sub programs as in the <a class="descbeg" href="../Intermidiate/intermidiate_HTML.html">INTERMIDIATE</a>
-                        program, but with more <span style="color:#a39546">advanced</span> exercises.<br/><br/>
-                        Also...
-                    </p>
-
-                    <ul class="descul">
-                        <li class="descli"><img class="descimg opacity" src="../Images/a.jpeg"/></li>
-                    </ul>
-                </div>
+                <h1 class="desch1">DESCRIPTION</h1>
+        
             </div>
 
-
-
-            <div class="subprogdiv parallax2"><div class="grayscale"></div>
-
-                <p class="subprogtitle">In the <span style="color:#e6cd45;">ADVANCED</span> 
-                program you will get 3 advice programs...</p>
+            <div class="aboutdiv"><div class="grayscale"></div>
                 
-                <div class="subprogdiv2">
+                <ul>
+                    <li class="firstli">
+                        <p class="aboutp opacity">
+                            WELCOME TO THE <span style="display: inline; color:#a39546;">ADVANCED</span> PAGE.<br/><br/>
+
+                            Before continuing, please finish the <a class="linksa" target="_blank" href="../Intermidiate/Intermidiate_HTML.html">INTERMIDIATE</a> program.<br/><br/>
+
+                            Now that you have finished the <span style="display: inline; color:#a39546;">INTERMIDIATE</span> program,<br/><br/>
+
+                            this is your next and final step!<br/><br/>
+
+                            In the <span style="display: inline; color:#a39546;">ADVANCED</span> program you will get
+                            the same sub programs as in the <a class="linksa" target="_blank" href="../Intermidiate/Intermidiate_HTML.html">INTERMIDIATE</a> program, but with more advanced exercises.<br/><br/>
+                            <span style="display: inline; color: #a39546">WARNING!:</span> Do NOT attempt any of the exercises in this program without a proper tehnique.<br/><br/> *Check my <a class="linksa" target="_blank" href="../Intermidiate/Intermidiate_HTML.html" >TUTORIALS</a> section for the propper tehnique.
+
+                            <br/><br/>Also...
+                        </p>
+                    </li>
+                </ul>
+            </div>            
+
+            <div class="subprogdiv">
+
+                <p class="subprogtitle">In the <span style="display: inline; color:#e6cd45;">ADVANCED</span> PROGRAM YOU WILL GET 3 ADVICE PROGRAMS...
+                </p>
                 
                     <ul class="subprogul">
-                        <li class="subprogli opacity"><img class="subprogimg" src="../Images/roman1.png"/>
-                            <ul>
-                                <li class="subproglispan">
-                                    <span>
-                                        <br/>SKILLS
-                                    </span>
-                                </li>
+                        <li class="subprogli opacity">
+                            <img class="subprogimg" src="../Images/roman1.png"/>
+                            <span>
+                                SKILLS
+                            </span>
                                     
-                                <li class="skills">
-                                    <p>
-                                       <br/><br/>
-                                        Skills alow you to express<br/>
-                                        your true power and srength.<br/>
-                                        You can't say that you have<br/>
-                                        mastered the calisthenics<br/>
-                                        without them.
-                                    </p>
-                                </li>
-                            </ul>
+                            <p>   
+                                Skills alow you to express
+                                your true power and srength.
+                                You can't say that you have
+                                mastered the calisthenics
+                                without them
+                            </p>
                         </li>
 
-                        <li class="subprogli2 opacity"><img class="subprogimg" src="../Images/roman2.png"/>
-                            <ul>
-                                <li class="subproglispan2">
-                                    <span>
-                                        <br/>TIPS
-                                    </span>
-                                </li>
+                        <li class="subprogli opacity">
+                            <img class="subprogimg" src="../Images/roman2.png"/>
+                            <span>
+                               TIPS
+                            </span>
                                             
-                                 <li class="tips">
-                                    <p>
-                                        <br/><br/>
-                                        In this section you will<br/>
-                                        get some tips on how to<br/>
-                                        improve your self both<br/>
-                                        physiclly and mentaly.
-                                    </p>
-                                </li>
-                            </ul>
+                            <p>
+                                In this section you will
+                                get some tips on how to
+                                improve your self both
+                                physiclly and mentaly.
+                            </p>
                         </li>
 
-                        <li class="subprogli3 opacity"><img class="subprogimg" src="../Images/roman3.png"/>
-                            <ul>
-                                <li class="subproglispan3">
-                                    <span>
-                                        <br/>NUTRITION
-                                    </span>
-                                </li>
-                                                    
-                                <li class="nutrition">
-                                    <p>
-                                        <br/><br/>
-                                        Here you will learn<br/>
-                                        the essential parts<br/>
-                                        of nutrition, what to<br/>
-                                        focus on and how to <br/>
-                                        change it for the better.
-                                    </p>
-                                </li>
-                            </ul>
+                        <li class="subprogli opacity">
+                            <img class="subprogimg" src="../Images/roman3.png"/>
+                            <span>
+                                NUTRITION
+                            </span>
+                                                
+                            <p>
+                                Here you will learn
+                                the essential parts
+                                of nutrition, what to
+                                focus on and how to 
+                                change it for the better.
+                            </p>
                         </li>
-                        
                     </ul>
-
-                </div>
             </div>
 
-            <div class="subprogsdiv">
+            <div id="subdiv2">
 
-                <div class="subprogsdiv2">
-                    
-                    <img class="subprogsimg opacity" src="../Images/subprogs.jpg"/>
-                    <h1 class="subprogsh1">ADVICE PROGRAMS</h1>
-                    <p class="subprogsp opacity">
+                <h1 class="subh1">ADVICE PROGRAMS</h1>
+        
+            </div>
+            <div class="subdiv">
+                
+                <ul>
+                    <li class="firstli">
+                        <p class="subp opacity">
+                            These advice programs were made so that you can
+                            <span style="display: inline; color: #a39546">improve both as an athlete and as a human.</span><br/><br/>
 
-                    These advice programs were made so that you can<br/>
-                    <span style="color:#a39546">improve both as an athlete and as a human.</span><br/><br/>
-                    I made them so that you could realise, that it's not<br/>
-                    all about how you look, <span style="color:#a39546">it's about how you feel,</span><br/><br/>
-                    how you can change someones life for the better just by
-                    being <span style="color:#a39546">positive</span> and <span style="color:#a39546">open minded.</span><br/><br/>
-                    These programs will make you a human every one can be
-                    proud of, but, <span style="color:#a39546">the only thing that matters is that you are proud of your self.</span>
+                            I made them so that you could realise, that it's not
+                            all about how you look, <span style="display: inline; color: #a39546">it's about how you feel,</span><br/><br/>
 
-                    </p>
-                </div>
+                            how you can change someones life for the better just by being <span style="display: inline; color: #a39546">positive</span> and <span style="display: inline; color: #a39546">open minded.</span><br/><br/>
+
+                            These programs will make you a human every one can be proud of, but <span style="display: inline; color: #a39546">the only thing that matters is that you are proud of your self!</span>
+                        </p>
+                    </li>
+                </ul>
             </div>
 
-            <div class="quotedowdiv parallax2"> <span class="quotedowspan"></span>
+            <div class="quotedowdiv"> <div class="grayscale"></div>
 
                 <a class="quotedowp" href="">GET IT NOW!</a>
 
@@ -209,26 +160,61 @@
             
             <!--FOOTER-->
             
-        <footer>
-            <ul class="left">
-                <li class="footerleft">
-                    <img class="footerleftimage" src="../Images/Logo2.png"/><p class="footerp">
-                    <span class="sapnnull">Null-Gym!</span><br/><br/><br/>
+            <footer class="footer-distributed">
+
+                <div class="footer-left">
+    
+                    <a href="Home_Page_HTML.html"><img src="../Images/Logo2.png" style="width:10%;"/></a>
+    
+                    <p class="footer-links">
+                        <a href="../../index.html#programsdiv2">Programs</a>
+                        ·
+                        <a href="../../index.html#tutorialsdiv2">Tutorials</a>
+                        ·
+                        <a href="../../index.html#transformationsdiv2">Transformations</a>
+                        ·
+                        <a href="#">FAQ</a>
+                        ·
+                        <a href="../../Log%20In/Log_In_HTML.html">Log In</a>
                     </p>
-                </li>
-                <li class="footermiddle">
-                    <span class="footerspan"><q>
-                        Do not pray for an easy life,
-                        pray for the strength to endure a difficult one.</q>
-                    <i>Bruce Lee.</i></span>
-                </li>
-            </ul>
-            
-            <ul class="right">
-                <li class="footerright contact">CONTACT :</li>
-                <li class="footerright2"><img class="rightimage" src="../Images/email.png"/>nullgym@gmail.com</li>
-            </ul>
-        </footer>
+    
+                    <p class="footer-company-name">NULL GYM &copy; 2018</p>
+                </div>
+    
+                <div class="footer-center">
+    
+                    <div>
+                        <i class="fa fa-map-marker"></i>
+                        <p>Vienna, Austria</p>
+                    </div>
+    
+                    <div>
+                        <i class="fa fa-envelope"></i>
+                        <p><a href="../../mail.html">nullgym@gmail.com</a></p>
+                    </div>
+    
+                </div>
+    
+                <div class="footer-right">
+    
+                    <p class="footer-company-about">
+                        <span>About Me</span>
+                        I'm an 18 year old software and web<br/>
+                        developer whose passion is calisthenics!
+                    </p>
+    
+                    <div class="footer-icons">
+    
+                        <a href="https://www.facebook.com/nemanja.glumicic" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://twitter.com/C0NE99" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/nemanjaglumicic/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/Glumac7" target="_blank"><i class="fab fa-github"></i></a>
+    
+                    </div>
+    
+                </div>
+    
+            </footer>
 
         </section>
 

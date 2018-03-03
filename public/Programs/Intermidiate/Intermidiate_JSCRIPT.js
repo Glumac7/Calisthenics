@@ -2,6 +2,7 @@ $(document).ready(function()
 {
     var body_width = $('body').width();
 
+    /*------FOR MOBILE PHONES------*/
     if(body_width < 600)
 	{
 		$('.footer-icons a:nth-child(1)').attr("href", "fb://facewebmodal/f?href=https://www.facebook.com/nemanja.glumicic");
@@ -10,13 +11,6 @@ $(document).ready(function()
     }
 
     var header_width = $('header').width();
-
-    if(header_width < 950)
-        $('header').removeClass();
-        
-    else
-        $('header').addClass('fixed');      
-
     
     if(body_width < 950)
     {
@@ -60,6 +54,7 @@ $(document).ready(function()
         $('.subp').removeClass('opacity');
     }
 
+    /*------OPEN AND CLOSE FOR THE HEADER------*/
     var counter;
 
     $("#burger-nav").on("click", function()
@@ -78,14 +73,22 @@ $(document).ready(function()
 		}
     });
     
+    /*------GET IT BUTTON-----*/
     $('.quotedowp').hover(function() 
     {
-        $('.quotedowdiv').addClass('zoomhover').removeClass('zoomleave');
+        $('.quotedowdiv').css({
+            transform: 'scale(1.3)',
+	        transition: '.2s ease-in-out'
+        });
     }, function()
     {
-        $('.quotedowdiv').removeClass('zoomhover').addClass('zoomleave');
+        $('.quotedowdiv').css({
+            transform: 'scale(1)',
+	        transition: '.2s ease-in-out'
+        });;
     });
 
+    /*------PARALLAX------*/
     $(window).bind('scroll',function(e)
     {
    		parallaxScroll();
@@ -98,6 +101,7 @@ $(document).ready(function()
    	}
 });
 
+/*------ANIMATIONS------*/
 $(window).scroll(function()
 {
     var body_width = $('body').width();

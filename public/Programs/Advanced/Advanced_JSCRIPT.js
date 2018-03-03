@@ -1,81 +1,87 @@
 $(document).ready(function()
 {
-	$(window).bind('scroll',function(e)
-    {
-   		parallaxScroll();
-   	});
- 
-   	function parallaxScroll()
-    {
-   		var scrolledY = $(window).scrollTop();
-		$('.parallax').css('background-position','center -'+((scrolledY*.3))+'px');
-    }
-    var wdth = $('header').width();
+    var body_width = $('body').width();
 
-    if(wdth < 900)
-    {
-        $(window).scroll(() =>
-        {
-            if($(this).scrollTop() > 150)
-            {
-                $('aside').removeClass('parallax');
-        
-            }
-            else
-                $('aside').addClass('parallax');
-        });
-        $('header').removeClass();
+    /*------FOR MOBILE PHONES------*/
+    if(body_width < 600)
+	{
+		$('.footer-icons a:nth-child(1)').attr("href", "fb://facewebmodal/f?href=https://www.facebook.com/nemanja.glumicic");
+		$('.footer-icons a:nth-child(3)').attr("href", "instagram://user?username=nemanjaglumicic");
+		$('.footer-mail').attr("href", "mailto:nullgym@gmail.com");
     }
-        
-    else
-        $('header').addClass('fixed');      
-});
 
-$(window).scroll(function()
-{
-    if($(this).scrollTop() > 700)
-    {
-        $('.descp').addClass('fadeInUp');
-        $('.descp').removeClass('opacity');
-        $('.descimg').addClass('bounceInRight');
-        $('.descimg').removeClass('opacity');
-    }
+    var header_width = $('header').width();
     
-    if($(this).scrollTop() > 1250)
+    if(body_width < 950)
     {
-        $('.subprogli').addClass('zoomInDown');
+        $('.parallax2').removeClass('parallax2');
+
+        $('.parallax').removeClass('parallax');
+    
+        $('aside.background').css({'height': '100%'});
+    }
+
+    if(body_width >= 640)
+    {
+        $('header').css({"position": "fixed", "width": "100%", "z-index": "5"})
+    }
+
+    var ul = $('.subprogul').width();
+    var li = $('.subprogul li').outerWidth();
+    if(body_width < 342)
+    {
+        li = $('.subprogul li').outerWidth(true);
+    }
+    var margin = (ul - li) / 2;
+
+    if(body_width < 732)
+    {
+        $('.subprogul li').css('margin-left', margin);
+
+        $('.aboutp').removeClass('opacity');
         $('.subprogli').removeClass('opacity');
-        $('.subprogli2').addClass('zoomInDown2');
         $('.subprogli2').removeClass('opacity');
-        $('.subprogli3').addClass('zoomInDown3');
         $('.subprogli3').removeClass('opacity');
+        $('.subprogli4').removeClass('opacity');
+        $('.subp').removeClass('opacity');
     }
 
-    if($(this).scrollTop() > 1800)
+    /*------OPEN AND CLOSE FOR THE HEADER------*/
+    var counter;
+
+    $("#burger-nav").on("click", function()
     {
-        $('.subprogsp').addClass('fadeInUp');
-        $('.subprogsp').removeClass('opacity');
-        $('.subprogsimg').addClass('bounceInLeft');
-        $('.subprogsimg').removeClass('opacity');
-    }
-});
-
-$(document).ready(function()
-{
+		if(counter === 1)
+		{
+			$("#burger-nav").css({"background": "url(../../Home%20Page/Images/burger.png) no-repeat 98% center"});
+			$("header nav ul").removeClass("open");
+			counter = 0;
+		} 
+		else
+		{
+			$("#burger-nav").css({"background": "url(../../Home%20Page/Images/closed.png) no-repeat 98% center"});
+			$("header nav ul").addClass("open");
+			counter = 1;
+		}
+    });
+    
+    /*------GET IT BUTTON-----*/
     $('.quotedowp').hover(function() 
     {
-        $('.quotedowdiv').addClass('zoomhover')
-        $('.quotedowdiv').removeClass('zoomleave')
+        $('.quotedowdiv').css({
+            transform: 'scale(1.3)',
+	        transition: '.2s ease-in-out'
+        });
     }, function()
     {
-        $('.quotedowdiv').removeClass('zoomhover')
-        $('.quotedowdiv').addClass('zoomleave')
+        $('.quotedowdiv').css({
+            transform: 'scale(1)',
+	        transition: '.2s ease-in-out'
+        });;
     });
-});
 
-$(document).ready(function()
-{
-	$(window).bind('scroll',function(e)
+    /*------PARALLAX------*/
+    $(window).bind('scroll',function(e)
     {
    		parallaxScroll();
    	});
@@ -87,16 +93,26 @@ $(document).ready(function()
    	}
 });
 
-$(document).ready(function()
+/*------ANIMATIONS------*/
+$(window).scroll(function()
 {
-	$(window).bind('scroll',function(e)
+    var body_width = $('body').width();
+
+    if($(this).scrollTop() > 800 && body_width > 732)
     {
-   		parallaxScroll();
-   	});
- 
-   	function parallaxScroll()
+        $('.aboutp').addClass('fadeInUp').removeClass('opacity');
+    }
+    
+    if($(this).scrollTop() > 1250 && body_width > 732)
     {
-   		var scrolledY = $(window).scrollTop();
-		$('.parallax3').css('background-position','center -'+((scrolledY*.5))+'px');
-   	}
+        $('.subprogli').addClass('zoomInDown').removeClass('opacity');
+        $('.subprogli2').addClass('zoomInDown2').removeClass('opacity');
+        $('.subprogli3').addClass('zoomInDown3').removeClass('opacity');
+        $('.subprogli4').addClass('zoomInDown4').removeClass('opacity');
+    }
+
+    if($(this).scrollTop() > 1740 && body_width > 732)
+    {
+        $('.subp').addClass('fadeInUp').removeClass('opacity');
+    }
 });

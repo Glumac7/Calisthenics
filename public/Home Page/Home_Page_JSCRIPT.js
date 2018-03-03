@@ -85,13 +85,11 @@ $(document).ready(function()
 
         $('#s li:nth-child(1)').css({"margin-bottom": "17px"});
         $('#s li:nth-child(2)').css({"margin-bottom": "17px"});
-
     }
-
 });
 
 /*-----ANIMATIONS-----*/
-$(window).scroll(() => {
+$(window).scroll(function() {
 
     $body_width = $('body').width();
 
