@@ -51,42 +51,6 @@ body::-webkit-scrollbar-thumb:hover
     animation-fill-mode: both;
 }
 
-.zoomInDown2
-{
-    -webkit-animation-name: zoomInDown;
-    animation-name: zoomInDown;
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-delay: .2s;
-    animation-delay: .2s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-}
-
-.zoomInDown3
-{
-    -webkit-animation-name: zoomInDown;
-    animation-name: zoomInDown;
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-delay: .3s;
-    animation-delay: .3s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-}
-
-.zoomInDown4
-{
-    -webkit-animation-name: zoomInDown;
-    animation-name: zoomInDown;
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-delay: .4s;
-    animation-delay: .4s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-}
-
 @-webkit-keyframes zoomInDown 
 {
     0% 
@@ -747,7 +711,7 @@ div.aboutdiv
 {   
     position: relative;
     text-align: center;
-    background: url(../Images/adv_photo.jpg) no-repeat left;
+    background: url(../Images/phoot.jpg) no-repeat left;
     background-size: cover;
     z-index: 10;
 }

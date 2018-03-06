@@ -114,9 +114,9 @@ $(window).scroll(function()
     if($(this).scrollTop() > 1250 && body_width > 732)
     {
         $('.subprogli').addClass('zoomInDown').removeClass('opacity');
-        $('.subprogli2').addClass('zoomInDown2').removeClass('opacity');
-        $('.subprogli3').addClass('zoomInDown3').removeClass('opacity');
-        $('.subprogli4').addClass('zoomInDown4').removeClass('opacity');
+        $('.subprogli2').css({"animation-delay": ".15s"});
+        $('.subprogli3').css({"animation-delay": ".25s"});
+        $('.subprogli4').css({"animation-delay": ".35s"});
     }
 
     if($(this).scrollTop() > 1740 && body_width > 732)
