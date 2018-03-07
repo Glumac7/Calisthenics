@@ -1205,25 +1205,32 @@ a.quotedowp
 
 .footer-distributed .footer-icons
 {
-	margin-top: 25px;
+    margin-top: 25px;
+    margin-left: 25px;
 }
 
 .footer-icons a i
 {
     display: inline-block;
-	width: 35px;
-	height: 35px;
+	width: inherit;
+	height: inherit;
 	cursor: pointer;
 	border-radius: 2px;
 
-	font-size: 20px;
+	font-size: 35px;
 	color: #ffffff;
 	text-align: center;
 	line-height: 35px;
 
-	margin-right: 3px;
+	margin-right: 15px;
 	margin-bottom: 5px;
 }
+
+.footer-icons a i:hover
+{
+    opacity: .5;
+}
+
 
 /* If you don't want the footer to be responsive, remove these media queries */
 
