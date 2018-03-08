@@ -326,8 +326,6 @@ aside.background
     background:url(../../Home%20Page/Images/intermidiate.jpg) no-repeat fixed;
     background-position: center 0px;
     background-size: cover;
-    background-color: #212121;
-    filter: grayscale(30%);
 }
 
 wrapper

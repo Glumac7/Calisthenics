@@ -329,7 +329,6 @@ aside.background
     background-position: center 0px;
     background-size: cover;
     background-color: #212121;
-    filter: grayscale(30%);
 }
 
 wrapper
