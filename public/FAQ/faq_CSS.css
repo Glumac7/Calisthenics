@@ -42,9 +42,9 @@ body
     padding: 0;
     height: 100%;
     font-family: 'Cool', sans-serif;
-    background-color: #000;
+    background: url(Images/background.png);
     overflow-x: hidden;
-    overflow-y: scroll;
+    overflow-y: auto;
 	font-weight: 400;
 }
 
@@ -253,7 +253,29 @@ div.faqdiv
     margin: 3% auto;
 }
 
+@media screen and (max-width: 409px)
+{
+    #ui-id-1, #ui-id-3, #ui-id-5, #ui-id-7, #ui-id-9
+    {
+        font-size: 15px;
+    }
+    div.faqdiv
+    {
+        margin: 4% auto;
+    }
+}
 
+@media screen and (max-width: 354px)
+{
+    #ui-id-1, #ui-id-3, #ui-id-5, #ui-id-7, #ui-id-9
+    {
+        font-size: 13px;
+    }
+    div.faqdiv
+    {
+        margin: 5% auto;
+    }
+}
 /*--------------------------------*/
 
 
@@ -270,7 +292,7 @@ div.faqdiv
 	font: bold 16px sans-serif;
 
     padding: 55px 50px;
-    position: relative;
+    position:absolute;
     bottom: 0;
 }
 
@@ -445,6 +467,14 @@ div.faqdiv
 
 /* If you don't want the footer to be responsive, remove these media queries */
 
+@media (max-width: 600px) 
+{
+    .footer-distributed
+    {
+        position: relative;
+    }
+}
+
 @media (max-width: 880px) 
 {
     .footer-distributed .footer-company-about span
@@ -455,7 +485,7 @@ div.faqdiv
 
     .footer-distributed
     {
-		font: bold 14px sans-serif;
+        font: bold 14px sans-serif;
 	}
 
 	.footer-distributed .footer-left,
