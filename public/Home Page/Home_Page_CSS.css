@@ -503,6 +503,7 @@ aside.background
     height: 80%;
     width: 100%;
     background:url(Images/home_page_background.jpg) no-repeat fixed;
+    background-size: 100px;
     background-position: center 0px;
     background-size: cover;
 }
@@ -635,7 +636,6 @@ header:after
     
 }
     
-    
 @media screen and (max-width: 640px)
 {  
     header nav li
@@ -749,6 +749,7 @@ div.programsdiv
     text-align: center;
     padding: 50px 0;
     background: url('Images/programs_parallax.png');
+    background-attachment: fixed;
 }
 
 div.grayscale
@@ -768,6 +769,8 @@ div.grayscale
 {
     position: relative;
     display: inline-block;
+    text-align: center;
+    width: auto;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -780,114 +783,128 @@ div.grayscale
 .programsdiv li 
 {
     position: relative;
-    float: left;
+    display: inline-block;
     height: 460px;
-    width: 270px;
+    width: 15%;
     margin: 0 60px;
     text-overflow: ellipsis;
     background: #21212173;
     overflow: hidden;
 }
 
-/*----------BEGINNER----------*/
-
-div.beginnerdiv
+.pdiv
 {
     height: 170px;
-    width: 270px;
+    width: 100%;
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
 }
 
-img.beginnerimg
+.pimg
 {
     height: 170px;
-    width: 270px;
+    width: 100%;
     padding: 0;
     margin: 0;
 }
 
-h1.beginnerh1
+.ph1
 {
     color: #d4d4d4;
     text-shadow: 3px 2px 3px #a395467c;
     font-family: sans-serif;
 }
 
-p.beginnerp
+.pp
 {
     color: #d4d4d4;
+    margin: 0 auto;
+    width: 95%;
+    line-height: 1.3em;
+    text-align: justify;
     font-family: Ripped;
     font-size: 20px;
-    padding: 5px;
 }
 
-/*----------INTERMIDIATE----------*/
-div.intermidiatediv
+@media (max-width: 1781px)
 {
-    height: 170px;
-    width: 270px;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
+    .programsul li
+    {
+        width: 18%;
+    }
 }
 
-img.intermidiateimg
+@media (max-width: 1494px)
 {
-    height: 170px;
-    width: 270px;
-    padding: 0;
-    margin: 0;
+    .programsul li
+    {
+        height: 510px;
+        width: 26%;
+    }
+    .programsul li:nth-child(3)
+    {
+        margin-top: 20px;
+    }
+}
+@media (max-width: 930px)
+{
+    .programsul li
+    {
+        height: 530px;
+        width: 40%;
+        margin: 14px auto;
+        margin: 20px;
+    }
+    .pimg, .pdiv
+    {
+        height: 200px;
+    }
+    .ph1
+    {
+        margin: 30px auto;
+    }
+    .pp
+    {
+        font-size: 20px;
+    }
+}
+@media (max-width: 800px)
+{
+    .pimg, .pdiv
+    {
+        height: 200px;
+    }
+    .ph1
+    {
+        margin: 20px auto;
+    }
+    .pp
+    {
+        font-size: 20px;
+    }
 }
 
-h1.intermidiateh1
+@media (max-width: 640px)
 {
-    color: #d4d4d4;
-    text-shadow: 3px 2px 3px #a395467c;
-    font-family: sans-serif;
+    .programsul li
+    {
+        width: 60%;
+    }
+
+    .pimg, .pdiv
+    {
+        height: 170px;
+    }
 }
 
-p.intermidiatep
+@media (max-width: 430px)
 {
-    color: #d4d4d4;
-    font-family: Ripped;
-    font-size: 20px;
-    padding: 5px;
-}
-
-/*----------ADVANCED----------*/
-div.advanceddiv
-{
-    height: 170px;
-    width: 270px;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-}
-
-img.advancedimg
-{
-    height: 170px;
-    width: 270px;
-    padding: 0;
-    margin: 0;
-}
-
-h1.advancedh1
-{
-    color: #d4d4d4;
-    text-shadow: 3px 2px 3px #a395467c;
-    font-family: sans-serif;
-    padding: 5px 0 0 0 ;
-}
-
-p.advancedp
-{
-    color: #d4d4d4;
-    font-family: Ripped;
-    font-size: 20px;
-    padding: 5px;
+    .programsul li
+    {
+        width: 80%;
+        overflow: visible;
+    }
 }
 
 /*-----------------------------------*/
@@ -979,6 +996,7 @@ div.tutorialsdiv
     text-align: center;
     padding: 50px 0;
     background: url('Images/tutorials_parallax.jpg');
+    background-attachment: fixed;
     background-size: cover;
     z-index: 9;
 }
@@ -1094,6 +1112,7 @@ div.transformationsdiv3
     text-align: center;
     padding: 50px 0;
     background: url(Images/transformations_parallax.png);
+    background-attachment: fixed;
     background-size: cover;
 }
 
@@ -1163,12 +1182,6 @@ p.transformationsp
     }
 
     .transformationsdiv li
-    {
-        margin: 0;
-        margin-left: 30px;
-    }
-
-    .programsul li
     {
         margin: 0;
         margin-left: 30px;

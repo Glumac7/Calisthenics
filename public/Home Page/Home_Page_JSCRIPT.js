@@ -51,19 +51,9 @@ $(document).ready(function()
         $('p.tutorialsp')
             .html("Before starting any of the programs listed above please make sure that you have the best tehnique posible. Without it you are putting your self at risk of getting hurt, and, you will never be at your full potencial.<br/><br/><span>Listed below are 3 general groups of tutorials...</span><br/><br/>")
             .css({"padding": "0 10px"});
-        
-        $('.programsul li:nth-child(1)').css({"margin-bottom": "17px"});
-        $('.programsul li:nth-child(2)').css({"margin-bottom": "17px"});
 
-        var ul = $('.programsul').width();
-        var li = $('.programsul li').width();
-
-        var margin = (ul - li) / 2;
-
-        $('.programsul li').css('margin-left', margin);
-
-        ul = $('.tutorialsul').width();
-        li = $('.tutorialsul li').width();
+        var ul = $('.tutorialsul').width();
+        var li = $('.tutorialsul li').width();
 
         margin = (ul - li) / 2;
 
