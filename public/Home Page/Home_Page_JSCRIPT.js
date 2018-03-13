@@ -52,22 +52,12 @@ $(document).ready(function()
             .html("Before starting any of the programs listed above please make sure that you have the best tehnique posible. Without it you are putting your self at risk of getting hurt, and, you will never be at your full potencial.<br/><br/><span>Listed below are 3 general groups of tutorials...</span><br/><br/>")
             .css({"padding": "0 10px"});
 
-        var ul = $('.tutorialsul').width();
-        var li = $('.tutorialsul li').width();
-
-        margin = (ul - li) / 2;
-
-        $('.tutorialsul li').css('margin-left', margin);
-
-        ul = $('.transformationsdiv ul').width();
-        li = $('.transformationsdiv ul li').width();
+        var ul = $('.transformationsdiv ul').width();
+        var li = $('.transformationsdiv ul li').width();
 
         margin = (ul - li) / 2;
 
         $('.transformationsdiv ul li').css('margin-left', margin);
-
-        $('.tutorialsul li:nth-child(1)').css({"margin-bottom": "17px"});
-        $('.tutorialsul li:nth-child(2)').css({"margin-bottom": "17px"});
 
         $('.transformationsp')
             .html("Listed below are some <q>SUCCESS</q> stories of the programs listed above. The reason it exists isto show <span>YOU</span> that <span>anything is possible!</span><br/><br/><br/>")
