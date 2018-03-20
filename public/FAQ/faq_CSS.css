@@ -290,9 +290,8 @@ div.faqdiv
 	width: 100%;
 	text-align: left;
 	font: bold 16px sans-serif;
-
+    position: relative;
     padding: 55px 50px;
-    position:absolute;
     bottom: 0;
 }
 
@@ -467,11 +466,11 @@ div.faqdiv
 
 /* If you don't want the footer to be responsive, remove these media queries */
 
-@media (max-width: 600px) 
+@media (min-width: 600px) and (min-height: 700px)
 {
     .footer-distributed
     {
-        position: relative;
+        position: absolute;
     }
 }
 
