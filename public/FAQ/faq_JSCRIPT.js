@@ -13,28 +13,14 @@ $(document).ready(function()
 		$('.footer-mail').attr("href", "mailto:necaglumicic@gmail.com");
     }
 
-    var counter;
-
-    $("#burger-nav").on("click", function()
+    $(document).ready(function()
     {
-		if(counter === 1)
-		{
-			$("#burger-nav").css({"background": "url(../Home%20Page/Images/burger.png) no-repeat 98% center"});
-			$("header nav ul").removeClass("open");
-			counter = 0;
-		} 
-		else
-		{
-			$("#burger-nav").css({"background": "url(../Home%20Page/Images/closed.png) no-repeat 98% center"});
-			$("header nav ul").addClass("open");
-			counter = 1;
-		}
-	});
-    
-    if($body_width >= 640)
-    {
-        $('header').css({ "width": "100%", "z-index": "5"})
-    }
+        $('.burger-container').click( function()
+        {
+            $(this).toggleClass('open');
+            $('nav ul').toggleClass('dropdown');
+        });
+    });
 
     /*------FAQ------*/
     

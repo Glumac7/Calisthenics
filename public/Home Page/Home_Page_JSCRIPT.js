@@ -15,13 +15,13 @@ $(document).ready(function()
     }
 
     $(document).ready(function()
-            {
-              $('.burger-container').click( function()
-              {
-                $(this).toggleClass('open');
-                $('nav ul').toggleClass('dropdown');
-              });
-            });
+    {
+        $('.burger-container').click( function()
+        {
+            $(this).toggleClass('open');
+            $('nav ul').toggleClass('dropdown');
+        });
+    });
     if($body_width < 800)
     {
         $($tutorials_ul_li).css({'height': '35%'});
@@ -40,7 +40,7 @@ $(window).scroll(function() {
 
     $body_width = $('body').width();
 
-    if($(this).scrollTop() > 400 && $body_width > 800)
+    if($(this).scrollTop() > 350 && $body_width > 800)
     {
         $('.programsul li:nth-child(1)').addClass('rotateInDownLeft').removeClass('opacity');
 
@@ -49,7 +49,7 @@ $(window).scroll(function() {
         $('.programsul li:nth-child(3)').addClass('rotateInDownRight').removeClass('opacity');
     }
 
-    if($(this).scrollTop() > 1000 && $body_width > 800)
+    if($(this).scrollTop() > 800 && $body_width > 800)
     {
         $('.tutorialsp').addClass('fadeInDown').removeClass('opacity');
 
@@ -60,7 +60,7 @@ $(window).scroll(function() {
         $('.tutorialsul li:nth-child(3)').addClass('fadeInRight').removeClass('opacity');
     }
 
-    if($(this).scrollTop() > 1600 && $body_width > 800)
+    if($(this).scrollTop() > 1250 && $body_width > 800)
     {
         $('.transformationsp').addClass('fadeInDown').removeClass('opacity');
 

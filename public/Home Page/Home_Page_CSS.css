@@ -30,7 +30,11 @@ body::-webkit-scrollbar-thumb:hover
     font-family: "Tagline";
     src: url('../Fonts/octin-prison-rg.ttf');
 }
-
+@font-face
+{
+    font-family: "Header";
+    src: url('../Fonts/BebasNeue Regular.ttf');
+}
 @font-face
 {
     font-family: "Ripped";
@@ -524,179 +528,205 @@ aside.background
 {
     aside.background
     {
-        height: 10%;
-        background-image: url(Images/dark_brick.png);
         display: none;
     }
 }
+/*------HEADER------*/
 header
-            {
-                position: fixed;
-                width: 100%;
-                height: 100px;
-                background: -webkit-linear-gradient(rgba(214, 31, 31, 0), #000000);
-                background: -moz-linear-gradient(bottom, rgba(33, 33, 33, 0), #000000);
-                background: -ms-linear-gradient(bottom, rgba(33, 33, 33, 0), #000000);
-                background: -o-linear-gradient(bottom, rgba(33, 33, 33, 0), #000000);
-                background: linear-gradient(to top, rgba(33, 33, 33, 0), #000000);
-            }
-            .logo
-            {
-                height: 50px;
-                margin: 26px;
-                margin-left: 60px;
-            }
-            .logo, .logo img, .logo h1
-            {
-                display: inline-block;
-            }
-            .logo img
-            {
-                position: relative;
-                top: 2px;
-            }
-            .logo h1
-            {
-                position: relative;
-                top: -6px;
-                margin-left: 10px;
-                color: #d4d4d4;
-                font-family: tagline; 
-            }
-            
-            nav
-            {
-                float: right;
-                margin: 38px 0;
-                margin-right: 60px;
-            }
-            nav::after
-            {
-                content: "";
-                display: block;
-                clear: both;
-            }
-            nav ul
-            {
-                position: relative;
-                list-style: none;
-                transition: all .5s ease-in-out;
-            }
-            li.desktop
-            {
-                position: relative;
-                margin: 0 20px;
-                display: inline-block;
-                font-size: 16px;
-                text-align: right;
-                font-family: 'Kavivanar', cursive;
-                z-index: 1;
-            }
-            .last_li
-            {
-                margin-right: 0;
-            }
-            nav ul span
-            {
-                color: #c1b04f;
-                font-size: 20px;
-            }
-            .header_a
-            {
-                text-decoration: none;
-                color:aliceblue;
-            }
-            /*BURGER!!!!!!!!!!!!!!!!!!*/
-            .burger-container
-            {
-              width: 10px;
-              display: none;
-            }
+{
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    background: -webkit-linear-gradient(rgba(214, 31, 31, 0), #000000);
+    background: -moz-linear-gradient(bottom, rgba(33, 33, 33, 0), #000000);
+    background: -ms-linear-gradient(bottom, rgba(33, 33, 33, 0), #000000);
+    background: -o-linear-gradient(bottom, rgba(33, 33, 33, 0), #000000);
+    background: linear-gradient(to top, rgba(33, 33, 33, 0), #000000);
+}
+.logo
+{
+    height: 50px;
+    margin: 26px;
+    margin-left: 60px;
+}
+.logo, .logo img, .logo h1
+{
+    display: inline-block;
+}
+.logo img
+{
+    position: relative;
+    top: 2px;
+}
+.logo h1
+{
+    position: relative;
+    top: -6px;
+    margin-left: 10px;
+    color: #d4d4d4;
+    font-family: tagline; 
+}
 
-            .burger
-            {
-              cursor: pointer;
-              display: block;
-            }
+nav
+{
+    float: right;
+    margin: 38px 0;
+    margin-right: 60px;
+}
+nav::after
+{
+    content: "";
+    display: block;
+    clear: both;
+}
+nav ul
+{
+    position: relative;
+    list-style: none;
+    transition: all .5s ease-in-out;
+}
+li.desktop
+{
+    position: relative;
+    margin: 0 20px;
+    display: inline-block;
+    font-size: 20px;
+    letter-spacing: .1em;
+    text-align: right;
+    font-family: 'Header';
+    z-index: 1;
+}
+.last_li
+{
+    margin-right: 0;
+}
+nav ul span
+{
+    position: relative;
+    top: -1px;
+    color: #c1b04f;
+    font-size: 20px;
+}
+.header_a
+{
+    text-decoration: none;
+    color:aliceblue;
+    width: 100%;
+}
+.header_a:hover
+{
+    color: #e6cd45;
+    transition: .3s;
+}
+/*BURGER!!!!!!!!!!!!!!!!!!*/
+.burger-container
+{
+    width: 10px;
+    display: none;
+}
 
-            .burger span
-            {
-              background: #eee;
-              display: block;
-              width: 20px;
-              height: 4px;
-              margin-bottom: 1px;
-              position: relative;
-              top: 0;
-              transition: all ease-in-out .4s;
-            }
+.burger
+{
+    cursor: pointer;
+    display: block;
+}
 
-            .burger-container.open span:nth-child(2),
-            .burger-container.open span:nth-child(3)
-            {
-              width: 0;
-              opacity: 0;
-            }
+.burger span
+{
+    background: #eee;
+    display: block;
+    width: 20px;
+    height: 4px;
+    margin-bottom: 1px;
+    position: relative;
+    top: 0;
+    transition: all ease-in-out .4s;
+}
 
-            .burger-container.open span:nth-child(1)
-            {
-              transform: rotate(-45deg);
-              top: 7.5px;
-            }
+.burger-container.open span:nth-child(2),
+.burger-container.open span:nth-child(3)
+{
+    width: 0;
+    opacity: 0;
+}
 
-            .burger-container.open span:nth-child(4)
-            {
-              transform: rotate(45deg);
-              top: -7.5px;
-            }
-            @media (max-width: 1031px)
-            {
-                .burger-container
-                {
-                    position: absolute;
-                    display: block;
-                }
-                header
-                {
-                    position: relative;
-                    background: #212121;
-                }
-                .spann
-                {
-                    display: none;
-                }
-                .last_li
-                {
-                    margin-right: 20px;
-                }
-                body
-                {
-                    position: relative;
-                }
-                nav ul 
-                {
-                    position: absolute;
-                    top: -105px;
-                    left: 0;
-                    width: 100%;
-                    background: rgba(128, 128, 128, 0.659);
-                    z-index: -1;
-                }
-                li.desktop
-                {
-                   /*display: none;*/
-                   display: block;
-                   text-align: center;
-                   border-bottom: 1px solid #2121217c;
-                   margin: 0;
-                   padding: 5px;
-                }
-                .dropdown
-                {
-                    position: absolute;
-                    top: 100px;
-                }
-            }
+.burger-container.open span:nth-child(1)
+{
+    transform: rotate(-45deg);
+    top: 7.5px;
+}
+
+.burger-container.open span:nth-child(4)
+{
+    transform: rotate(45deg);
+    top: -7.5px;
+}
+@media (max-width: 1031px)
+{
+    #programsdiv2, div#tutorialsdiv2, div#transformationsdiv2
+    {
+        height: 55px !important;
+    }
+    .programsh1, .tutorialsh1, .transformationsh1
+    {
+        top: 13px !important;
+        font-size: 25px !important;
+    }
+    .burger-container
+    {
+        position: absolute;
+        display: block;
+    }
+    header
+    {
+        position: relative;
+        background: url(Images/header.png);
+    }
+    .spann
+    {
+        display: none;
+    }
+    .last_li
+    {
+        margin-right: 20px;
+    }
+    body
+    {
+        position: relative;
+    }
+    nav ul 
+    {
+        position: absolute;
+        top: -105px;
+        left: 0;
+        width: 100%;
+        background: rgba(128, 128, 128, 0.659);
+        z-index: -1;
+    }
+    li.desktop
+    {
+        /*display: none;*/
+        display: block;
+        text-align: center;
+        border-bottom: 1px solid #2121217c;
+        margin: 0;
+        padding: 10px;
+    }
+    .logo
+    {
+        margin-left: 40px;
+
+    }
+    .logo a h1
+    {
+        font-size: 30px;
+    }
+    .dropdown
+    {
+        position: absolute;
+        top: 100px;
+    }
+}
 
 /*--------------------------------*/
 
@@ -728,7 +758,7 @@ section
 .programsh1
 {
     position: absolute;
-    top: 25;
+    top: 25px;
     left: 0;
     right: 0;
     width: auto;
@@ -936,7 +966,7 @@ div#tutorialsdiv2
 h1.tutorialsh1
 {
     position: absolute;
-    top: 25;
+    top: 25px;
     left: 0;
     right: 0;
     width: auto;
@@ -1191,7 +1221,7 @@ div#transformationsdiv2
 h1.transformationsh1
 {
     position: absolute;
-    top: 25;
+    top: 25px;
     left: 0;
     right: 0;
     width: auto;

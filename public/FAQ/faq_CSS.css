@@ -1,6 +1,13 @@
+@font-face
+{
+    font-family: "Header";
+    src: url('../Fonts/BebasNeue Regular.ttf');
+}
+
 body::-webkit-scrollbar-track
 {
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
 	border-radius: 10px;
 	background-color: #212121;
 }
@@ -14,7 +21,8 @@ body::-webkit-scrollbar
 body::-webkit-scrollbar-thumb
 {
 	border-radius: 10px;
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    box-shadow: inset 0 0 6px rgba(0,0,0,.3);
 	background-color: #a39546;
 }
 
@@ -36,8 +44,14 @@ body::-webkit-scrollbar-thumb:hover
 }
 
 /*-------------BODY---------------*/
+*
+{
+    margin: 0;
+    padding: 0;
+}
 body
 {
+    position: relative;
     margin: 0;
     padding: 0;
     height: 100%;
@@ -45,195 +59,198 @@ body
     background: url(Images/background.png);
     overflow-x: hidden;
     overflow-y: auto;
-	font-weight: 400;
+    font-weight: 400;
+    z-index: -10;
 }
 
-wrapper
-{
-    width: 96%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 2%;
-}
-
+/*------HEADER------*/
 header
 {
     position: relative;
-    background: #212121;
-    padding: 20px 0;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    background: -webkit-linear-gradient(rgba(214, 31, 31, 0), #000000);
+    background: -moz-linear-gradient(bottom, rgba(33, 33, 33, 0), #000000);
+    background: -ms-linear-gradient(bottom, rgba(33, 33, 33, 0), #000000);
+    background: -o-linear-gradient(bottom, rgba(33, 33, 33, 0), #000000);
+    background: linear-gradient(to top, rgba(33, 33, 33, 0), #000000);
+}
+.logo
+{
+    height: 50px;
+    margin: 26px;
+    margin-left: 60px;
+}
+.logo, .logo img, .logo h1
+{
+    display: inline-block;
+}
+.logo img
+{
+    position: relative;
+    top: 2px;
+}
+.logo h1
+{
+    position: relative;
+    top: -6px;
+    margin-left: 10px;
+    color: #d4d4d4;
+    font-family: tagline; 
 }
 
-header h1
-{
-    margin: 0;
-    margin-left: 50px;
-    text-indent: -10000px;
-    text-align: center;
-    background: url(../Home%20Page/Images/Screenshot_1.png) no-repeat;
-    height: 40px;
-    width: 208px;
-    float: left;
-}
-header h1::after
-{
-    content: "";
-    display: block;
-    clear: both;
-}
-
-header nav
+nav
 {
     float: right;
-    margin-right: 50px;
+    margin: 38px 0;
+    margin-right: 60px;
 }
-header nav::after
+nav::after
 {
     content: "";
     display: block;
     clear: both;
 }
-
-header nav h2
+nav ul
 {
-    line-height: 0;
+    position: relative;
     margin: 0;
-    text-indent: -10000px;
+    list-style: none;
+    transition: all .5s ease-in-out;
 }
-
-header nav ul
+li.desktop
 {
-    margin: 0;
-    padding: 0;
+    position: relative;
+    margin: 0 20px;
+    display: inline-block;
+    font-size: 20px;
+    letter-spacing: .1em;
+    text-align: right;
+    font-family: 'Header';
+    z-index: 1;
 }
-
-header nav li
+.last_li
 {
-    list-style-type: none;
-    float: left;
-    margin-left: 50px;
-    margin-top: 10px;
+    margin-right: 0;
 }
-
-header nav a
+nav ul span
+{
+    position: relative;
+    top: -1px;
+    color: #c1b04f;
+    font-size: 20px;
+}
+.header_a
 {
     text-decoration: none;
-    color: #eee;
-    font-family: 'Kavivanar', cursive;
-    text-transform: uppercase;
-    font-weight: bold;
+    color:aliceblue;
+    width: 100%;
 }
-
-header nav a:hover
+.header_a:hover
 {
     color: #e6cd45;
-    transition: all ease .3s;
+    transition: .3s;
+}
+/*BURGER!!!!!!!!!!!!!!!!!!*/
+.burger-container
+{
+    width: 10px;
+    display: none;
 }
 
-header:after
+.burger
 {
+    cursor: pointer;
     display: block;
-    content: "";
-    clear: both;
 }
 
-@media screen and (max-width: 951px)
+.burger span
 {
-    
-    header nav
-    {
-        float: none;
-        margin: 0;
-    }
-    
-    header nav li
-    {
-        margin-left: 0;
-        width: 20%;
-        text-align: center;
-        font-size: 14px;
-    }
-    
-    header h1.logo
-    {
-        float: none;
-        margin: 0 auto 15px;
-    }
-        
-    #latest-work li
-    {
-        width: 60%;
-         margin: 30px 20% !important;
-        float: none;
-    }
-        
-    #latest-work h2
-    {
-        text-align: center;
-    }
-    
+    background: #eee;
+    display: block;
+    width: 20px;
+    height: 4px;
+    margin-bottom: 1px;
+    position: relative;
+    top: 0;
+    transition: all ease-in-out .4s;
 }
-    
-    
-@media screen and (max-width: 640px)
-{  
-    header nav li
+
+.burger-container.open span:nth-child(2),
+.burger-container.open span:nth-child(3)
+{
+    width: 0;
+    opacity: 0;
+}
+
+.burger-container.open span:nth-child(1)
+{
+    transform: rotate(-45deg);
+    top: 7.5px;
+}
+
+.burger-container.open span:nth-child(4)
+{
+    transform: rotate(45deg);
+    top: -7.5px;
+}
+@media (max-width: 1031px)
+{
+    .burger-container
     {
-        float: none;
-        width: 100%;
-        margin: 0;
+        position: absolute;
+        display: block;
     }
-        
-    header nav
-    {
-        background: #555;
-    }
-        
-    header .wrapper
-    {
-        padding: 0;
-        width: 100%;
-        
-    }
-        
     header
     {
-        padding-bottom: 0;
+        position: relative;
+        background: url(../Home%20Page/Images/header.png);
     }
-        
-    header nav li a
+    .spann
     {
+        display: none;
+    }
+    .last_li
+    {
+        margin-right: 20px;
+    }
+    body
+    {
+        position: relative;
+    }
+    nav ul 
+    {
+        position: absolute;
+        top: -105px;
+        left: 0;
+        width: 100%;
+        background: rgba(128, 128, 128, 0.659);
+        z-index: -1;
+    }
+    li.desktop
+    {
+        /*display: none;*/
         display: block;
         text-align: center;
+        border-bottom: 1px solid #2121217c;
+        margin: 0;
         padding: 10px;
-        color: #999;
-        border-top: 1px solid #4f4f4f
     }
+    .logo
+    {
+        margin-left: 40px;
 
-    header nav li a:hover
-    {
-        color: #e6cd45;
-        background-color: #212121;
     }
-        
-    #burger-nav
+    .logo a h1
     {
-        width: 100%;
-        height: 40px;
-        background: url(../Home%20Page/Images/burger.png) no-repeat 98% center;
-        cursor: pointer;
+        font-size: 30px;
     }
-        
-    header nav ul
+    .dropdown
     {
-        height: 0;
-        overflow: hidden;
-     }
-        
-    header nav ul.open
-    {
-        height: auto;
+        position: absolute;
+        top: 100px;
     }
-        
 }
 
 /*--------------------------------*/
@@ -245,6 +262,7 @@ section
     width: 100%;
     height: auto;
     margin: 0;
+    z-index: -6;
 }
 
 div.faqdiv

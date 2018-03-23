@@ -4,28 +4,14 @@ $(document).ready(function()
     var $body_width = $('body').width();
 
     /*-----HEADER FOR MOBILE PHONES------*/
-    if($body_width >= 640)
+    $(document).ready(function()
     {
-        $('header').css({"position": "fixed", "width": "100%", "z-index": "5"})
-    }
-
-    var counter;
-
-    $("#burger-nav").on("click", function()
-    {
-		if(counter === 1)
-		{
-			$("#burger-nav").css({"background": "url(../../Home%20Page/Images/burger.png) no-repeat 98% center"});
-			$("header nav ul").removeClass("open");
-			counter = 0;
-		} 
-		else
-		{
-			$("#burger-nav").css({"background": "url(../../Home%20Page/Images/closed.png) no-repeat 98% center"});
-			$("header nav ul").addClass("open");
-			counter = 1;
-		}
-	});
+        $('.burger-container').click( function()
+        {
+            $(this).toggleClass('open');
+            $('nav ul').toggleClass('dropdown');
+        });
+    });
     
     /*------PARALLAX REMOVAL-----*/
     if($body_width < 950)
@@ -46,15 +32,6 @@ $(document).ready(function()
     if($body_width < 500)
         $('p.quotep').css({"font-size": "32px"});
 
-    /*------BURGER ICON FOR MOBILE PHONES------*/
-    $('.icon').on('click', function()
-    {
-        $(this).toggleClass('image');
-        if(!$(this).is('.image'))
-            $(this).html("&#9776");
-        else
-            $(this).html("&#10060");
-    });
 
     /*------DOWNLOAD BUTTOM ANIMATIONS-----*/
     $('.quotedowp').hover(function() 

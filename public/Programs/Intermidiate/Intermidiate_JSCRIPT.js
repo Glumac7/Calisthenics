@@ -10,7 +10,6 @@ $(document).ready(function()
 		$('.footer-mail').attr("href", "mailto:nullgym@gmail.com");
     }
 
-    var header_width = $('header').width();
     
     if(body_width < 950)
     {
@@ -21,33 +20,18 @@ $(document).ready(function()
         $('aside.background').css({'height': '100%'});
     }
 
-    if(body_width >= 640)
-    {
-        $('header').css({"position": "fixed", "width": "100%", "z-index": "5"})
-    }
-
     if(body_width < 732)
     {
         $('.opacity').removeClass('opacity');
     }
 
-    /*------OPEN AND CLOSE FOR THE HEADER------*/
-    var counter;
-
-    $("#burger-nav").on("click", function()
+    $(document).ready(function()
     {
-		if(counter === 1)
-		{
-			$("#burger-nav").css({"background": "url(../../Home%20Page/Images/burger.png) no-repeat 98% center"});
-			$("header nav ul").removeClass("open");
-			counter = 0;
-		} 
-		else
-		{
-			$("#burger-nav").css({"background": "url(../../Home%20Page/Images/closed.png) no-repeat 98% center"});
-			$("header nav ul").addClass("open");
-			counter = 1;
-		}
+        $('.burger-container').click( function()
+        {
+            $(this).toggleClass('open');
+            $('nav ul').toggleClass('dropdown');
+        });
     });
     
     /*------GET IT BUTTON-----*/
