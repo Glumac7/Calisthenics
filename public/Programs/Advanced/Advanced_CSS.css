@@ -555,7 +555,36 @@ nav ul span
         top: 100px;
     }
 }
-
+@media (max-width: 343px)
+{
+    .burger-container
+    {
+        right: 30px;
+    }
+    nav
+    {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .logo{
+        margin-left: 20px;
+    }
+}
+@media (max-width: 310px)
+{
+    .burger-container
+    {
+        right: 20px;
+    }
+    nav
+    {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .logo{
+        margin-left: 10px;
+    }
+}
 /*--------------------------------*/
 /*------SECTION------*/
 

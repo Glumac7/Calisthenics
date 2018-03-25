@@ -1,15 +1,24 @@
+:root
+{
+    --gold: #e6cd45;
+    --light_black: #212121;
+    --dark_gold: #a39546;
+    --text_color: #d4d4d4;
+    --border: 1px solid rgba(230, 205, 69, .4);
+}
+
 body::-webkit-scrollbar-track
 {
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
     box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
 	border-radius: 10px;
-	background-color: #212121;
+	background-color: var(--light_black);
 }
 
 body::-webkit-scrollbar
 {
 	width: 12px;
-	background-color: #212121;
+	background-color: var(--light_black);
 }
 
 body::-webkit-scrollbar-thumb
@@ -17,12 +26,12 @@ body::-webkit-scrollbar-thumb
 	border-radius: 10px;
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
     box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-	background-color: #a39546;
+	background-color: var(--dark_gold);
 }
 
 body::-webkit-scrollbar-thumb:hover
 {
-    background-color: #e6cd45;
+    background-color: var(--gold);
 }
 
 @font-face
@@ -493,6 +502,7 @@ body::-webkit-scrollbar-thumb:hover
 /*-------------BODY---------------*/
 *
 {
+    outline: 0;
     margin: 0;
     padding: 0;
 }
@@ -502,7 +512,7 @@ body
     margin: 0;
     padding: 0;
     font-family: 'Cool', sans-serif;
-    background-color: #212121;
+    background-color: var(--light_black);
     overflow-x: hidden;
     overflow-y: scroll;
     font-weight: 400;
@@ -563,7 +573,7 @@ header
     position: relative;
     top: -6px;
     margin-left: 10px;
-    color: #d4d4d4;
+    color: var(--text_color);
     font-family: tagline; 
 }
 
@@ -610,12 +620,13 @@ nav ul span
 .header_a
 {
     text-decoration: none;
+    transition: all .3s;
     color:aliceblue;
     width: 100%;
 }
 .header_a:hover
 {
-    color: #e6cd45;
+    color: var(--gold);
     transition: .3s;
 }
 /*BURGER!!!!!!!!!!!!!!!!!!*/
@@ -728,6 +739,37 @@ nav ul span
     }
 }
 
+@media (max-width: 343px)
+{
+    .burger-container
+    {
+        right: 30px;
+    }
+    nav
+    {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .logo{
+        margin-left: 20px;
+    }
+}
+@media (max-width: 310px)
+{
+    .burger-container
+    {
+        right: 20px;
+    }
+    nav
+    {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .logo{
+        margin-left: 10px;
+    }
+}
+
 /*--------------------------------*/
 
 section
@@ -737,7 +779,7 @@ section
     height: 0;
     padding-bottom: 0px;
     margin: 0 auto;
-    background: #212121;
+    background: var(--light_black);
     z-index: -2;
 }
 
@@ -747,11 +789,11 @@ section
 {
     position: relative;
     height: 100px;
-    border: 1px solid rgba(230, 205, 69, .4);
+    border: var(--border);
     border-left: 0;
     border-right: 0;
     background-image: url(Images/black_linen_v2.png);background-position: initial initial; background-repeat: initial initial; 
-    background-color: #212121;
+    background-color: var(--light_black);
     z-index: 5;
 }
 
@@ -765,7 +807,7 @@ section
     margin: 0 auto;
     font-family: Tagline;
     font-size: 40px;
-    color: #d4d4d4;
+    color: var(--text_color);
     text-align: center;
     z-index: 6;
 }
@@ -840,7 +882,7 @@ div.grayscale
 
 .ph1
 {
-    color: #d4d4d4;
+    color: var(--text_color);
     text-shadow: 3px 2px 3px #a395467c;
     font-family: sans-serif;
     text-align: center;
@@ -849,7 +891,7 @@ div.grayscale
 
 .pp
 {
-    color: #d4d4d4;
+    color: var(--text_color);
     margin: 0 auto;
     width: 95%;
     line-height: 1.3em;
@@ -956,10 +998,10 @@ div#tutorialsdiv2
     position: relative;
     height: 100px;
     border: 0;
-    border-top: 1px solid rgba(230, 205, 69, .4);
-    border-bottom: 1px solid rgba(230, 205, 69, .4);
+    border-top: var(--border);
+    border-bottom: var(--border);
     background-image: url(Images/black_linen_v2.png);background-position: initial initial; background-repeat: initial initial; 
-    background-color: #212121;
+    background-color: var(--light_black);
     z-index: 12;
 }
 
@@ -973,7 +1015,7 @@ h1.tutorialsh1
     margin: 0 auto;
     font-family: Tagline;
     font-size: 40px;
-    color: #d4d4d4;
+    color: var(--text_color);
     text-align: center;
     z-index: 6;
 }
@@ -982,7 +1024,7 @@ p.tutorialsp
 {
     position: relative;
     color: #eee;
-    padding: 0px 20px 40px;
+    padding: 0px 10px 40px;
     font-size: 17px;
     font-weight: 400;
     text-align: center;
@@ -1094,9 +1136,9 @@ div.grayscale2
     margin: 0 60px;
     text-overflow: ellipsis;
     background: #000000a1;
-    -webkit-box-shadow: 0px 4px 5px -4px #e6cd45;
-    -moz-box-shadow: 0px 4px 5px -4px #e6cd45;
-    box-shadow: 0px 4px 5px -4px #e6cd45;
+    -webkit-box-shadow: 0px 4px 5px -4px var(--gold);
+    -moz-box-shadow: 0px 4px 5px -4px var(--gold);
+    box-shadow: 0px 4px 5px -4px var(--gold);
     overflow: hidden;
 }/* ie needs position:relative here*/
 
@@ -1211,10 +1253,10 @@ div#transformationsdiv2
     position: relative;
     height: 100px;
     border: 0;
-    border-top: 1px solid rgba(230, 205, 69, .4);
-    border-bottom: 1px solid rgba(230, 205, 69, .4);
+    border-top: var(--border);
+    border-bottom: var(--border);
     background-image: url(Images/black_linen_v2.png);background-position: initial initial; background-repeat: initial initial; 
-    background-color: #212121;
+    background-color: var(--light_black);
     z-index: 12;
 }
 
@@ -1228,7 +1270,7 @@ h1.transformationsh1
     margin: 0 auto;
     font-family: Tagline;
     font-size: 40px;
-    color: #d4d4d4;
+    color: var(--text_color);
     text-align: center;
     z-index: 6;
 }
@@ -1262,7 +1304,7 @@ p.transformationsp
 {
     position: relative;
     color: #eee;
-    padding: 0px 20px 40px;
+    padding: 0px 10px 40px;
     font-size: 17px;
     font-weight: 400;
     text-align: justify;
@@ -1330,9 +1372,9 @@ p.transformationsp
     margin: 0 60px;
     text-overflow: ellipsis;
     background: #000000a1;
-    -webkit-box-shadow: 0px 4px 5px -4px #e6cd45;
-    -moz-box-shadow: 0px 4px 5px -4px #e6cd45;
-    box-shadow: 0px 4px 5px -4px #e6cd45;
+    -webkit-box-shadow: 0px 4px 5px -4px var(--gold);
+    -moz-box-shadow: 0px 4px 5px -4px var(--gold);
+    box-shadow: 0px 4px 5px -4px var(--gold);
     overflow: hidden;
 }
 
@@ -1463,9 +1505,15 @@ p.transformationsp
 
 @media (max-width: 430px)
 {
+    #s
+    {
+        width: 100%;
+    }
     .transformationsul li
     {
-        width: 80%;
+        width: 80% !important;
+        margin-left: 0;
+        margin-right: 0;
         overflow: visible;
     }
 }
@@ -1516,7 +1564,7 @@ p.transformationsp
 {
     
 	background-image: url(Images/skewed_print.png);background-position: initial initial; background-repeat: initial initial; 
-    background-color: #212121;
+    background-color: var(--light_black);
 	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
 	box-sizing: border-box;
 	width: 100%;
@@ -1576,7 +1624,7 @@ p.transformationsp
 .footer-distributed .footer-links a:hover
 {
     transition: .3s;
-	color:  #e6cd45;
+	color:  var(--gold);
 }
 
 .footer-distributed .footer-company-name

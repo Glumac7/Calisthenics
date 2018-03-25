@@ -239,8 +239,12 @@ input:focus
   background: rgba(230, 205, 69,.2);
   border-radius: 20px;
   border-color: transparent;
+  
 }
-
+::placeholder
+{
+  color: #d4d4d4;
+}
 a
 {
   text-decoration: none;
@@ -248,20 +252,21 @@ a
 
 .login-btn:not(hover)
 {
-  transition: .4s;
+  transition: .3s;
   border-radius: 10px;
-  background: rgb(230, 205, 69);
+  border:1px solid #a39546;
   text-align: center;
   opacity: .8;
-  color: #fff;
+  color: #a39546;
 }
 
 .login-btn:hover
 {
-  transition: .4s;
+  transition: .3s;
   border-radius: 10px;
   text-align: center;
   background: #a39546;
+  color: #181818;
 }
 
 .other-options
@@ -331,4 +336,24 @@ a
   bottom: 0;
   margin: auto;
   background: rgba(255,255,255,.5);
+}
+@media (max-width: 331px) and (max-height: 550px)
+{
+  div.mobile-screen
+  {
+    width: 250px;
+    height: 450px;
+  }
+  .logo
+  {
+    width: 150px;
+    height: 150px;
+  }
+}
+@media (max-width: 600px) and (max-width: 700px)
+{
+  body
+  {
+    overflow-y: scroll;
+  }
 }
