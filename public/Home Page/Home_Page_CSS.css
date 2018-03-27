@@ -674,6 +674,10 @@ nav ul span
 }
 @media (max-width: 1031px)
 {
+    section
+    {
+        z-index: -2;
+    }
     #programsdiv2, div#tutorialsdiv2, div#transformationsdiv2
     {
         height: 55px !important;
@@ -780,7 +784,6 @@ section
     padding-bottom: 0px;
     margin: 0 auto;
     background: var(--light_black);
-    z-index: -2;
 }
 
 /*---------------PROGRAMS----------------*/
@@ -884,9 +887,11 @@ div.grayscale
 {
     color: var(--text_color);
     text-shadow: 3px 2px 3px #a395467c;
-    font-family: sans-serif;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-size: 27px;
+    letter-spacing: .06em;
     text-align: center;
-    margin: 20px auto;
+    margin: 15px auto;
 }
 
 .pp
@@ -894,10 +899,11 @@ div.grayscale
     color: var(--text_color);
     margin: 0 auto;
     width: 95%;
-    line-height: 1.3em;
+    line-height: 1.5em;
+    letter-spacing: .01em;
     text-align: justify;
-    font-family: 'Nunito Sans', sans-serif;
-    font-size: 18px;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-size: 16px;
 }
 
 @media (min-width: 1920px)
@@ -920,59 +926,56 @@ div.grayscale
 {
     .programsul li
     {
-        height: 485px;
-        width: 26%;
-    }
-    .programsul li:nth-child(3)
-    {
-        margin-top: 20px;
+        height: 445px;
+        width: 20%;
     }
 }
-@media (max-width: 930px)
+@media (max-width: 1280px)
 {
     .programsul li
     {
-        height: 530px;
-        width: 40%;
+        height: 435px;
+        width: 25%;
         margin: 14px auto;
         margin: 20px;
     }
     .pimg, .pdiv
     {
-        height: 200px;
-    }
-    .ph1
-    {
-        margin: 30px auto;
-        text-align: center;
+        height: 170px;
     }
     .pp
     {
-        font-size: 20px;
+        font-size: 16px;
     }
 }
-@media (max-width: 800px)
-{
-    .pimg, .pdiv
-    {
-        height: 200px;
-    }
-    .ph1
-    {
-        margin: 20px auto;
-        text-align: center;
-    }
-    .pp
-    {
-        font-size: 20px;
-    }
-}
-
-@media (max-width: 640px)
+@media (max-width: 1000px)
 {
     .programsul li
     {
-        width: 60%;
+        height: 440px;
+        width: 25%;
+        margin: 14px auto;
+        margin: 20px;
+    }
+    .pimg, .pdiv
+    {
+        height: 150px;
+    }
+    .ph1
+    {
+        margin: 12px auto;
+    }
+    .pp
+    {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 820px)
+{
+    .programsul li
+    {
+        width: 40%;
     }
 
     .pimg, .pdiv
@@ -981,12 +984,19 @@ div.grayscale
     }
 }
 
-@media (max-width: 430px)
+@media (max-width: 565px)
 {
     .programsul li
     {
-        width: 80%;
-        overflow: visible;
+        width: 50%;
+    }
+}
+
+@media (max-width: 425px)
+{
+    .programsul li
+    {
+        width:80%;
     }
 }
 
