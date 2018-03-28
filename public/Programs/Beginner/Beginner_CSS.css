@@ -543,13 +543,12 @@ section
     width: 100%;
     height: auto;
     margin: 0;
-    z-index: -6;
 }
 
 .beginnerdiv
 {
     position: relative;
-    height: 100px;
+    height: 70px;
     border: 1px solid rgba(230, 205, 69, .4);
     border-left: 0;
     border-right: 0;
@@ -560,7 +559,7 @@ section
 .beginnerh1
 {
     position: absolute;
-    top: 25;
+    top: 10px;
     left: 0;
     right: 0;
     width: auto;
@@ -653,11 +652,11 @@ p.aboutp
 {
     text-align: justify;
     color: #d4d4d4;
-    font-family: 'Ropa Sans', sans-serif;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
     line-height: 1.21em;
     margin: 0;
     width: 600px;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .firstli
@@ -669,7 +668,7 @@ p.aboutp
 #aboutdiv2
 {
     position: relative;
-    height: 100px;
+    height: 60px;
     border-top: 1px solid rgba(230, 205, 69, .4);
     border-bottom: 1px solid rgba(230, 205, 69, .4);
     background-image: url(../../Home%20Page/Images/black_linen_v2.png);background-position: initial initial; background-repeat: initial initial; 
@@ -680,13 +679,13 @@ p.aboutp
 .abouth1
 {
     position: absolute;
-    top: 20px;
+    top: 5px;
     left: 0;
     right: 0;
     width: auto;
     margin: 0 auto;
-    font-family: 'Kaushan Script', cursive;
-    text-shadow: 3px 3px 1px #e6ce456b;
+    font-family: 'BenchNine', sans-serif;
+    font-weight: 100;
     font-size: 40px;
     color: #d4d4d4;
     text-align: center;

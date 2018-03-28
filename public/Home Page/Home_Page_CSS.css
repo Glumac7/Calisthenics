@@ -791,7 +791,7 @@ section
 #programsdiv2
 {
     position: relative;
-    height: 100px;
+    height: 70px;
     border: var(--border);
     border-left: 0;
     border-right: 0;
@@ -803,7 +803,7 @@ section
 .programsh1
 {
     position: absolute;
-    top: 25px;
+    top: 12px;
     left: 0;
     right: 0;
     width: auto;
@@ -996,7 +996,7 @@ div.grayscale
 {
     .programsul li
     {
-        width:80%;
+        width: 80%;
     }
 }
 
@@ -1006,7 +1006,7 @@ div.grayscale
 div#tutorialsdiv2
 {
     position: relative;
-    height: 100px;
+    height: 70px;
     border: 0;
     border-top: var(--border);
     border-bottom: var(--border);
@@ -1018,7 +1018,7 @@ div#tutorialsdiv2
 h1.tutorialsh1
 {
     position: absolute;
-    top: 25px;
+    top: 12px;
     left: 0;
     right: 0;
     width: auto;
@@ -1035,11 +1035,13 @@ p.tutorialsp
     position: relative;
     color: #eee;
     padding: 0px 10px 40px;
-    font-size: 17px;
-    font-weight: 400;
+    font-size: 18px;
+    font-weight: 100;
     text-align: center;
-    line-height: 1.3em;
-    font-family: 'Raleway', sans-serif;
+    line-height: 1.4em;
+    letter-spacing: .02em;
+    word-spacing: .1em;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
     z-index: 11;
 }
 
@@ -1047,7 +1049,7 @@ p.tutorialsp
 {
     p.tutorialsp
     {
-        font-size: 19px;
+        font-size: 20px;
     }
 }
 
@@ -1102,10 +1104,8 @@ div.tutorialsdiv
     position: relative;
     text-align: center;
     padding: 50px 0;
-    background: url('Images/tutorials_parallax.jpg');
+    background: url('Images/programs_parallax.png');
     background-attachment: fixed;
-    background-size: cover;
-    z-index: 9;
 }
 
 div.grayscale2
@@ -1146,9 +1146,7 @@ div.grayscale2
     margin: 0 60px;
     text-overflow: ellipsis;
     background: #000000a1;
-    -webkit-box-shadow: 0px 4px 5px -4px var(--gold);
-    -moz-box-shadow: 0px 4px 5px -4px var(--gold);
-    box-shadow: 0px 4px 5px -4px var(--gold);
+    border: 2px solid var(--gold);
     overflow: hidden;
 }/* ie needs position:relative here*/
 
@@ -1261,7 +1259,7 @@ img.tutorialsimg
 div#transformationsdiv2
 {
     position: relative;
-    height: 100px;
+    height: 70px;
     border: 0;
     border-top: var(--border);
     border-bottom: var(--border);
@@ -1273,7 +1271,7 @@ div#transformationsdiv2
 h1.transformationsh1
 {
     position: absolute;
-    top: 25px;
+    top: 12px;
     left: 0;
     right: 0;
     width: auto;
@@ -1288,13 +1286,10 @@ h1.transformationsh1
 div.transformationsdiv3
 {
     position: relative;
-    width: 100%;
-    height: auto;
     text-align: center;
     padding: 50px 0;
-    background: url(Images/transformations_parallax.png);
+    background: url('Images/programs_parallax.png');
     background-attachment: fixed;
-    background-size: cover;
 }
 
 div.grayscale3
@@ -1305,9 +1300,11 @@ div.grayscale3
     left: 0;
     right: 0;
     margin: 0 auto;
-    width: 100%;
-    background-color: #303030b1;
     height: auto;
+    
+    width: 100%;
+    background-color: #303030f6;
+    z-index: 9;
 }
 
 p.transformationsp
@@ -1319,7 +1316,7 @@ p.transformationsp
     font-weight: 400;
     text-align: justify;
     line-height: 1.3em;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
     margin: 0 auto;
     width: auto;
     z-index: 11;
@@ -1382,10 +1379,7 @@ p.transformationsp
     margin: 0 60px;
     text-overflow: ellipsis;
     background: #000000a1;
-    -webkit-box-shadow: 0px 4px 5px -4px var(--gold);
-    -moz-box-shadow: 0px 4px 5px -4px var(--gold);
-    box-shadow: 0px 4px 5px -4px var(--gold);
-    overflow: hidden;
+    border: 2px solid var(--gold);
 }
 
 .slide1,.slide2,.slide3

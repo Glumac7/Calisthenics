@@ -594,13 +594,12 @@ section
     width: 100%;
     height: auto;
     margin: 0;
-    z-index: -6;
 }
 
 .advanceddiv
 {
     position: relative;
-    height: 100px;
+    height: 70px;
     border: 1px solid #e6cd45;
     border: 1px solid rgba(230, 205, 69, .4);
     border-right: 0;
@@ -612,7 +611,7 @@ section
 .advancedh1
 {
     position: absolute;
-    top: 25;
+    top: 12px;
     left: 0;
     right: 0;
     width: auto;
@@ -703,7 +702,7 @@ a.linksa:hover
 #descdiv2
 {
     position: relative;
-    height: 100px;
+    height: 60px;
     border-top: 1px solid rgba(230, 205, 69, .4);
     border-bottom: 1px solid rgba(230, 205, 69, .4);
     background-image: url(../../Home%20Page/Images/black_linen_v2.png);background-position: initial initial; background-repeat: initial initial; 
@@ -714,13 +713,13 @@ a.linksa:hover
 .desch1
 {
     position: absolute;
-    top: 20px;
+    top: 5px;
     left: 0;
     right: 0;
     width: auto;
     margin: 0 auto;
-    font-family: 'Kaushan Script', cursive;
-    text-shadow: 3px 3px 1px #e6ce456b;
+    font-family: 'BenchNine', sans-serif;
+    font-weight: 100;
     font-size: 40px;
     color: #d4d4d4;
     text-align: center;
@@ -756,11 +755,11 @@ p.aboutp
 {
     text-align: justify;
     color: #d4d4d4;
-    font-family: 'Ropa Sans', sans-serif;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
     line-height: 1.21em;
     margin: 0;
     width: 600px;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .firstli
@@ -974,7 +973,7 @@ li.subprogli::after
 #subdiv2
 {
     position: relative;
-    height: 100px;
+    height: 60px;
     border-top: 1px solid rgba(230, 205, 69, .4);
     border-bottom: 1px solid rgba(230, 205, 69, .4);
     background-image: url(../../Home%20Page/Images/black_linen_v2.png);background-position: initial initial; background-repeat: initial initial; 
@@ -985,13 +984,13 @@ li.subprogli::after
 .subh1
 {
     position: absolute;
-    top: 20px;
+    top: 5px;
     left: 0;
     right: 0;
     width: auto;
     margin: 0 auto;
-    font-family: 'Kaushan Script', cursive;
-    text-shadow: 3px 3px 1px #e6ce456b;
+    font-family: 'BenchNine', sans-serif;
+    font-weight: 100;
     font-size: 40px;
     color: #d4d4d4;
     text-align: center;
@@ -1002,11 +1001,11 @@ p.subp
 {
     text-align: justify;
     color: #d4d4d4;
-    font-family: 'Ropa Sans', sans-serif;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
     line-height: 1.21em;
     margin: 0;
     width: 600px;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .firstli

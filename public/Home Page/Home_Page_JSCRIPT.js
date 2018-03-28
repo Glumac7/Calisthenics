@@ -37,7 +37,6 @@ $(document).ready(function()
 
 /*-----ANIMATIONS-----*/
 $(window).scroll(function() {
-
     $body_width = $('body').width();
 
     if($(this).scrollTop() > 350 && $body_width > 800)
