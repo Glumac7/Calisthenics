@@ -610,8 +610,8 @@ section
 
 .intermidiateh1
 {
-    position: absolute;
-    top: 12px;
+    position: relative;
+    top: 11px;
     left: 0;
     right: 0;
     width: auto;
@@ -850,7 +850,7 @@ div.subprogdiv
 p.subprogtitle
 {
     margin: 0 auto;
-    font-family: 'Bangers', cursive;
+    font-family: 'Oswald', sans-serif;
     letter-spacing: .1em;
     word-spacing: .2em;
     padding: 20px 0 0 0;

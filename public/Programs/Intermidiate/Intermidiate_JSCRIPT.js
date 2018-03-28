@@ -67,12 +67,12 @@ $(window).scroll(function()
 {
     var body_width = $('body').width();
 
-    if($(this).scrollTop() > 800 && body_width > 732)
+    if($(this).scrollTop() > 500 && body_width > 732)
     {
         $('.aboutp').addClass('fadeInUp').removeClass('opacity');
     }
     
-    if($(this).scrollTop() > 1250 && body_width > 732)
+    if($(this).scrollTop() > 950 && body_width > 732)
     {
         $('.subprogli').addClass('zoomInDown').removeClass('opacity');
         $('.subprogli2').css({"animation-delay": ".15s"});
@@ -80,7 +80,7 @@ $(window).scroll(function()
         $('.subprogli4').css({"animation-delay": ".35s"});
     }
 
-    if($(this).scrollTop() > 1740 && body_width > 732)
+    if($(this).scrollTop() > 1240 && body_width > 732)
     {
         $('.subp').addClass('fadeInUp').removeClass('opacity');
     }
