@@ -435,6 +435,10 @@ nav ul span
 }
 @media (max-width: 1031px)
 {
+    section
+    {
+        z-index: -2;
+    }
     .beginnerdiv, #aboutdiv2
     {
         height: 55px !important;

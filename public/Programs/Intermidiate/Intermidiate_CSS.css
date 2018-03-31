@@ -487,6 +487,10 @@ nav ul span
 }
 @media (max-width: 1031px)
 {
+    section
+    {
+        z-index: -2;
+    }
     .intermidiatediv, #descdiv2, #subdiv2
     {
         height: 55px !important;
